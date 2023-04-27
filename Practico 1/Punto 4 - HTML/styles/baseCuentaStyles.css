@@ -1,0 +1,229 @@
+
+/* GENERALES */
+
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    font-family: 'Gotham', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+/* MOBILE */
+
+/* Header */
+
+header {
+    position: relative;
+    min-width: 100%;
+    min-height: 16rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background-color: rgb(2, 82, 85);
+}
+
+.div_logo_header {
+    position: relative;
+    top: 20px;
+    height: 100px;
+    width: 200px;
+    margin: 0px auto;
+}
+
+.enlace_logo {
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+}
+
+.imagen_logo {
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 10px 0px 10px 10px;
+    background-color: white;
+}
+
+.seccion_logo_cuenta {
+    position: relative;
+    top: 40px;
+    height: 100px;
+    width: 300px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 60px;
+    border: solid 1px #000;
+}
+
+.titulo_nombre_cuenta {
+    font-size: 18px;
+    margin-left: 40px;
+}
+
+.div_imagen_cuenta {
+    position: absolute;
+    right: 15px;
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 1px #000;
+}
+
+.imagen_usuario {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    min-height: 18rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background-color: rgb(2, 82, 85);
+}
+
+.nav_contactos_footer {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.enlace_contacto_footer {
+    width: 80px;
+    height: 80px;  
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.imagen_contacto_footer {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.seccion_final_footer {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion_final_footer p {
+    color: black;
+    font-size: 1rem;
+}
+
+.enlace_logo_footer {
+    width: 200px;
+    height: 100px;   
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.imagen_logo_footer {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.parrafo_final_footer {
+    font-size: 15px;
+    margin: auto;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 900px) {
+    
+    /* Header */
+
+    header {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        min-width: 100%;
+        min-height: 9rem;
+        background-color: rgb(2, 82, 85);
+    }
+    
+    .div_logo_header {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        height: 100px;
+        width: 200px;
+    }
+
+    .div_logo_header:hover {
+        transform: scale(1.1);
+    }
+    
+    .enlace_logo {
+        min-height: 100%;
+        min-width: 100%;
+        display: flex;
+    }
+    
+    .imagen_logo {
+        min-width: 100%;
+        min-height: 100%;
+        background-color: white;
+    }
+    
+    .seccion_logo_cuenta {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    /* Footer */
+
+    .enlace_contacto_footer:hover {
+        transform: scale(1.1);
+    }
+
+    .enlace_logo_footer:hover {
+        transform: scale(1.1);
+    }
+
+    .parrafo_final_footer {
+        font-size: 20px;
+    }
+
+}
+
+@media print {
+    
+    header {
+        min-height: 8rem;
+    }
+    
+    .imagen_logo {
+        filter: grayscale(100%);
+    }
+    
+    .seccion_logo_cuenta {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }    
+
+}

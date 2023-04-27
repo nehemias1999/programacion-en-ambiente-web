@@ -1,0 +1,130 @@
+
+/* GENERALES */
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
+a {
+    font-family: 'Gotham', sans-serif;
+}  
+
+h1, h2, h3 {
+    color: black;
+    font-family: 'Gotham', sans-serif;
+}
+
+p {
+     color: rgb(2, 82, 85);
+     font-family: 'Gotham', sans-serif;
+}
+
+/* MOBILE */
+
+.div_principal_main {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 150px;
+    width: 100%;
+    display: flex;
+}
+
+.titulo_principal {
+    position: relative;
+    margin: 40px auto;
+    font-size: 60px;
+}
+
+.seccion_contacto_main {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+}
+
+.div_formulario {
+    position: relative;
+    width: 75%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px 0px 10px 10px;
+    border: solid 2px #000;
+    background-color: rgb(238, 241, 239);
+}
+
+p {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    position: relative;
+    left: 4%;
+}
+
+input {
+    height: 20px;
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.boton_reset {
+    font-size: 15px;
+    height: 30px;
+    width: 150px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+.boton_submit {
+    font-size: 20px;
+    height: 40px;
+    width: 200px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 900px) {
+
+    .titulo_principal {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .div_formulario {
+        width: 40%;
+    }
+
+    .boton_reset:hover {
+        transform: scale(1.1);
+    }
+
+    .boton_submit:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+@media print {
+
+    .seccion_contacto_main {
+        border: none;
+    }
+
+    .boton_reset, .boton_submit {
+        background-color: white;
+    }
+    
+}

@@ -1,0 +1,338 @@
+
+/* GENERALES */
+
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
+a{
+    font-family: 'Gotham', sans-serif;
+}  
+
+h1{
+    color: black;
+    font-family: 'Gotham', sans-serif;
+}
+
+h3{
+    color: rgb(2, 82, 85);
+    font-family: 'Gotham', sans-serif;
+    text-transform: uppercase;
+}
+
+p{
+     color: rgb(2, 82, 85);
+     font-family: 'Gotham', sans-serif;
+}
+
+/* MOBILE */
+
+
+
+main{
+    background-color: rgba(252, 196, 68, 50% );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_principal {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+}
+/*
+.boton_solicitar_turno {
+    position: absolute;
+    top: 150px;
+    right: 20px; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(252, 196, 68);
+}*/
+
+ /*Estilos para el boton*/
+ .boton_solicitar_turno{
+    min-width: 200px;
+    min-height: 5px;
+    background: rgb(0 157 218);
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgb(0 157 218) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 15px 8px 29px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    padding: 10px;
+    top: 150px;
+    right: 90px;
+}
+
+  /*Estilo para el enlace */
+.boton_solicitar_turno a {
+    font-family: 'Gotham', sans-serif;
+}
+
+/*Estilo del texto*/
+.boton_solicitar_turno h2 {
+    font-family: 'Gotham', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: black;
+   
+    text-align: center;
+}
+
+.titulo_principal_main {
+    position: relative;
+    margin: 40px auto;
+    font-size: 70px;
+}
+
+.seccion_mision_main {
+    position: relative;
+    top: 0px;
+    left:0px;
+    height: 300px; /* VER */
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: solid 1px #000;
+}
+
+.articulo_mision_main {
+    position: relative;
+    height: 100%;
+    min-width: 100%;
+    display: flex;
+}
+
+.imagen_mision {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.div_introduccion_mision {
+    position: absolute;
+    left: -1px;
+    bottom: -1px;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.titulo_mision {
+    font-size: 30px;
+    margin: 0px auto;
+    margin-top: 15px; 
+    margin-bottom: 10px;
+}
+
+.parrafo_introductorio_mision {
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.seccion_valores_main {
+    position: relative;
+    width: 95%;
+    min-height: 400px;
+    margin-bottom: 20px;
+    border: solid 1px #000;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.articulo_valores {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.imagen_valores {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.div_introduccion_valores {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    min-width: 100%;
+    min-height: 100px;
+    border-top: solid 1px #000;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.titulo_valores {
+    font-size: 25px;
+    margin-top: 15px; 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.parrafo_introductorio_valores {
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.seccion_paginas_internas_main {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    margin-bottom:2em;
+}
+
+.articulo_pagina_interna {
+    position: relative;
+    grid-column: span 2;
+    border: solid 1px #000;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.imagen_pagina_interna {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.div_introduccion_pagina_interna {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    min-height: 100px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-top: solid 1px #000;
+}
+
+.titulo_pagina_interna {
+    font-size: 20px;
+    margin-top: 15px; 
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.parrafo_introductorio_pagina_interna {
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 900px) {
+
+    .titulo_principal_main {
+        top: 10px;
+        font-size: 100px;
+    }
+
+    .seccion_valores_main {
+        height: 300px;
+        width: 70%;
+    }
+
+    .seccion_valores_main:hover {
+        transform: scale(1.03);
+    }
+
+    .articulo_pagina_interna:hover {
+        transform: scale(1.03);
+    }   
+
+    .boton_solicitar_turno::before{
+        content: '';
+        border-radius: 1000px;
+        min-width: calc(230px);
+        min-height: calc(52px + 12px);
+        border: 3px solid rgb(0 157 218);
+        box-shadow: 0 0 60px rgb(0 157 218);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all .3s ease-in-out 0s;
+    }
+      
+    .boton_solicitar_turno:hover,
+    .boton_solicitar_turno:focus{
+        color: #d89e31;
+        transform: translateY(-6px);
+    }
+      
+    .boton_solicitar_turno:hover::before, 
+    .boton_solicitar_turno:focus::before{
+        opacity: 1;
+    }
+      
+    .boton_solicitar_turno::after{
+        /* efecto circular en el centro
+        content: '';
+        width: 30px; height: 30px;
+        border-radius: 100%;
+        border: 6px solid rgb(0 157 218);
+        position: absolute;*/
+        /*efecto alrededor del boton*/
+        content: '';
+        border-radius: 1000px;
+        min-width: calc(230px);
+        min-height: calc(52px + 12px);
+        border: 3px solid rgb(0 157 218);
+        /*box-shadow: 0 0 60px rgb(0 157 218);*/
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: ring 1.5s infinite;
+    }
+      
+    .boton_solicitar_turno:hover::after, 
+    .boton_solicitar_turno:focus::after{
+        animation: none;
+        display: none;
+    }
+      
+    @keyframes ring {
+        0% {
+          width: 200px;
+          height: 5px;
+          opacity: 1;
+        }
+        100% {
+          width: 247px;
+          height: 5px;
+          opacity: 0;
+        }
+    }
+    /*fin prueba*/
+
+}

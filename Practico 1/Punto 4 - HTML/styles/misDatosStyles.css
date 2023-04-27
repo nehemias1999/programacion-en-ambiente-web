@@ -1,0 +1,196 @@
+
+/* GENERALES */
+
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    font-family: 'Gotham', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+/* MOBILE */
+
+.seccion_principal {
+    position: relative;
+    min-height: 500px;
+    width: 100%;
+    margin: 20px auto;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+}
+
+.nav_menu_paginas_internas {
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 0px 10px 10px;
+    background-color: rgb(238, 241, 239);     
+}
+    
+.enlace_pagina_interna {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.seccion_mis_datos {
+    position: relative;
+    min-height: 350px;
+    width: 95%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border: solid 2px #000;
+    border-radius: 10px 0px 10px 10px;
+    background-color: rgba(238, 241, 239, 1);
+}
+
+.div_encabezado_mis_datos {
+    position: relative;
+    height: 90px;
+    min-width: 100%;
+}
+
+.titulo_principal {
+    position: relative;
+    top: 70px;
+    font-size: 40px;
+    margin: 30px;
+}
+
+.boton_cambiar_contrasena {
+    position: absolute;
+    right: 150px;
+    top: 15px;
+    height: 60px;
+    width: 200px;
+    border-radius: 10px 0px 10px 10px;
+}
+
+.boton_editar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    height: 60px;
+    width: 120px;
+    border-radius: 10px 0px 10px 10px;
+}
+
+.seccion_datos_usuario {
+    padding: 30px;
+    display: flex;
+    align-items: first baseline;
+    justify-content:space-evenly;
+}
+
+dl {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    margin-top: 50px;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+  
+dd {
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 900px) {
+
+    .seccion_principal {
+        min-height: 970px;
+    }
+
+    .enlace_pagina_interna:hover {
+        transform: scale(1.1);
+    }
+    
+    .nav_menu_paginas_internas {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        height: 60px;
+        width: 65%;
+        display: flex;
+        flex-direction: row;  
+        align-items: center;
+        justify-content: space-around; 
+    }
+
+    .boton_cambiar_contrasena {
+        top: 30px;
+        right: 180px;
+    }
+
+    .boton_editar {
+        top: 30px;
+        right: 30px;
+    }
+
+    .titulo_principal {
+        font-size: 50px;
+        top: 10px;
+        margin-left: 50px;
+    }
+
+    .seccion_mis_datos {
+        top: 140px;
+        width: 70%;
+    }
+
+    dl {
+        margin-top: 20px;
+    }
+        
+    .boton_cambiar_contrasena:hover {
+        transform: scale(1.1);
+    }
+
+    .boton_editar:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+@media print {
+            
+    .seccion_principal {
+        border: none;
+    } 
+
+    .nav_menu_paginas_internas {
+        display: none;
+    }
+
+    button {
+        display: none;
+    }
+
+    .seccion_datos_usuario {
+        background-color: white;
+    }
+    
+    .boton_reset, .boton_submit {
+        background-color: white;
+    }
+       
+}

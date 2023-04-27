@@ -1,0 +1,353 @@
+
+/* GENERALES */
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
+a{
+    font-family: 'Gotham', sans-serif;
+}  
+
+h1{
+    color: black;
+    font-family: 'Gotham', sans-serif;
+}
+
+h3{
+    color: black;
+    font-family: 'Gotham', sans-serif;
+}
+
+h4{
+    color: black;
+    font-family: 'Gotham', sans-serif;
+}
+
+p{
+     color: rgb(2, 82, 85);
+     font-family: 'Gotham', sans-serif;
+}
+/* MOBILE */
+
+.div_principal_main {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+}
+/*
+.boton_solicitar_turno {
+    position: absolute;
+    top: 150px;
+    right: 20px; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(252, 196, 68);
+}*/
+
+/*Prueba*/
+.div_principal_main {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+  }
+
+  /*Estilos para el boton*/
+.boton_solicitar_turno{
+    min-width: 200px;
+    min-height: 5px;
+    background: rgb(0 157 218);
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgb(0 157 218) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 15px 8px 29px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    padding: 10px;
+    top: 150px;
+    right: 90px;
+}
+
+  /*Estilo para el enlace */
+.boton_solicitar_turno a {
+    font-family: 'Gotham', sans-serif;
+}
+
+/*Estilo del texto*/
+.boton_solicitar_turno h2 {
+    font-family: 'Gotham', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: black;
+   
+    text-align: center;
+}
+
+.titulo_principal_main {
+    position: relative;
+    margin: 40px auto;
+    font-size: 70px;
+}
+
+.titulo_principal {
+    position: relative;
+    top: 150px;
+    font-size: 4rem;
+}
+
+.seccion_profesionales_main {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+    background-color: rgba(238, 241, 239, 1);
+}
+
+.div_buscador_profesionales {
+    position: relative;
+    height: 50px;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    border: solid 1px #000;
+    border-radius: 30px;
+}
+
+.form_buscador_profesionales {
+    position: relative;
+    min-width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_buscador {
+    font-size: 15px;
+    height: 30px;
+    min-width: 60%;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.selector_filtro_busqueda {
+    text-align: center;
+    height: 30px;
+    width: 75px;
+    margin-right: 5px;
+}
+
+.boton_buscador {
+    font-size: 15px;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.seccion_listado_profesionales {
+    position: relative;
+    height: 500px;
+    width: 95%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.lista_profesionales {
+    list-style: none;
+}
+  
+.elemento_profesional {
+    min-height: 150px;
+    min-width: 100%;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.articulo_profesional {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content:left;
+}
+
+.div_imagen_profesional {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 1px #000;
+}
+
+.imagen_profesional {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.div_descripcion_profesional {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;    
+}
+
+.div_nombre_profesional {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 40px;
+    border: solid 1px #000;
+}
+
+.titulo_profesional {
+    margin-left: 20px;
+    padding: 0px;
+}
+
+.subtitulo_cargo_profesional {
+    margin-left: 30px;
+    padding: 0px;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 900px) {
+
+    .boton_solicitar_turno:hover {
+        transform: scale(1.1);
+    }
+
+    .div_buscador_profesionales {
+        height: 70px;
+        width: 60%;
+    }
+
+    .input_buscador {
+        font-size: 20px;
+        height: 40px;
+        min-width: 70%;
+    }
+
+    .selector_filtro_busqueda {
+        font-size: 18px;
+        height: 40px;
+        width: 100px;
+    }
+
+    .boton_buscador {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    .boton_buscador:hover {
+        transform: scale(1.05);
+    }
+
+    .seccion_listado_profesionales {
+        width: 70%;
+        height: 460px;
+    }
+
+    .boton_solicitar_turno::before{
+        content: '';
+        border-radius: 1000px;
+        min-width: calc(230px);
+        min-height: calc(52px + 12px);
+        border: 3px solid rgb(0 157 218);
+        box-shadow: 0 0 60px rgb(0 157 218);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all .3s ease-in-out 0s;
+    }
+      
+    .boton_solicitar_turno:hover,
+    .boton_solicitar_turno:focus{
+        color: #d89e31;
+        transform: translateY(-6px);
+    }
+      
+    .boton_solicitar_turno:hover::before, 
+    .boton_solicitar_turno:focus::before{
+        opacity: 1;
+    }
+      
+    .boton_solicitar_turno::after{
+        /* efecto circular en el centro
+        content: '';
+        width: 30px; height: 30px;
+        border-radius: 100%;
+        border: 6px solid rgb(0 157 218);
+        position: absolute;*/
+        /*efecto alrededor del boton*/
+        content: '';
+        border-radius: 1000px;
+        min-width: calc(230px);
+        min-height: calc(52px + 12px);
+        border: 3px solid rgb(0 157 218);
+        /*box-shadow: 0 0 60px rgb(0 157 218);*/
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: ring 1.5s infinite;
+    }
+      
+    .boton_solicitar_turno:hover::after, 
+    .boton_solicitar_turno:focus::after{
+        animation: none;
+        display: none;
+    }
+      
+    @keyframes ring {
+        0% {
+          width: 200px;
+          height: 5px;
+          opacity: 1;
+        }
+        100% {
+          width: 247px;
+          height: 5px;
+          opacity: 0;
+        }
+    }
+    /*fin prueba*/
+}
+
+@media print {
+    
+    .seccion_profesionales_main {
+        border: none;
+    }
+
+    .boton_solicitar_turno {
+        display: none;
+    }
+
+    .div_buscador_profesionales {
+        display: none;
+    }
+
+    .seccion_listado_profesionales {
+        overflow: visible;
+        overflow-y: none;
+    }
+
+    .imagen_profesional {
+        filter: grayscale(100%);
+    }
+
+}
