@@ -1,0 +1,200 @@
+
+/* GENERALES */
+
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    font-family: 'Gotham', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+/* MOBILE */
+
+.seccion_principal {
+    position: relative;
+    width: 100%;
+    margin: 20px auto;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;  
+}
+
+.nav_menu_paginas_internas {
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 0px 10px 10px;
+    background-color: rgb(238, 241, 239);     
+}
+    
+.enlace_pagina_interna {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.seccion_editar_campos {
+    position: relative;
+    width: 75%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px 0px 10px 10px;
+    border: solid 2px #000;
+    background-color: rgb(238, 241, 239);
+}
+
+.titulo_principal {
+    text-align: center;
+    font-size: 5vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    position: relative;
+    left: 4%;
+}
+
+input {
+    height: 20px;
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+select {
+    height: 25px;
+    width: 91.5%;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+.div_domicilio {
+    position: relative;
+    width: 92%;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.div_dato {
+    width: calc(100% / 3);
+    padding-right: 7px;
+    display: inline-block;
+}
+
+.div_dato > input {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.div_dato > input:last-child {
+    width: 100%;
+    padding-right: 0px;
+    margin-bottom: 0px;
+}
+
+.div_botones {
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton_reset {
+    font-size: 3vw;
+    height: 35px;
+    width: calc(90% / 2);
+}
+
+.boton_submit {
+    font-size: 3vw;
+    height: 35px;
+    width: calc(90% / 2);
+}
+
+/* DESKTOP */
+@media screen and (min-width: 900px) {
+
+    .seccion_principal {
+        height: 685px;
+    }
+
+    .enlace_pagina_interna:hover {
+        transform: scale(1.1);
+    }
+    
+    .nav_menu_paginas_internas {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        height: 60px;
+        width: 65%;
+        display: flex;
+        flex-direction: row;  
+        align-items: center;
+        justify-content: space-around; 
+    }
+
+    .seccion_editar_campos {
+        top: 120px;
+        width: 40%;
+    }
+
+    .titulo_principal {
+        font-size: 3vw;
+        margin: 20px auto;
+    }
+
+    .boton_reset {
+        font-size: 1.5vw;
+        height: 40px;
+    }
+    
+    .boton_submit {
+        font-size: 1.5vw;
+        height: 40px;
+    }
+        
+    .boton_reset:hover {
+        transform: scale(1.1);
+    }
+
+    .boton_submit:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+@media print {
+            
+    .seccion_principal {
+        border: none;
+    } 
+
+    .nav_menu_paginas_internas {
+        display: none;
+    }
+
+    .seccion_editar_campos {
+        background-color: white;
+    }
+    
+    .boton_reset, .boton_submit {
+        background-color: white;
+    }
+       
+}

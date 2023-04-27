@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel='stylesheet' type='text/css' media='all' href='../styles/baseStyles.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='../styles/homeStyles.css'>
+
+</head>
+<body>
+
+    <header>
+
+        <div class="div_logo_header">
+            <a href="home" class="enlace_logo">
+                <img src="../images/Imagotipo_PAW_Hospitals.svg" alt="imagen_logo" class="imagen_logo">
+            </a>
+        </div>
+
+        <nav class="nav_contactos_header">
+
+            <a href="https://www.facebook.com/" class="enlace_contacto">
+                <img src="../images/icono_facebook.png" alt="logo_facebook" class="imagen_contacto"/>
+            </a>
+
+            <a href="https://twitter.com/" class="enlace_contacto">
+                <img src="../images/icono_twitter.png" alt="logo_twitter" class="imagen_contacto"/>
+            </a>
+
+            <a href="https://instagram.com/" class="enlace_contacto">
+                <img src="../images/icono_instagram.png" alt="logo_instagram" class="imagen_contacto"/>
+            </a>
+            
+            <a href="https://www.youtube.com/" class="enlace_contacto">
+                <img src="../images/icono_youtube.png" alt="logo_youtube" class="imagen_contacto"/>
+            </a>
+
+            <a href="tel:011-15XXXXXX" class="enlace_contacto">
+                <img src="../images/icono_telefono.png" alt="logo_telefono" class="imagen_contacto"/>
+            </a>
+
+            <a href="mailto:clinica@email.com" class="enlace_contacto">
+                <img src="../images/icono_email.png" alt="logo_mail" class="imagen_contacto"/>
+            </a>
+
+        </nav>
+
+        <nav class="nav_enlaces_header">
+
+            <a href="institucional" class="enlace_pagina">
+                Institucional
+            </a>
+
+            <a href="portal-del-paciente/ingresar" class="enlace_pagina">
+                Portal del paciente
+            </a>
+
+            <a href="profesionales" class="enlace_pagina">
+                Profesionales
+            </a>
+
+            <a href="obras-sociales" class="enlace_pagina">
+                Obras sociales
+            </a>
+
+            <a href="contacto" class="enlace_pagina">
+                Contacto
+            </a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="div_principal_main">  
+            <a href="../portal del paciente/ingresar.html" class="boton_solicitar_turno">
+              <h2>
+                Solicitar turno
+              </h2>
+            </a>
+        </div>
+          
+        <section class="seccion_carrousel_noticias_main">
+
+            <a href="home/noticia">
+
+                <article class="articulo_carrousel_main">
+
+                    <img src="../images/equipamiento.jpg" alt="imagen_noticia" class="imagen_noticia_carrousel">
+
+                    <div class="div_introduccion_noticia">
+
+                        <h4 class="titulo_noticia_carrousel">
+                            Sala angiográfica 2023
+                        </h4>
+
+                        <p class="parrafo_introductorio_noticia_carrousel">
+                            UNLu Paw inaguró la nueva sala angiográfica con la más alta tecnología permitiendo así tratar pacientes
+                            con problemas vasculares neurologicos, cardiacos y vasculares periféricos 
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </a>
+
+        </section>
+
+        <section class="seccion_paginas_internas_main">
+
+            <article class="articulo_enlace_pagina_interna">
+                
+                <a href="obras-sociales">
+
+                    <img src="../images/obra_social.jpeg" alt="imagen_pagina_interna" class="imagen_pagina_interna">
+
+                    <div class="div_introduccion_pagina_interna">
+
+                        <h4 class="titulo_pagina_interna">
+                            Obras sociales
+                        </h4>
+    
+                        <p class="parrafo_introductorio_pagina_interna">
+                            Contamos con una gran cantidad de coberturas médicas asociadas 
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </article>
+
+            <article class="articulo_enlace_pagina_interna">
+                
+                <a href="profesionales">
+
+                    <img src="../images/profesionales1.jpg" alt="imagen_pagina_interna" class="imagen_pagina_interna">
+
+                    <div class="div_introduccion_pagina_interna">
+
+                        <h4 class="titulo_pagina_interna">
+                            Profesionales
+                        </h4>
+    
+                        <p class="parrafo_introductorio_pagina_interna">
+                            La información completa de cada uno de los profesionales 
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </article>
+
+        </section>
+
+        <section class="seccion_ubicacion_main">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.9678638195483!2d-58.86765139708054!3d-34.457138578792204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9c67ea60bb3b%3A0x40d0bcfe5b652e7b!2sHospital%20Universitario%20Austral!5e0!3m2!1ses!2sar!4v1679872560649!5m2!1ses!2sar" 
+            ></iframe>
+        </section>
+
+    </main>
+
+    <footer>  
+        
+        <nav class="nav_contactos_footer">
+
+            <a href="https://www.facebook.com/" class="enlace_contacto_footer">
+                <img src="../images/icono_facebook.png" alt="logo_facebook" class="imagen_contacto_footer"/>
+            </a>
+
+            <a href="https://twitter.com/" class="enlace_contacto_footer">
+                <img src="../images/icono_twitter.png" alt="logo_twitter" class="imagen_contacto_footer"/>
+            </a>
+
+            <a href="https://instagram.com/" class="enlace_contacto_footer">
+                <img src="../images/icono_instagram.png" alt="logo_instagram" class="imagen_contacto_footer"/>
+            </a>
+            
+            <a href="https://www.youtube.com/" class="enlace_contacto_footer">
+                <img src="../images/icono_youtube.png" alt="logo_youtube" class="imagen_contacto_footer"/>
+            </a>
+
+            <a href="tel:011-15XXXXXX" class="enlace_contacto_footer">
+                <img src="../images/icono_telefono.png" alt="logo_telefono" class="imagen_contacto_footer"/>
+            </a>
+
+            <a href="mailto:clinica@email.com" class="enlace_contacto_footer">
+                <img src="../images/icono_email.png" alt="logo_mail" class="imagen_contacto_footer"/>
+            </a>
+
+        </nav>
+        
+        <section class="seccion_final_footer">
+
+            <a href="home" class="enlace_logo_footer">
+                <img src="../images/Imagotipo_PAW_Hospitals.svg" alt="logo_de_la_clinica" class="imagen_logo_footer"/>
+            </a>
+    
+            <p class="parrafo_final_footer">©2023 UNLu PAW UL Hospital Mariano Moreno 2790, Lujan, Buenos Aires.</p>
+    
+        </section>
+
+    </footer>  
+
+</body>
+</html>

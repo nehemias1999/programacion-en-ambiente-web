@@ -1,0 +1,27 @@
+{
+    "name": "paw/trabajo-practico-3",
+    "description": "Trabajo practico 3 - Programacion en backend 1",
+    "keywords": ["php", "mvc"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nehemias salazar",
+            "email": "nehemiassala@gmail.com",
+            "role": "Creator/Main Developer"
+        },
+        {
+            "name": "roberto carlos soto",
+            "email": "nehemiassala@gmail.com",
+            "role": "Creator/Main Developer"
+        }
+    ],
+    "require": {
+        "php": ">= 7.4.0",
+        "filp/whoops": "~2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Paw\\": "src/"
+        }
+    }
+}
