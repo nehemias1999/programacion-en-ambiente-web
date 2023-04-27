@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profesionales</title>
 
-    <link rel='stylesheet' type='text/css' media='all' href='styles/baseStyles.css'>
-    <link rel='stylesheet' type='text/css' media='all' href='styles/profesionalesStyles.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/baseStyles.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/profesionalesStyles.css'>
+
     <script src='main.js'></script>
 
 </head>
@@ -16,63 +17,9 @@
 
     <header>
 
-        <div class="div_logo_header">
-            <a href="../Punto 4 - HTML/home/home.html" class="enlace_logo">
-                <img src="images/Imagotipo_PAW_Hospitals.svg" alt="imagen_logo" class="imagen_logo">
-            </a>
-        </div>
-
-        <nav class="nav_contactos_header">
-
-            <a href="https://www.facebook.com/" class="enlace_contacto">
-                <img src="images/icono_facebook.png" alt="logo_facebook" class="imagen_contacto"/>
-            </a>
-
-            <a href="https://twitter.com/" class="enlace_contacto">
-                <img src="images/icono_twitter.png" alt="logo_twitter" class="imagen_contacto"/>
-            </a>
-
-            <a href="https://instagram.com/" class="enlace_contacto">
-                <img src="images/icono_instagram.png" alt="logo_instagram" class="imagen_contacto"/>
-            </a>
-            
-            <a href="https://www.youtube.com/" class="enlace_contacto">
-                <img src="images/icono_youtube.png" alt="logo_youtube" class="imagen_contacto"/>
-            </a>
-
-            <a href="tel:011-15XXXXXX" class="enlace_contacto">
-                <img src="images/icono_telefono.png" alt="logo_telefono" class="imagen_contacto"/>
-            </a>
-
-            <a href="mailto:clinica@email.com" class="enlace_contacto">
-                <img src="images/icono_email.png" alt="logo_mail" class="imagen_contacto"/>
-            </a>
-                    
-        </nav>
-
-        <nav class="nav_enlaces_header">
-
-            <a href="../Punto 4 - HTML/institucional/institucional.html" class="enlace_pagina">
-                Institucional
-            </a>
-
-            <a href="../Punto 4 - HTML/portal del paciente/ingresar.html" class="enlace_pagina">
-                Portal del paciente
-            </a>
-
-            <a href="../Punto 4 - HTML/profesionales.html" class="enlace_pagina">
-                Profesionales
-            </a>
-
-            <a href="../Punto 4 - HTML/obras_sociales.html" class="enlace_pagina">
-                Obras sociales
-            </a>
-
-            <a href="../Punto 4 - HTML/contacto.html" class="enlace_pagina">
-                Contacto
-            </a>
-
-        </nav>
+        <?php
+            require "parts/header.view.php";
+        ?>
 
     </header>
 
@@ -236,43 +183,9 @@
 
     <footer>  
         
-        <nav class="nav_contactos_footer">
-
-            <a href="https://www.facebook.com/" class="enlace_contacto_footer">
-                <img src="images/icono_facebook.png" alt="logo_facebook" class="imagen_contacto_footer"/>
-            </a>
-
-            <a href="https://twitter.com/" class="enlace_contacto_footer">
-                <img src="images/icono_twitter.png" alt="logo_twitter" class="imagen_contacto_footer"/>
-            </a>
-
-            <a href="https://instagram.com/" class="enlace_contacto_footer">
-                <img src="images/icono_instagram.png" alt="logo_instagram" class="imagen_contacto_footer"/>
-            </a>
-            
-            <a href="https://www.youtube.com/" class="enlace_contacto_footer">
-                <img src="images/icono_youtube.png" alt="logo_youtube" class="imagen_contacto_footer"/>
-            </a>
-
-            <a href="tel:011-15XXXXXX" class="enlace_contacto_footer">
-                <img src="images/icono_telefono.png" alt="logo_telefono" class="imagen_contacto_footer"/>
-            </a>
-
-            <a href="mailto:clinica@email.com" class="enlace_contacto_footer">
-                <img src="images/icono_email.png" alt="logo_mail" class="imagen_contacto_footer"/>
-            </a>
-
-        </nav>
-
-        <section class="seccion_final_footer">
-
-            <a href="#" class="enlace_logo_footer">
-                <img src="images/Imagotipo_PAW_Hospitals.svg" alt="logo_de_la_clinica" class="imagen_logo_footer"/>
-            </a>
-    
-            <p class="parrafo_final_footer">©2023 UNLu PAW UL Hospital Mariano Moreno 2790, Lujan, Buenos Aires.</p>
-    
-        </section>
+        <?php
+            require "parts/footer.view.php";
+        ?>
         
     </footer>  
 
