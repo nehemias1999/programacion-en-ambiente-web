@@ -14,6 +14,11 @@ a {
     color: black;
 }
 
+h1,h4{
+    color: black;
+    font-family: 'Gotham Medium Italic', sans-serif;
+}
+
 /* MOBILE */
 
 .seccion_principal {
@@ -100,17 +105,20 @@ dl {
     margin-inline-end: 0;
     padding-inline-start: 0;
     margin-top: 50px;
+    font-family: 'Gotham', sans-serif;
 }
 
 dt {
     font-weight: bold;
     margin-top: 1rem;
+    font-family: 'Gotham', sans-serif;
 }
   
 dd {
     margin: 0px;
     margin-top: 10px;
     margin-bottom: 1rem;
+    font-family: 'Gotham', sans-serif;
 }
 
 /* DESKTOP */

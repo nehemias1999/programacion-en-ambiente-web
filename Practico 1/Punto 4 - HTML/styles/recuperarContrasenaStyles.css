@@ -30,7 +30,8 @@ p {
 .titulo_principal {
     position: relative;
     margin: 40px auto;
-    font-size: 9vw;
+    font-size: 3rem;
+    text-align: center;
 }
 
 .seccion_recuperar_contrasena_main {
@@ -117,7 +118,9 @@ select {
 
 /* DESKTOP */
 @media screen and (min-width: 900px) {
-
+    .titulo_principal{
+        font-size: 4rem;
+    }
     .div_formulario_recuperar_contrasena {
         width: 40%;
     }
