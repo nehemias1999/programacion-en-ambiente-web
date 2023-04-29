@@ -1,6 +1,6 @@
 
 <div class="div-logo-header">
-    <a href="home" class="enlace-logo">
+    <a href="<?php echo $path . "home";?>" class="enlace-logo">
         <img src="/assets/images/Imagotipo_PAW_Hospitals.svg" alt="imagen-logo" class="imagen-logo">
     </a>
 </div>
@@ -35,7 +35,7 @@
 
 <nav class="nav-enlaces-header">
 
-    <a href="institucional" class="enlace-pagina">
+    <a href="<?php echo $path . "institucional";?>" class="enlace-pagina">
         Institucional
     </a>
 
@@ -43,15 +43,15 @@
         Portal del paciente
     </a>
 
-    <a href="profesionales" class="enlace-pagina">
+    <a href="<?php echo $path . "profesionales";?>" class="enlace-pagina">
         Profesionales
     </a>
 
-    <a href="obras-sociales" class="enlace-pagina">
+    <a href="<?php echo $path . "obras-sociales";?>" class="enlace-pagina">
         Obras sociales
     </a>
 
-    <a href="contacto" class="enlace-pagina">
+    <a href="<?php echo $path . "contacto";?>" class="enlace-pagina">
         Contacto
     </a>
 

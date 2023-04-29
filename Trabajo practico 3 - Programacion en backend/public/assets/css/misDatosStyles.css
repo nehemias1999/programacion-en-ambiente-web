@@ -16,7 +16,7 @@ a {
 
 /* MOBILE */
 
-.seccion_principal {
+.seccion-principal {
     position: relative;
     min-height: 500px;
     width: 100%;
@@ -25,23 +25,7 @@ a {
     border-bottom: solid 1px #000;
 }
 
-.nav_menu_paginas_internas {
-    position: relative;
-    width: 90%;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px 0px 10px 10px;
-    background-color: rgb(238, 241, 239);     
-}
-    
-.enlace_pagina_interna {
-    padding: 10px;
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-.seccion_mis_datos {
+.seccion-mis-datos {
     position: relative;
     min-height: 350px;
     width: 95%;
@@ -54,20 +38,20 @@ a {
     background-color: rgba(238, 241, 239, 1);
 }
 
-.div_encabezado_mis_datos {
+.div-encabezado-mis-datos {
     position: relative;
     height: 90px;
     min-width: 100%;
 }
 
-.titulo_principal {
+.titulo-principal {
     position: relative;
     top: 70px;
     font-size: 40px;
     margin: 30px;
 }
 
-.boton_cambiar_contrasena {
+.boton-cambiar-contrasena {
     position: absolute;
     right: 150px;
     top: 15px;
@@ -76,7 +60,7 @@ a {
     border-radius: 10px 0px 10px 10px;
 }
 
-.boton_editar {
+.boton-editar {
     position: absolute;
     top: 15px;
     right: 20px;
@@ -85,7 +69,7 @@ a {
     border-radius: 10px 0px 10px 10px;
 }
 
-.seccion_datos_usuario {
+.seccion-datos-usuario {
     padding: 30px;
     display: flex;
     align-items: first baseline;
@@ -116,43 +100,27 @@ dd {
 /* DESKTOP */
 @media screen and (min-width: 900px) {
 
-    .seccion_principal {
+    .seccion-principal {
         min-height: 970px;
     }
 
-    .enlace_pagina_interna:hover {
-        transform: scale(1.1);
-    }
-    
-    .nav_menu_paginas_internas {
-        position: absolute;
-        top: 20px;
-        right: 40px;
-        height: 60px;
-        width: 65%;
-        display: flex;
-        flex-direction: row;  
-        align-items: center;
-        justify-content: space-around; 
-    }
-
-    .boton_cambiar_contrasena {
+    .boton-cambiar-contrasena {
         top: 30px;
         right: 180px;
     }
 
-    .boton_editar {
+    .boton-editar {
         top: 30px;
         right: 30px;
     }
 
-    .titulo_principal {
+    .titulo-principal {
         font-size: 50px;
         top: 10px;
         margin-left: 50px;
     }
 
-    .seccion_mis_datos {
+    .seccion-mis-datos {
         top: 140px;
         width: 70%;
     }
@@ -161,11 +129,11 @@ dd {
         margin-top: 20px;
     }
         
-    .boton_cambiar_contrasena:hover {
+    .boton-cambiar-contrasena:hover {
         transform: scale(1.1);
     }
 
-    .boton_editar:hover {
+    .boton-editar:hover {
         transform: scale(1.1);
     }
 
@@ -173,23 +141,19 @@ dd {
 
 @media print {
             
-    .seccion_principal {
+    .seccion-principal {
         border: none;
     } 
-
-    .nav_menu_paginas_internas {
-        display: none;
-    }
 
     button {
         display: none;
     }
 
-    .seccion_datos_usuario {
+    .seccion-datos-usuario {
         background-color: white;
     }
     
-    .boton_reset, .boton_submit {
+    .boton-reset, .boton-submit {
         background-color: white;
     }
        

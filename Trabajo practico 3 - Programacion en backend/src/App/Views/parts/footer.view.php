@@ -29,7 +29,7 @@
 
 <section class="seccion-final-footer">
 
-    <a href="home" class="enlace-logo-footer">
+    <a href="<?php echo $path . "home";?>" class="enlace-logo-footer">
         <img src="/assets/images/Imagotipo_PAW_Hospitals.svg" alt="logo-clinica" class="imagen-logo-footer"/>
     </a>
 

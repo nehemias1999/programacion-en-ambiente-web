@@ -16,7 +16,7 @@ a {
 
 /* MOBILE */
 
-.seccion_principal {
+.seccion-principal {
     position: relative;
     width: 100%;
     margin: 20px auto;
@@ -24,23 +24,7 @@ a {
     border-bottom: solid 1px #000;
 }
 
-.nav_menu_paginas_internas {
-    position: relative;
-    width: 90%;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px 0px 10px 10px;
-    background-color: rgb(238, 241, 239);   
-}
-    
-.enlace_pagina_interna {
-    padding: 10px;
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-.seccion_solicitar_turno {
+.seccion-solicitar-turno {
     position: relative;
     height: 870px;
     width: 100%;
@@ -50,12 +34,12 @@ a {
     border-bottom: solid 1px #000;
 }
 
-.titulo_principal {
+.titulo-principal {
     font-size: 40px;
     text-align: center;
 }
 
-.seccion_formulario_turno {
+.seccion-formulario-turno {
     position: relative;
     width: 95%;
     margin: 0px auto;
@@ -72,7 +56,7 @@ form {
     flex-direction: column;
 }
 
-.div_vinculo {
+.div-vinculo {
     position: relative;
     top: 30px;
     height: 100px;
@@ -82,20 +66,20 @@ form {
     border: solid 1px #000;
 }
 
-.label_vinculo {
+.label-vinculo {
     position: absolute;
     top: 20px;
     left: 5%;
     margin-right: 10px;
 }
 
-.checkbox_vinculo {
+.checkbox-vinculo {
     position: absolute;
     top: 16px;
     left: 35px;
 }
 
-.select_vinculo {
+.select-vinculo {
     position: relative;
     top: 50px;
     height: 25px;
@@ -103,7 +87,7 @@ form {
     margin: 0px auto;
 }
 
-.div_alineacion {
+.div-alineacion {
     position: relative;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -111,7 +95,7 @@ form {
     justify-content: center;
 }
 
-.div_especialidad {
+.div-especialidad {
     position: relative;
     height: 60px;
     width: 40%;
@@ -121,7 +105,7 @@ form {
     justify-content: center;
 }
 
-.div_profesional {
+.div-profesional {
     position: relative;
     height: 60px;
     width: 40%;
@@ -134,7 +118,7 @@ select {
     height: 25px;
 }
 
-.label_turnos_disponibles {
+.label-turnos-disponibles {
     margin-bottom: 10px;
     margin-left: 10px;
 }
@@ -145,7 +129,7 @@ input {
     margin-bottom: 10px;
 }
 
-.div_turnos_disponibles {
+.div-turnos-disponibles {
     position: relative;
     height: 400px;
     width: 100%;
@@ -153,25 +137,25 @@ input {
     border: solid 1px #000;
 }
 
-.div_scrollbar {
+.div-scrollbar {
     height: 100%;
     width: 100%;
     overflow: hidden;
     overflow-y: scroll;
 }
 
-.div_contenido {
+.div-contenido {
     padding: 20px;
     padding-top: 0px;
     padding-bottom: 0px;
 }
 
-.lista_turnos_disponibles {
+.lista-turnos-disponibles {
     list-style: none;
     padding: 0px;
 }
 
-.elemento_turno_disponible {
+.elemento-turno-disponible {
     height: 50px;
     width: 100%;
     margin-bottom: 10px;
@@ -179,7 +163,7 @@ input {
     background-color: whitesmoke;
 }
 
-.articulo_turno_disponible {
+.articulo-turno-disponible {
     height: 100%;
     width: 100%;
     display: flex;
@@ -187,11 +171,11 @@ input {
     justify-content: space-around;
 }
 
-.boton_seleccionar {
+.boton-seleccionar {
     height: 35px;
 }
 
-.div_botones {
+.div-botones {
     margin-top: 20px;
     margin-bottom: 15px;
     display: flex;
@@ -199,13 +183,13 @@ input {
     justify-content: space-between;
 }
 
-.boton_reset {
+.boton-reset {
     font-size: 15px;
     height: 35px;
     width: 150px;
 }
 
-.boton_submit {
+.boton-submit {
     font-size: 15px;
     height: 35px;
     width: 150px;
@@ -214,58 +198,42 @@ input {
 /* DESKTOP */
 @media screen and (min-width: 900px) {
 
-    .seccion_principal {
+    .seccion-principal {
         min-height: 1075px;
     }
 
-    .seccion_solicitar_turno {
+    .seccion-solicitar-turno {
         top: 140px;
         min-height: 915px;
     }
 
-    .titulo_principal {
+    .titulo-principal {
         font-size: 50px;
     }
 
-    .nav_menu_paginas_internas {
-        position: absolute;
-        top: 20px;
-        right: 40px;
-        height: 60px;
-        width: 65%;
-        display: flex;
-        flex-direction: row;  
-        align-items: center;
-        justify-content: space-around; 
-    }
-
-    .enlace_pagina_interna:hover {
-        transform: scale(1.1);
-    }
-
-    .div_vinculo {
+    .div-vinculo {
         width: 85%;
         margin: 0px auto;
         margin-bottom: 30px;
     }
 
-    .checkbox_vinculo {
+    .checkbox-vinculo {
         left: 45px;
     }
 
-    .seccion_formulario_turno {
+    .seccion-formulario-turno {
         width: 65%;
     }
 
-    .div_botones {
+    .div-botones {
         justify-content: space-around;
     }
 
-    .boton_reset:hover {
+    .boton-reset:hover {
         transform: scale(1.1);
     }
 
-    .boton_submit:hover {
+    .boton-submit:hover {
         transform: scale(1.1);
     }
 
@@ -273,11 +241,11 @@ input {
 
 @media print {
             
-    .seccion_principal {
+    .seccion-principal {
         border: none;
     } 
 
-    .nav_menu_paginas_internas {
+    .nav-menu-paginas-internas {
         display: none;
     }
 
@@ -285,37 +253,37 @@ input {
         display: none;
     }
 
-    .seccion_formulario_turno {
+    .seccion-formulario-turno {
         border: none;
         background-color: white;
     }
 
-    .div_vinculo {
+    .div-vinculo {
         display: none;
     }
 
-    .div_alineacion {
+    .div-alineacion {
         display: none;
     }
 
-    .seccion_solicitar_turno {
+    .seccion-solicitar-turno {
         border: none;
     }
 
-    .label_turnos_disponibles {
+    .label-turnos-disponibles {
         display: none;
     }
 
-    .div_turnos_disponibles {
+    .div-turnos-disponibles {
         border: none;
     }
 
-    .div_scrollbar {
+    .div-scrollbar {
         overflow: visible;
         overflow-y: none;
     }
     
-    .boton_reset, .boton_submit {
+    .boton-reset, .boton-submit {
        display: none;
     }
        

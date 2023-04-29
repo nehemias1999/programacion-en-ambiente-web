@@ -16,7 +16,7 @@ a {
 
 /* MOBILE */
 
-.seccion_principal {
+.seccion-principal {
     position: relative;
     width: 100%;
     margin: 20px auto;
@@ -25,23 +25,7 @@ a {
     border-bottom: solid 1px #000;
 }
 
-.nav_menu_paginas_internas {
-    position: relative;
-    width: 90%;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px 0px 10px 10px;
-    background-color: rgb(238, 241, 239);     
-}
-    
-.enlace_pagina_interna {
-    padding: 10px;
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-.seccion_vinculos_cargados {
+.seccion-vinculos-cargados {
     position: relative;
     width: 100%;
     margin: 0px auto;
@@ -51,12 +35,12 @@ a {
     border-bottom: solid 1px #000;
 }
 
-.titulo_principal {
+.titulo-principal {
     font-size: 40px;
     margin-left: 20px;
 }
 
-.div_vinculos_cargados {
+.div-vinculos-cargados {
     height: 400px;
     width: 90%;
     margin: 0px auto;
@@ -66,40 +50,40 @@ a {
     background-color: rgb(238, 241, 239);
 }
 
-.div_scrollbar {
+.div-scrollbar {
     height: 400px;
     width: 100%;
     overflow: hidden;
     overflow-y: scroll;
 }
 
-.div_contenido {
+.div-contenido {
     padding: 20px;
 }
 
-.lista_vinculos_cargados {
+.lista-vinculos-cargados {
     list-style: none;
     padding: 0px;
 }
 
-.elemento_vinculo {
+.elemento-vinculo {
     width: 95%;
     padding: 10px;
     border: solid 1px #000;
     background-color: whitesmoke;
 }
 
-.articulo_vinculo {
+.articulo-vinculo {
     height: 100%;
     width: 100%;
 }
 
-.div_encabezado_vinculo {
+.div-encabezado-vinculo {
     display: flex;
     align-items: center;
 }
 
-.div_imagen_vinculo {
+.div-imagen-vinculo {
     position: relative;
     height: 100px;
     width: 100px;
@@ -108,12 +92,12 @@ a {
     border-radius: 50%;
 }
 
-.nombre_apellido_vinculo {
+.nombre-apellido-vinculo {
     position: relative;
     margin-left: 20px;
 }
 
-.div_datos_vinculo {
+.div-datos-vinculo {
     display: flex;
     justify-content: space-evenly;
 }
@@ -133,19 +117,19 @@ dd {
     margin-bottom: 1rem;
 }
 
-.div_seccion_botones_vinculo {
+.div-seccion-botones-vinculo {
     display: flex;
     justify-content: end;
 }
 
-.boton_eliminar {
+.boton-eliminar {
     position: relative;
     font-size: 15px;
     height: 35px;
     width: 30%;
 }
 
-.seccion_cargar_vinculos {
+.seccion-cargar-vinculos {
     position: relative;
     width: 100%;
     margin: 0px auto;
@@ -154,7 +138,7 @@ dd {
     border-bottom: solid 1px #000;
 }
 
-.titulo_agregar_vinculo {
+.titulo-agregar-vinculo {
     font-size: 30px;
     margin-left: 20px;
 }
@@ -185,7 +169,7 @@ input {
     margin-bottom: 10px;
 }
 
-.div_domicilio {
+.div-domicilio {
     position: relative;
     width: 71.5%;
     margin-bottom: 20px;
@@ -193,7 +177,7 @@ input {
     justify-content: center;
 }
 
-.div_dato {
+.div-dato {
     width: calc(100% / 3);
     padding: 7px;
     display: flex;
@@ -201,24 +185,24 @@ input {
     align-items: center;
 }
 
-.div_dato > input {
+.div-dato > input {
     width: 100%;
 }
 
-.div_botones {
+.div-botones {
     width: 71.5%;
     display: flex;
     justify-content: center;
 }
 
-.boton_reset {
+.boton-reset {
     font-size: 15px;
     height: 35px;
     width: calc(100% / 2);
     margin-right: 20px;
 }
 
-.boton_submit {
+.boton-submit {
     font-size: 15px;
     height: 35px;
     width: calc(100% / 2);
@@ -227,41 +211,25 @@ input {
 /* DESKTOP */
 @media screen and (min-width: 900px) {
 
-    .seccion_principal {
+    .seccion-principal {
         min-height: 1075px;
     }
 
-    .seccion_vinculos_cargados {
+    .seccion-vinculos-cargados {
         margin-top: 140px;
     }
 
-    .titulo_principal {
+    .titulo-principal {
         font-size: 50px;
         top: 10px;
         margin-left: 50px;
     }
 
-    .nav_menu_paginas_internas {
-        position: absolute;
-        top: 20px;
-        right: 40px;
-        height: 60px;
-        width: 65%;
-        display: flex;
-        flex-direction: row;  
-        align-items: center;
-        justify-content: space-around; 
-    }
-
-    .enlace_pagina_interna:hover {
-        transform: scale(1.1);
-    }
-
-    .div_vinculos_cargados {
+    .div-vinculos-cargados {
         width: 60%;
     }
 
-    .titulo_agregar_vinculo {
+    .titulo-agregar-vinculo {
         font-size: 40px;
         top: 10px;
         margin-left: 50px;
@@ -271,11 +239,11 @@ input {
         width: 60%;
     }
 
-    .boton_reset:hover {
+    .boton-reset:hover {
         transform: scale(1.1);
     }
 
-    .boton_submit:hover {
+    .boton-submit:hover {
         transform: scale(1.1);
     }
 
@@ -283,11 +251,11 @@ input {
 
 @media print {
             
-    .seccion_principal {
+    .seccion-principal {
         border: none;
     } 
 
-    .nav_menu_paginas_internas {
+    .nav-menu-paginas-internas {
         display: none;
     }
 
@@ -295,21 +263,21 @@ input {
         visibility: hidden;
     }
 
-    .seccion_vinculos_cargados {
+    .seccion-vinculos-cargados {
         border: none;
         background-color: white;
     }
 
-    .div_vinculos_cargados {
+    .div-vinculos-cargados {
         border: none;
     }
 
-    .div_scrollbar {
+    .div-scrollbar {
         overflow: visible;
         overflow-y: none;
     }
 
-    .seccion_cargar_vinculos {
+    .seccion-cargar-vinculos {
         display: none;
     }
            

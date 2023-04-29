@@ -16,7 +16,7 @@ a {
 
 /* MOBILE */
 
-.seccion_principal {
+.seccion-principal {
     position: relative;
     width: 100%;
     margin: 20px auto;
@@ -24,7 +24,7 @@ a {
     border-bottom: solid 1px #000;  
 }
 
-.nav_menu_paginas_internas {
+.nav-menu-paginas-internas {
     position: relative;
     width: 90%;
     margin: 20px auto;
@@ -34,13 +34,13 @@ a {
     background-color: rgb(238, 241, 239);     
 }
     
-.enlace_pagina_interna {
+.enlace-pagina-interna {
     padding: 10px;
     text-align: center;
     font-size: 1.3rem;
 }
 
-.seccion_editar_campos {
+.seccion-editar-campos {
     position: relative;
     width: 75%;
     margin: 20px auto;
@@ -50,7 +50,7 @@ a {
     background-color: rgb(238, 241, 239);
 }
 
-.titulo_principal {
+.titulo-principal {
     text-align: center;
     font-size: 5vw;
     margin-top: 20px;
@@ -81,7 +81,7 @@ select {
     margin-bottom: 10px;
 }
 
-.div_domicilio {
+.div-domicilio {
     position: relative;
     width: 92%;
     margin: 0px auto;
@@ -89,24 +89,24 @@ select {
     display: flex;
 }
 
-.div_dato {
+.div-dato {
     width: calc(100% / 3);
     padding-right: 7px;
     display: inline-block;
 }
 
-.div_dato > input {
+.div-dato > input {
     width: 100%;
     margin-bottom: 0px;
 }
 
-.div_dato > input:last-child {
+.div-dato > input:last-child {
     width: 100%;
     padding-right: 0px;
     margin-bottom: 0px;
 }
 
-.div_botones {
+.div-botones {
     position: relative;
     width: 90%;
     margin: 10px auto;
@@ -114,13 +114,13 @@ select {
     justify-content: space-around;
 }
 
-.boton_reset {
+.boton-reset {
     font-size: 3vw;
     height: 35px;
     width: calc(90% / 2);
 }
 
-.boton_submit {
+.boton-submit {
     font-size: 3vw;
     height: 35px;
     width: calc(90% / 2);
@@ -129,15 +129,15 @@ select {
 /* DESKTOP */
 @media screen and (min-width: 900px) {
 
-    .seccion_principal {
+    .seccion-principal {
         height: 685px;
     }
 
-    .enlace_pagina_interna:hover {
+    .enlace-pagina-interna:hover {
         transform: scale(1.1);
     }
     
-    .nav_menu_paginas_internas {
+    .nav-menu-paginas-internas {
         position: absolute;
         top: 20px;
         right: 40px;
@@ -149,31 +149,31 @@ select {
         justify-content: space-around; 
     }
 
-    .seccion_editar_campos {
+    .seccion-editar-campos {
         top: 120px;
         width: 40%;
     }
 
-    .titulo_principal {
+    .titulo-principal {
         font-size: 3vw;
         margin: 20px auto;
     }
 
-    .boton_reset {
+    .boton-reset {
         font-size: 1.5vw;
         height: 40px;
     }
     
-    .boton_submit {
+    .boton-submit {
         font-size: 1.5vw;
         height: 40px;
     }
         
-    .boton_reset:hover {
+    .boton-reset:hover {
         transform: scale(1.1);
     }
 
-    .boton_submit:hover {
+    .boton-submit:hover {
         transform: scale(1.1);
     }
 
@@ -181,19 +181,19 @@ select {
 
 @media print {
             
-    .seccion_principal {
+    .seccion-principal {
         border: none;
     } 
 
-    .nav_menu_paginas_internas {
+    .nav-menu-paginas-internas {
         display: none;
     }
 
-    .seccion_editar_campos {
+    .seccion-editar-campos {
         background-color: white;
     }
     
-    .boton_reset, .boton_submit {
+    .boton-reset, .boton-submit {
         background-color: white;
     }
        

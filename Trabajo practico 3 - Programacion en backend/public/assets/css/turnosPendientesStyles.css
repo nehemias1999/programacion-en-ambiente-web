@@ -16,7 +16,7 @@ a {
 
 /* MOBILE */
 
-.seccion_principal {
+.seccion-principal {
     position: relative;
     width: 100%;
     margin: 20px auto;
@@ -24,23 +24,7 @@ a {
     border-bottom: solid 1px #000;
 }
 
-.nav_menu_paginas_internas {
-    position: relative;
-    width: 90%;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px 0px 10px 10px;
-    background-color: rgb(238, 241, 239);          
-}
-    
-.enlace_pagina_interna {
-    padding: 10px;
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-.seccion_turnos_pendientes {
+.seccion-turnos-pendientes {
     position: relative;
     width: 95%;
     margin: 0px auto;
@@ -50,13 +34,13 @@ a {
     background-color: rgb(238, 241, 239);
 }
 
-.titulo_principal {
+.titulo-principal {
     font-size: 6vw;
     margin: 20px;
     margin-left: 2%;
 }
 
-.div_nombre_columnas {
+.div-nombre-columnas {
     position: relative;
     height: 40px;
     width: 95%;
@@ -68,11 +52,11 @@ a {
     background-color: whitesmoke;
 }
 
-.titulo_nombre_columna {
+.titulo-nombre-columna {
     font-size: 2.5vw;
 }
 
-.div_scrollbar {
+.div-scrollbar {
     height: 400px;
     width: 95%;
     margin: 20px auto;
@@ -80,19 +64,19 @@ a {
     overflow-y: scroll;
 }
 
-.div_contenido {
+.div-contenido {
     padding-top: 0px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 0px;
 }
 
-.lista_turnos_pendientes {
+.lista-turnos-pendientes {
     list-style: none;
     padding: 0px;
 }
 
-.elemento_turno_pendiente {
+.elemento-turno-pendiente {
     position: relative;
     height: 40px;
     width: 100%;
@@ -102,7 +86,7 @@ a {
     background-color: whitesmoke;
 }
 
-.articulo_turno_pendiente {
+.articulo-turno-pendiente {
     position: relative;
     height: 100%;
     width: 100%;
@@ -111,57 +95,41 @@ a {
     justify-content: space-around;
 }
 
-.articulo_turno_pendiente > p {
+.articulo-turno-pendiente > p {
     font-size: 1.5vw;
 }
 
 /* DESKTOP */
 @media screen and (min-width: 900px) {
 
-    .seccion_principal {
+    .seccion-principal {
         height: 780px;
     }
     
-    .nav_menu_paginas_internas {
-        position: absolute;
-        top: 20px;
-        right: 40px;
-        height: 60px;
-        width: 65%;
-        display: flex;
-        flex-direction: row;  
-        align-items: center;
-        justify-content: space-around; 
-    }
-
-    .titulo_principal {
+    .titulo-principal {
         font-size: 4vw;
         margin: 30px;
         margin-left: 10%;
     }
         
-    .enlace_pagina_interna:hover {
-        transform: scale(1.1);
-    }
-
-    .seccion_turnos_pendientes {
+    .seccion-turnos-pendientes {
         top: 140px;
         width: 70%;
     }
 
-    .div_nombre_columnas {
+    .div-nombre-columnas {
         width: 80%;
     }
 
-    .titulo_nombre_columna {
+    .titulo-nombre-columna {
         font-size: 1.5vw;
     }
 
-    .div_scrollbar {
+    .div-scrollbar {
         width: 80%;
     }
 
-    .articulo_turno_pendiente > p {
+    .articulo-turno-pendiente > p {
         font-size: 1vw;
     }
 
@@ -169,11 +137,11 @@ a {
 
 @media print {
             
-    .seccion_principal {
+    .seccion-principal {
         border: none;
     } 
 
-    .nav_menu_paginas_internas {
+    .nav-menu-paginas-internas {
         display: none;
     }
 
@@ -181,16 +149,16 @@ a {
         visibility: hidden;
     }
 
-    .seccion_turnos_pendientes {
+    .seccion-turnos-pendientes {
         background-color: white;
     }
 
-    .seccion_turnos_pendientes {
+    .seccion-turnos-pendientes {
         border: none;
         background-color: white;
     }
 
-    .div_scrollbar {
+    .div-scrollbar {
         overflow: visible;
         overflow-y: none;
     }

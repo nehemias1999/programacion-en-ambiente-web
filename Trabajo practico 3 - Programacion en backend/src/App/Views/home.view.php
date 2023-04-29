@@ -4,11 +4,14 @@
 
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>home</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>home</title>
 
     <link rel='stylesheet' type='text/css' media='all' href='/assets/css/baseStyles.css'>
     <link rel='stylesheet' type='text/css' media='all' href='/assets/css/homeStyles.css'>
+
+    <script src='main.js'></script>
 
 </head>
 <body>
@@ -16,7 +19,7 @@
     <header>
 
         <?php
-            //require "parts/header.view.php";
+            require "parts/header.view.php";
         ?>
 
     </header>
@@ -116,7 +119,7 @@
     <footer>  
         
         <?php
-            require "/parts/footer.view.php";
+            require "parts/footer.view.php";
         ?>
 
     </footer>

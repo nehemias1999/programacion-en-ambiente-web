@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turnos pendientes</title>
 
-    <link rel='stylesheet' type='text/css' media='all' href='../../styles/baseCuentaStyles.css'>
-    <link rel='stylesheet' type='text/css' media='all' href='../../styles/ingresarTurnoStyles.css'>
+    <title>Solicitar turno</title>
+
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/baseCuentaStyles.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/solicitarTurnoStyles.css'>
 
     <script src='main.js'></script>
 
@@ -17,70 +18,44 @@
 
     <header>
 
-        <div class="div_logo_header">
-            <a href="/Punto 4 - HTML/home/home.html" class="enlace_logo">
-                <img src="../../images/Imagotipo_PAW_Hospitals.svg" alt="imagen_logo" class="imagen_logo">
-            </a>
-        </div>
+        <?php
 
-        <section class="seccion_logo_cuenta">
+            $path = "../../";
 
-            <h4 class="titulo_nombre_cuenta">
-                Nombre de usuario
-            </h4>
-            
-            <div class="div_imagen_cuenta">
-                <img src="" alt="imagen_usuario" class="imagen_usuario">
-            </div>
+            require "parts/header.portal.view.php";
 
-        </section>
+        ?>
 
     </header>
 
     <main>
 
-        <section class="seccion_principal">
+        <section class="seccion-principal">
 
-            <nav class="nav_menu_paginas_internas">
+            <?php
 
-                <a href="turnos_pendientes.html" class="enlace_pagina_interna">
-                    Turnos pendientes
-                </a>
+                $path = "";
 
-                <a href="ingresar_turno.html" class="enlace_pagina_interna">
-                    Ingresar turno
-                </a>
+                require "parts/nav.portal.view.php";
+                
+            ?>
 
-                <a href="vinculaciones.html" class="enlace_pagina_interna">
-                    Vinculaciones
-                </a>
+            <section class="seccion-solicitar-turno">
 
-                <a href="resultados.html" class="enlace_pagina_interna">
-                    Resultados
-                </a>
-
-                <a href="mis_datos/mis_datos.html" class="enlace_pagina_interna">
-                    Mis datos
-                </a>
-    
-            </nav>
-
-            <section class="seccion_solicitar_turno">
-
-                <h1 class="titulo_principal">
+                <h1 class="titulo-principal">
                     Solicitar turno
                 </h1>
 
-                <section class="seccion_formulario_turno">
+                <section class="seccion-formulario-turno">
 
                     <form action="" method="">
 
-                        <div class="div_vinculo">
+                        <div class="div-vinculo">
 
-                            <label for="checkbox_vinculo" class="label_vinculo">Solicitar turno para un tercero</label>
-                            <input type="checkbox" name="checkbox_vinculo" class="checkbox_vinculo">
+                            <label for="checkbox-vinculo" class="label-vinculo">Solicitar turno para un tercero</label>
+                            <input type="checkbox" name="checkbox-vinculo" class="checkbox-vinculo">
         
-                            <select name="select_vinculo" class="select_vinculo">
+                            <select name="select-vinculo" class="select-vinculo">
                                 <option value="" disabled selected>---</option>
                                 <option value="">Vinculo 1</option>
                                 <option value="">Vinculo 2</option>
@@ -89,12 +64,12 @@
 
                         </div>
     
-                       <div class="div_alineacion">
+                       <div class="div-alineacion">
 
-                            <div class="div_especialidad">
+                            <div class="div-especialidad">
 
-                                <label for="select_especialidad">Especialidad</label>
-                                <select name="select_especialidad" id="">
+                                <label for="select-especialidad">Especialidad</label>
+                                <select name="select-especialidad" id="">
                                     <option value="" disabled selected>---</option>
                                     <option value="">Cardiologia</option>
                                     <option value="">Traumatologia</option>
@@ -104,10 +79,10 @@
 
                             </div>
 
-                            <div class="div_profesional">
+                            <div class="div-profesional">
             
-                                <label for="select_profesional">Profesional</label>
-                                <select name="select_profesional" id="">
+                                <label for="select-profesional">Profesional</label>
+                                <select name="select-profesional" id="">
                                     <option value="" disabled selected>---</option>
                                     <option value="">Pagani, Rocio</option>
                                     <option value="">De negri, Gerardo</option>
@@ -119,16 +94,16 @@
 
                        </div>
     
-                        <label for="div_turnos_disponibles" class="label_turnos_disponibles">
+                        <label for="div-turnos-disponibles" class="label-turnos-disponibles">
                             Seleccione una fecha y horario
                         </label>
-                        <div class="div_turnos_disponibles">
-                            <div class="div_scrollbar">
-                                <div class="div_contenido">
-                                    <ul class="lista_turnos_disponibles">
+                        <div class="div-turnos-disponibles">
+                            <div class="div-scrollbar">
+                                <div class="div-contenido">
+                                    <ul class="lista-turnos-disponibles">
 
-                                        <li class="elemento_turno_disponible">
-                                            <article class="articulo_turno_disponible">
+                                        <li class="elemento-turno-disponible">
+                                            <article class="articulo-turno-disponible">
 
                                                 <p>
                                                     dd/mm/aaaa
@@ -138,15 +113,15 @@
                                                     hh:mm
                                                 </p>
 
-                                                <button class="boton_seleccionar">
+                                                <button class="boton-seleccionar">
                                                     Seleccionar
                                                 </button>
 
                                             </article>
                                         </li>
 
-                                        <li class="elemento_turno_disponible">
-                                            <article class="articulo_turno_disponible">
+                                        <li class="elemento-turno-disponible">
+                                            <article class="articulo-turno-disponible">
 
                                                 <p>
                                                     dd/mm/aaaa
@@ -156,15 +131,15 @@
                                                     hh:mm
                                                 </p>
 
-                                                <button class="boton_seleccionar">
+                                                <button class="boton-seleccionar">
                                                     Seleccionar
                                                 </button>
 
                                             </article>
                                         </li>
 
-                                        <li class="elemento_turno_disponible">
-                                            <article class="articulo_turno_disponible">
+                                        <li class="elemento-turno-disponible">
+                                            <article class="articulo-turno-disponible">
 
                                                 <p>
                                                     dd/mm/aaaa
@@ -174,15 +149,15 @@
                                                     hh:mm
                                                 </p>
 
-                                                <button class="boton_seleccionar">
+                                                <button class="boton-seleccionar">
                                                     Seleccionar
                                                 </button>
 
                                             </article>
                                         </li>
 
-                                        <li class="elemento_turno_disponible">
-                                            <article class="articulo_turno_disponible">
+                                        <li class="elemento-turno-disponible">
+                                            <article class="articulo-turno-disponible">
 
                                                 <p>
                                                     dd/mm/aaaa
@@ -192,15 +167,15 @@
                                                     hh:mm
                                                 </p>
 
-                                                <button class="boton_seleccionar">
+                                                <button class="boton-seleccionar">
                                                     Seleccionar
                                                 </button>
 
                                             </article>
                                         </li>
 
-                                        <li class="elemento_turno_disponible">
-                                            <article class="articulo_turno_disponible">
+                                        <li class="elemento-turno-disponible">
+                                            <article class="articulo-turno-disponible">
 
                                                 <p>
                                                     dd/mm/aaaa
@@ -210,15 +185,15 @@
                                                     hh:mm
                                                 </p>
 
-                                                <button class="boton_seleccionar">
+                                                <button class="boton-seleccionar">
                                                     Seleccionar
                                                 </button>
 
                                             </article>
                                         </li>
 
-                                        <li class="elemento_turno_disponible">
-                                            <article class="articulo_turno_disponible">
+                                        <li class="elemento-turno-disponible">
+                                            <article class="articulo-turno-disponible">
 
                                                 <p>
                                                     dd/mm/aaaa
@@ -228,15 +203,15 @@
                                                     hh:mm
                                                 </p>
 
-                                                <button class="boton_seleccionar">
+                                                <button class="boton-seleccionar">
                                                     Seleccionar
                                                 </button>
 
                                             </article>
                                         </li>
 
-                                        <li class="elemento_turno_disponible">
-                                            <article class="articulo_turno_disponible">
+                                        <li class="elemento-turno-disponible">
+                                            <article class="articulo-turno-disponible">
 
                                                 <p>
                                                     dd/mm/aaaa
@@ -246,15 +221,15 @@
                                                     hh:mm
                                                 </p>
 
-                                                <button class="boton_seleccionar">
+                                                <button class="boton-seleccionar">
                                                     Seleccionar
                                                 </button>
 
                                             </article>
                                         </li>
 
-                                        <li class="elemento_turno_disponible">
-                                            <article class="articulo_turno_disponible">
+                                        <li class="elemento-turno-disponible">
+                                            <article class="articulo-turno-disponible">
 
                                                 <p>
                                                     dd/mm/aaaa
@@ -264,15 +239,15 @@
                                                     hh:mm
                                                 </p>
 
-                                                <button class="boton_seleccionar">
+                                                <button class="boton-seleccionar">
                                                     Seleccionar
                                                 </button>
 
                                             </article>
                                         </li>
 
-                                        <li class="elemento_turno_disponible">
-                                            <article class="articulo_turno_disponible">
+                                        <li class="elemento-turno-disponible">
+                                            <article class="articulo-turno-disponible">
 
                                                 <p>
                                                     dd/mm/aaaa
@@ -282,7 +257,7 @@
                                                     hh:mm
                                                 </p>
 
-                                                <button class="boton_seleccionar">
+                                                <button class="boton-seleccionar">
                                                     Seleccionar
                                                 </button>
 
@@ -294,10 +269,10 @@
                             </div>
                         </div>
     
-                       <div class="div_botones">
+                       <div class="div-botones">
 
-                            <input type="reset" value="Cancelar" class="boton_reset">
-                            <input type="submit" value="Solicitar turno" class="boton_submit">
+                            <input type="reset" value="Cancelar" class="boton-reset">
+                            <input type="submit" value="Solicitar turno" class="boton-submit">
 
                        </div>
     
@@ -313,43 +288,13 @@
 
     <footer>  
         
-        <nav class="nav_contactos_footer">
-
-            <a href="https://www.facebook.com/" class="enlace_contacto_footer">
-                <img src="../../images/icono_facebook.png" alt="logo_facebook" class="imagen_contacto_footer"/>
-            </a>
-
-            <a href="https://twitter.com/" class="enlace_contacto_footer">
-                <img src="../../images/icono_twitter.png" alt="logo_twitter" class="imagen_contacto_footer"/>
-            </a>
-
-            <a href="https://instagram.com/" class="enlace_contacto_footer">
-                <img src="../../images/icono_instagram.png" alt="logo_instagram" class="imagen_contacto_footer"/>
-            </a>
+        <?php
             
-            <a href="https://www.youtube.com/" class="enlace_contacto_footer">
-                <img src="../../images/icono_youtube.png" alt="logo_youtube" class="imagen_contacto_footer"/>
-            </a>
+            $path = "../../";
 
-            <a href="tel:011-15XXXXXX" class="enlace_contacto_footer">
-                <img src="../../images/icono_telefono.png" alt="logo_telefono" class="imagen_contacto_footer"/>
-            </a>
+            require "parts/footer.view.php";
 
-            <a href="mailto:clinica@email.com" class="enlace_contacto_footer">
-                <img src="../../images/icono_email.png" alt="logo_mail" class="imagen_contacto_footer"/>
-            </a>
-
-        </nav>
-
-        <section class="seccion_final_footer">
-
-            <a href="#" class="enlace_logo_footer">
-                <img src="../../images/Imagotipo_PAW_Hospitals.svg" alt="logo_de_la_clinica" class="imagen_logo_footer"/>
-            </a>
-    
-            <p class="parrafo_final_footer">©2023 UNLu PAW UL Hospital Mariano Moreno 2790, Lujan, Buenos Aires.</p>
-    
-        </section>
+        ?>
         
     </footer>
 
