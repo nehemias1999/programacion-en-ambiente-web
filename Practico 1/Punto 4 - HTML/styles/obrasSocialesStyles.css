@@ -25,6 +25,7 @@ p{
      color: rgb(2, 82, 85);
      font-family: 'Gotham', sans-serif;
 }
+
 /* MOBILE */
 
 .div_principal_main {
@@ -34,27 +35,9 @@ p{
     width: 100%;
     min-height: 250px;
     display: flex;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(113,136,57,0.66) 98%); 
 }
-
-/*.boton_solicitar_turno {
-    position: absolute;
-    top: 150px;
-    right: 20px; 
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(252, 196, 68);
-}*/
-
-/*Prueba*/
-.div_principal_main {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    min-height: 250px;
-    display: flex;
-  }
 
   /*Estilos para el boton*/
 .boton_solicitar_turno{
@@ -71,7 +54,7 @@ p{
     position: absolute;
     padding: 10px;
     top: 150px;
-    right: 90px;
+    right: 105px;
 }
 
   /*Estilo para el enlace */
@@ -93,7 +76,7 @@ p{
 .titulo_principal_main {
     position: relative;
     margin: 40px auto;
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .titulo_principal {
@@ -120,6 +103,7 @@ p{
     display: flex;
     border: solid 1px #000;
     border-radius: 30px;
+    border-radius: 0px 10px 10px 10px;
 }
 
 .form_buscador_obras_sociales {
@@ -139,8 +123,9 @@ p{
 }
 
 .boton_buscador {
-    padding: 5px 20px;
+    padding: 5px 10px;
     border-radius: 10px;
+    font-family: 'Gotham', sans-serif;
 }
 
 .seccion_listado_obras_sociales {
@@ -163,6 +148,7 @@ p{
 .elemento_obra_social {
     height: 200px;
     width: 400px;
+    position:relative;/**/
 }
 
 .articulo_obra_social {
@@ -170,6 +156,9 @@ p{
     min-height: 100%;
     display: flex;
     align-items: center;
+    position: absolute;/**/
+    left:-30px;/**/
+ 
 }
 
 .div_imagen_obra_social {
@@ -177,7 +166,15 @@ p{
     width: 150px;
     overflow: hidden;
     border-radius: 50%;
-    border: solid 1px #000;
+    border: solid 1px  rgb(2, 82, 85);
+  
+}
+
+.imagen_obra_social{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    clip-path: circle(50%);
 }
 
 .div_descripcion_obra_social {
@@ -188,7 +185,8 @@ p{
     align-items: center;
     border-radius: 20px;
     border: solid 1px #000;
-    background-color: rgba(208, 36, 74, 0.5); /* Ver transparencia */
+    background-color: rgba(208, 36, 74, 0.4); /* Ver transparencia */
+    border-radius: 0px 10px 10px 10px;
 }
 
 .titulo_obra_social {
@@ -198,6 +196,9 @@ p{
 
 /* DESKTOP */
 @media screen and (min-width: 900px) {
+    .titulo_principal_main {
+        font-size: 70px;
+    }
 
     .boton_solicitar_turno:hover {
         transform: scale(1.1);
@@ -227,6 +228,20 @@ p{
         height: 470px;
     }
 
+    .imagen_obra_social {
+        transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+        z-index: 4;
+    }
+      
+    .div_imagen_obra_social:hover .imagen_obra_social {
+        transform: scale(1.4);
+    }
+      
+    .boton_solicitar_turno{
+        top: 150px;
+        right: 90px;
+    }
+
     .boton_solicitar_turno::before{
         content: '';
         border-radius: 1000px;
@@ -254,13 +269,6 @@ p{
     }
       
     .boton_solicitar_turno::after{
-        /* efecto circular en el centro
-        content: '';
-        width: 30px; height: 30px;
-        border-radius: 100%;
-        border: 6px solid rgb(0 157 218);
-        position: absolute;*/
-        /*efecto alrededor del boton*/
         content: '';
         border-radius: 1000px;
         min-width: calc(230px);

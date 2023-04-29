@@ -14,6 +14,16 @@ a {
     color: black;
 }
 
+h1, h2, h3, h4{
+    color: black;
+    font-family: 'Gotham Medium Italic', sans-serif;
+}
+
+label, p{
+    color: black;
+    font-family: 'Gotham', sans-serif;
+}
+
 /* MOBILE */
 
 .seccion_principal {
@@ -121,10 +131,12 @@ a {
 dl {
     column-count: 2;
     column-gap: 20px;
+    font-family: 'Gotham', sans-serif;
 }
 
 dt {
     font-weight: bold;
+    font-family: 'Gotham', sans-serif;
 }
   
 dd {
@@ -143,6 +155,9 @@ dd {
     font-size: 15px;
     height: 35px;
     width: 30%;
+    font-weight: 600;
+    font-family: 'Gotham', sans-serif;
+    background-color: rgba(208,36,74,50%);
 }
 
 .seccion_cargar_vinculos {
@@ -216,12 +231,16 @@ input {
     height: 35px;
     width: calc(100% / 2);
     margin-right: 20px;
+    background-color: rgba(208,36,74,50%);
+    font-weight: 600;
 }
 
 .boton_submit {
     font-size: 15px;
     height: 35px;
     width: calc(100% / 2);
+    background-color: rgb(0, 218, 73);
+    font-weight: 600;
 }
 
 /* DESKTOP */

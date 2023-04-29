@@ -14,6 +14,11 @@ a {
     color: black;
 }
 
+h1,h4{
+    color: black;
+    font-family: 'Gotham Medium Italic', sans-serif;
+}
+
 /* MOBILE */
 
 .seccion_principal {
@@ -65,6 +70,7 @@ form {
 label {
     position: relative;
     left: 4%;
+    font-family: 'Gotham', sans-serif;
 }
 
 input {
@@ -72,6 +78,7 @@ input {
     width: 90%;
     margin: 0px auto;
     margin-bottom: 10px;
+    font-family: 'Gotham', sans-serif;
 }
 
 .div_botones {

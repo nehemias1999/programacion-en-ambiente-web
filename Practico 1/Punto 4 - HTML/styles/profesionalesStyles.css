@@ -12,41 +12,27 @@ h1{
 }
 
 h3{
-    color: black;
-    font-family: 'Gotham', sans-serif;
+    color: white;
+    font-family: 'Gotham Italic', sans-serif;
 }
 
 h4{
     color: black;
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Gotham Light', sans-serif;
+    display: inline-block;
+    border-bottom: 2px solid rgb(2, 82, 85);;
+    padding-bottom: 5px;
 }
 
 p{
-     color: rgb(2, 82, 85);
-     font-family: 'Gotham', sans-serif;
+    color: rgb(2, 82, 85);
+    font-family: 'Gotham', sans-serif;
 }
+
+
 /* MOBILE */
 
-.div_principal_main {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    min-height: 250px;
-    display: flex;
-}
-/*
-.boton_solicitar_turno {
-    position: absolute;
-    top: 150px;
-    right: 20px; 
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(252, 196, 68);
-}*/
 
-/*Prueba*/
 .div_principal_main {
     position: relative;
     top: 0px;
@@ -54,6 +40,8 @@ p{
     width: 100%;
     min-height: 250px;
     display: flex;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 56%, rgba(160,73,40,0.6614845767408526) 105%); 
   }
 
   /*Estilos para el boton*/
@@ -71,7 +59,7 @@ p{
     position: absolute;
     padding: 10px;
     top: 150px;
-    right: 90px;
+    right: 105px;
 }
 
   /*Estilo para el enlace */
@@ -87,14 +75,13 @@ p{
     letter-spacing: 1.3px;
     font-weight: 700;
     color: black;
-   
     text-align: center;
 }
 
 .titulo_principal_main {
     position: relative;
     margin: 40px auto;
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .titulo_principal {
@@ -116,11 +103,13 @@ p{
 .div_buscador_profesionales {
     position: relative;
     height: 50px;
-    width: 90%;
+    width: 95%;
     margin: 20px auto;
     display: flex;
     border: solid 1px #000;
     border-radius: 30px;
+    border-radius: 0px 10px 10px 10px;
+    background-color: rgba(59, 74, 90, 0.2);
 }
 
 .form_buscador_profesionales {
@@ -130,6 +119,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .input_buscador {
@@ -145,12 +135,16 @@ p{
     height: 30px;
     width: 75px;
     margin-right: 5px;
+    font-family: 'Gotham Bold', sans-serif;
 }
 
 .boton_buscador {
-    font-size: 15px;
+    font-size: 10px;
+    height: 30px;
     padding: 5px 20px;
-    border-radius: 10px;
+    border-radius: 7px;
+    font-family: 'Gotham Bold', sans-serif;
+    text-transform: uppercase;
 }
 
 .seccion_listado_profesionales {
@@ -159,6 +153,7 @@ p{
     width: 95%;
     margin: 0px auto;
     margin-bottom: 20px;
+    margin-left: 1px;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -175,29 +170,34 @@ p{
 }
 
 .articulo_profesional {
-    height: 200px;
-    width: 100%;
-    display: flex;
+    height: 38vw;
+    width: 80vw;
+    display:flex;
     justify-content:left;
 }
 
 .div_imagen_profesional {
-    height: 200px;
-    width: 200px;
+    /*height: 190px;
+    width: 190px;*/
     overflow: hidden;
-    border-radius: 50%;
     border: solid 1px #000;
+    border-radius: 50%;
+    background: rgb(2, 82, 85);
+    height: 25vw; /* Utilizamos unidades de vista en lugar de píxeles */
+    max-height: 190px; /* Establecemos un tamaño máximo para evitar que el div sea demasiado grande */
+    width: 25vw;
 }
 
 .imagen_profesional {
     height: 100%;
     width: 100%;
     object-fit: contain;
+    clip-path: circle(47%);
 }
 
 .div_descripcion_profesional {
     height: 100%;
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content:center;    
@@ -208,20 +208,47 @@ p{
     margin-right: 10px;
     border-radius: 40px;
     border: solid 1px #000;
+    border-radius: 10px 0px 10px 10px;
+    background-color: rgb(2, 82, 85);
 }
 
 .titulo_profesional {
     margin-left: 20px;
     padding: 0px;
+  
 }
 
 .subtitulo_cargo_profesional {
-    margin-left: 30px;
+    margin-left: 10px;
     padding: 0px;
 }
 
 /* DESKTOP */
 @media screen and (min-width: 900px) {
+
+    .titulo_principal_main {
+        position: relative;
+        margin: 40px auto;
+        font-size: 70px;
+    }
+
+    .div_imagen_profesional {
+        height: 12vw;
+        width: 12vw;
+    }
+
+    .seccion_listado_profesionales {
+        height: 500px;
+        width: 95%;
+        margin: 0px auto;
+    }
+
+    .articulo_profesional {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content:left;
+    }
 
     .boton_solicitar_turno:hover {
         transform: scale(1.1);
@@ -242,11 +269,20 @@ p{
         font-size: 18px;
         height: 40px;
         width: 100px;
+        margin-left: 15px;
+        
     }
 
     .boton_buscador {
-        padding: 10px 20px;
-        font-size: 20px;
+        padding: 10px 45px;
+        font-size: 18px;
+        height: 40px;
+        font-family: 'Gotham Light', sans-serif;
+        text-transform: uppercase;
+        border-radius: 7px;
+        margin-left: 15px;
+        border-left: 35px;
+        border-right: 35px;
     }
 
     .boton_buscador:hover {
@@ -256,6 +292,11 @@ p{
     .seccion_listado_profesionales {
         width: 70%;
         height: 460px;
+    }
+
+    .boton_solicitar_turno{
+        top: 150px;
+        right: 90px;
     }
 
     .boton_solicitar_turno::before{
@@ -285,19 +326,11 @@ p{
     }
       
     .boton_solicitar_turno::after{
-        /* efecto circular en el centro
-        content: '';
-        width: 30px; height: 30px;
-        border-radius: 100%;
-        border: 6px solid rgb(0 157 218);
-        position: absolute;*/
-        /*efecto alrededor del boton*/
         content: '';
         border-radius: 1000px;
         min-width: calc(230px);
         min-height: calc(52px + 12px);
         border: 3px solid rgb(0 157 218);
-        /*box-shadow: 0 0 60px rgb(0 157 218);*/
         position: absolute;
         z-index: -1;
         top: 50%;
@@ -324,7 +357,6 @@ p{
           opacity: 0;
         }
     }
-    /*fin prueba*/
 }
 
 @media print {

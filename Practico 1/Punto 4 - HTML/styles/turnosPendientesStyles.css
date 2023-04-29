@@ -14,6 +14,17 @@ a {
     color: black;
 }
 
+a {
+    font-family: 'Gotham', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+h1, h3, h4 ,p{
+    color: black;
+    font-family: 'Gotham Medium Italic', sans-serif;
+}
+
 /* MOBILE */
 
 .seccion_principal {

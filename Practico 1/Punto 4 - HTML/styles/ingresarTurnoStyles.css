@@ -14,6 +14,18 @@ a {
     color: black;
 }
 
+h1,h4{
+    color: black;
+    font-family: 'Gotham Medium Italic', sans-serif;
+}
+
+label, p{
+    color: black;
+    font-family: 'Gotham', sans-serif;
+}
+
+
+
 /* MOBILE */
 
 .seccion_principal {
@@ -86,13 +98,15 @@ form {
     position: absolute;
     top: 20px;
     left: 5%;
-    margin-right: 10px;
+    margin-right: 0px;
+    font-family: 'Gotham', sans-serif;
 }
 
 .checkbox_vinculo {
     position: absolute;
     top: 16px;
     left: 35px;
+    margin-left: 50px;
 }
 
 .select_vinculo {
@@ -137,12 +151,15 @@ select {
 .label_turnos_disponibles {
     margin-bottom: 10px;
     margin-left: 10px;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 600;
 }
 
 input {
     height: 20px;
     width: 400px;
     margin-bottom: 10px;
+    font-family: 'Gotham', sans-serif;
 }
 
 .div_turnos_disponibles {
@@ -203,12 +220,16 @@ input {
     font-size: 15px;
     height: 35px;
     width: 150px;
+    background-color: rgba(208,36,74,50%);
+    font-weight: 600;
 }
 
 .boton_submit {
     font-size: 15px;
     height: 35px;
     width: 150px;
+    font-weight: 600;
+    background-color: rgb(0, 218, 73);;
 }
 
 /* DESKTOP */
