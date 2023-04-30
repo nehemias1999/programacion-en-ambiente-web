@@ -18,7 +18,7 @@ p {
 
 /* MOBILE */
 
-.div_principal_main {
+.div-principal-main {
     position: relative;
     top: 0px;
     left: 0px;
@@ -27,13 +27,13 @@ p {
     display: flex;
 }
 
-.titulo_principal {
+.titulo-principal {
     position: relative;
     margin: 40px auto;
     font-size: 9vw;
 }
 
-.seccion_ingresar_portal_main {
+.seccion-ingresar-portal-main {
     position: relative;
     width: 100%;
     margin-bottom: 20px;
@@ -41,12 +41,12 @@ p {
     border-bottom: solid 1px #000;
 }
 
-.titulo_crear_cuenta {
+.titulo-crear-cuenta {
     font-size: 35px;
     margin-left: 8%;
 }
 
-.div_formulario_datos_personales {
+.div-formulario-datos-personales {
     position: relative;
     width: 75%;
     margin: 20px auto;
@@ -56,7 +56,7 @@ p {
     background-color: rgb(238, 241, 239);
 }
 
-.titulo_datos_personales {
+.titulo-datos-personales {
     text-align: center;
     font-size: 25px;
 }
@@ -78,19 +78,19 @@ input {
     margin-bottom: 10px;
 }
 
-.div_ingreso_documento {
+.div-ingreso-documento {
     position: relative;
     width: 92.5%;
     margin: 0px auto;
     display: flex;
 }
 
-.input_documento {
+.input-documento {
     width: 70%;
     margin-right: 10px;
 }
 
-.select_documento {
+.select-documento {
     width: 30%;
 }
 
@@ -101,23 +101,27 @@ select {
     margin-bottom: 10px;
 }
 
-.div_telefono {
+.div-telefono {
     position: relative;
     width: 92.5%;
     margin: 0px auto;
     display: flex;
 }
 
-.input_caracteristica {
+.input-caracteristica {
     width: 30%;
     margin-right: 10px;
 }
 
-.input_telefono {
+.input-telefono {
     width: 70%;
 }
 
-.div_botones {
+progress {
+    margin: 20px auto;
+}
+
+.div-botones {
     position: relative;
     width: 90%;
     margin: 10px auto;
@@ -131,24 +135,24 @@ button {
     width: calc(90% / 2);
 }
 
-progress {
-    margin: 0px auto;
-    margin-bottom: 20px;
+button a {
+    height: 100%;
+    width: 100%;
 }
 
 /* DESKTOP */
 @media screen and (min-width: 900px) {
 
-    .titulo_crear_cuenta {
+    .titulo-crear-cuenta {
         font-size: 40px;
         margin-left: 28%;
     }
 
-    .div_formulario_datos_personales {
+    .div-formulario-datos-personales {
         width: 40%;
     }
 
-    .titulo_datos_personales {
+    .titulo-datos-personales {
         font-size: 30px;
     }
 
@@ -160,11 +164,11 @@ progress {
 
 @media print {
     
-    .seccion_ingresar_portal_main {
+    .seccion-ingresar-portal-main {
         border: none;
     }
     
-    .div_formulario_datos_personales {
+    .div-formulario-datos-personales {
         background-color: white;
     }
     

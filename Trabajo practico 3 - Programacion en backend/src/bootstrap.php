@@ -2,7 +2,10 @@
 
 require __DIR__ . "/../vendor/autoload.php";
 
+use Paw\Core\Request;
 use Paw\Core\Router; 
+
+$request = new Request();
 
 $router = new Router();
 
@@ -44,9 +47,5 @@ $router->get("/profesionales", "PageController@profesionales");
 
 // Contacto
 $router->get("/contacto", "PageController@contacto");
-
-// Errores
-$router->get("not_found", "ErrorController@notFound");
-$router->get("internal_error", "ErrorController@internalError");
 
 ?>

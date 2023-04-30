@@ -66,26 +66,26 @@
                         Repetir contraseña
                     </label>
                     <input type="password" name="input_repetir_contrasena">              
-        
-                    <div class="div_botones">
-
-                        <button class="boton_volver">
-                            <a href="">
-                                Volver
-                            </a>
-                        </button>
-        
-                        <button>
-                            <a href="">
-                                Siguiente
-                            </a>
-                        </button>
-
-                    </div>
-                        
+                                
                     <progress value="90" max="90"></progress>
     
                 </form>
+
+                <div class="div_botones">
+
+                    <button class="boton-volver">
+                        <a href="domicilio">
+                            Volver
+                        </a>
+                    </button>
+    
+                    <button class="boton-submit">
+                        <a href="">
+                            Siguiente
+                        </a>
+                    </button>
+
+                </div>
 
             </div>
 
