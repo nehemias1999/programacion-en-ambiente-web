@@ -39,7 +39,7 @@
         Institucional
     </a>
 
-    <a href="portal-del-paciente/ingresar" class="enlace-pagina">
+    <a href="<?php echo $path . "portal-del-paciente/ingresar";?>" class="enlace-pagina">
         Portal del paciente
     </a>
 

@@ -26,14 +26,14 @@
 
     <main>
 
-        <div class="div_principal_main">
+        <div class="div-principal-main">
 
-            <h1 class="titulo_principal_main">
+            <h1 class="titulo-principal-main">
                 Profesionales
             </h1>
     
           
-                <a href="../Punto 4 - HTML/portal del paciente/ingresar.html" class="boton_solicitar_turno">
+                <a href="../Punto 4 - HTML/portal del paciente/ingresar.html" class="boton-solicitar-turno">
                   <h2>
                     Solicitar turno
                   </h2>
@@ -42,45 +42,45 @@
     
         </div>
 
-        <section class="seccion_profesionales_main">
+        <section class="seccion-profesionales-main">
 
-            <div class="div_buscador_profesionales">
+            <div class="div-buscador-profesionales">
 
-                <form action="" method="" name="" class="form_buscador_profesionales">
-                    <input type="search" class="input_buscador">
-                    <select name="select_filter" id="" class="selector_filtro_busqueda">
+                <form action="" method="" name="" class="form-buscador-profesionales">
+                    <input type="search" class="input-buscador">
+                    <select name="select-filter" id="" class="selector-filtro-busqueda">
                         <option value="" disabled selected>Filtrar</option>
                         <option value="">Nombre</option>
                         <option value="">Especialidad</option>
                     </select>
-                    <input type="submit" value="buscar" class="boton_buscador">
+                    <input type="submit" value="buscar" class="boton-buscador">
                 </form>
 
             </div>       
             
-            <section class="seccion_listado_profesionales">
+            <section class="seccion-listado-profesionales">
 
-                <ul class="lista_profesionales">
+                <ul class="lista-profesionales">
 
-                    <li class="elemento_profesional">
+                    <li class="elemento-profesional">
     
-                        <article class="articulo_profesional">
+                        <article class="articulo-profesional">
     
-                            <div class="div_imagen_profesional">
-                                <img src="images/fondo_noticia_principal.png" alt="imagen_profesional" class="imagen_profesional">
+                            <div class="div-imagen-profesional">
+                                <img src="images/fondo-noticia-principal.png" alt="imagen-profesional" class="imagen-profesional">
                             </div>
 
-                            <div class="div_descripcion_profesional">
+                            <div class="div-descripcion-profesional">
     
-                                <div class="div_nombre_profesional">
+                                <div class="div-nombre-profesional">
 
-                                    <h3 class="titulo_profesional">
+                                    <h3 class="titulo-profesional">
                                         Nombre profesional
                                     </h3>    
 
                                 </div>
 
-                                <h4 class="subtitulo_cargo_profesional">
+                                <h4 class="subtitulo-cargo-profesional">
                                     Cargo profesional
                                 </h4>
     
@@ -90,25 +90,25 @@
     
                     </li>
 
-                    <li class="elemento_profesional">
+                    <li class="elemento-profesional">
     
-                        <article class="articulo_profesional">
+                        <article class="articulo-profesional">
     
-                            <div class="div_imagen_profesional">
-                                <img src="images/fondo_noticia_principal.png" alt="imagen_profesional" class="imagen_profesional">
+                            <div class="div-imagen-profesional">
+                                <img src="images/fondo-noticia-principal.png" alt="imagen-profesional" class="imagen-profesional">
                             </div>
 
-                            <div class="div_descripcion_profesional">
+                            <div class="div-descripcion-profesional">
     
-                                <div class="div_nombre_profesional">
+                                <div class="div-nombre-profesional">
 
-                                    <h3 class="titulo_profesional">
+                                    <h3 class="titulo-profesional">
                                         Nombre profesional
                                     </h3>    
 
                                 </div>
 
-                                <h4 class="subtitulo_cargo_profesional">
+                                <h4 class="subtitulo-cargo-profesional">
                                     Cargo profesional
                                 </h4>
     
@@ -118,25 +118,25 @@
     
                     </li>
 
-                    <li class="elemento_profesional">
+                    <li class="elemento-profesional">
     
-                        <article class="articulo_profesional">
+                        <article class="articulo-profesional">
     
-                            <div class="div_imagen_profesional">
-                                <img src="images/fondo_noticia_principal.png" alt="imagen_profesional" class="imagen_profesional">
+                            <div class="div-imagen-profesional">
+                                <img src="images/fondo-noticia-principal.png" alt="imagen-profesional" class="imagen-profesional">
                             </div>
 
-                            <div class="div_descripcion_profesional">
+                            <div class="div-descripcion-profesional">
     
-                                <div class="div_nombre_profesional">
+                                <div class="div-nombre-profesional">
 
-                                    <h3 class="titulo_profesional">
+                                    <h3 class="titulo-profesional">
                                         Nombre profesional
                                     </h3>    
 
                                 </div>
 
-                                <h4 class="subtitulo_cargo_profesional">
+                                <h4 class="subtitulo-cargo-profesional">
                                     Cargo profesional
                                 </h4>
     
@@ -146,25 +146,25 @@
     
                     </li>
 
-                    <li class="elemento_profesional">
+                    <li class="elemento-profesional">
     
-                        <article class="articulo_profesional">
+                        <article class="articulo-profesional">
     
-                            <div class="div_imagen_profesional">
-                                <img src="images/fondo_noticia_principal.png" alt="imagen_profesional" class="imagen_profesional">
+                            <div class="div-imagen-profesional">
+                                <img src="images/fondo-noticia-principal.png" alt="imagen-profesional" class="imagen-profesional">
                             </div>
 
-                            <div class="div_descripcion_profesional">
+                            <div class="div-descripcion-profesional">
     
-                                <div class="div_nombre_profesional">
+                                <div class="div-nombre-profesional">
 
-                                    <h3 class="titulo_profesional">
+                                    <h3 class="titulo-profesional">
                                         Nombre profesional
                                     </h3>    
 
                                 </div>
 
-                                <h4 class="subtitulo_cargo_profesional">
+                                <h4 class="subtitulo-cargo-profesional">
                                     Cargo profesional
                                 </h4>
     

@@ -12,13 +12,13 @@ h1, h2, h3 {
 }
 
 p {
-     color: rgb(2, 82, 85);
-     font-family: 'Gotham', sans-serif;
+    color: rgb(2, 82, 85);
+    font-family: 'Gotham', sans-serif;
 }
 
 /* MOBILE */
 
-.div_principal_main {
+.div-principal-main {
     position: relative;
     top: 0px;
     left: 0px;
@@ -27,13 +27,13 @@ p {
     display: flex;
 }
 
-.titulo_principal {
+.titulo-principal {
     position: relative;
     margin: 40px auto;
     font-size: 60px;
 }
 
-.seccion_contacto_main {
+.seccion-contacto-main {
     position: relative;
     width: 100%;
     margin-bottom: 20px;
@@ -41,7 +41,7 @@ p {
     border-bottom: solid 1px #000;
 }
 
-.div_formulario {
+.div-formulario {
     position: relative;
     width: 75%;
     margin: 20px auto;
@@ -66,35 +66,33 @@ label {
 }
 
 input {
-    height: 20px;
+    position: relative;
+    height: 25px;
     width: 90%;
     margin: 0px auto;
     margin-bottom: 10px;
 }
 
 textarea {
+    position: relative;
     width: 90%;
     margin: 0px auto;
     margin-bottom: 10px;
     resize: none;
+    text-align: left;
 }
 
-.div_botones {
+.div-botones {
+    position: relative;
     width: 80%;
     margin: 0px auto;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
 }
 
-.boton_reset {
-    font-size: 3.5vw;
-    height: 40px;
-    width: 70%;
-}
-
-.boton_submit {
+input[type="reset"], input[type="submit"]  {
     font-size: 3.5vw;
     height: 40px;
     width: 70%;
@@ -103,37 +101,27 @@ textarea {
 /* DESKTOP */
 @media screen and (min-width: 900px) {
 
-    .titulo_principal {
+    .titulo-principal {
         margin-top: 40px;
         margin-bottom: 10px;
     }
 
-    .div_formulario {
+    .div-formulario {
         width: 50%;
     }
 
-    .div_botones {
+    .div-botones {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .boton_reset {
+    input[type="reset"], input[type="submit"] {
         font-size: 2vw;
         width: 40%;
         height: 45px;
     }
 
-    .boton_reset:hover {
-        transform: scale(1.1);
-    }
-
-    .boton_submit {
-        font-size: 2vw;
-        width: 40%;
-        height: 45px;
-    }
-
-    .boton_submit:hover {
+    input[type="reset"]:hover, input[type="submit"]:hover {
         transform: scale(1.1);
     }
 
@@ -141,11 +129,11 @@ textarea {
 
 @media print {
 
-    .seccion_contacto_main {
+    .seccion-contacto-main {
         border: none;
     }
 
-    .boton_reset, .boton_submit {
+    input[type="reset"], input[type="submit"] {
         background-color: white;
     }
     

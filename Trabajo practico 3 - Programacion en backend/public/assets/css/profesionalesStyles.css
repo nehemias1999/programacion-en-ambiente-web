@@ -27,7 +27,7 @@ p{
 }
 /* MOBILE */
 
-.div_principal_main {
+.div-principal-main {
     position: relative;
     top: 0px;
     left: 0px;
@@ -36,7 +36,7 @@ p{
     display: flex;
 }
 /*
-.boton_solicitar_turno {
+.boton-solicitar-turno {
     position: absolute;
     top: 150px;
     right: 20px; 
@@ -47,7 +47,7 @@ p{
 }*/
 
 /*Prueba*/
-.div_principal_main {
+.div-principal-main {
     position: relative;
     top: 0px;
     left: 0px;
@@ -57,7 +57,7 @@ p{
   }
 
   /*Estilos para el boton*/
-.boton_solicitar_turno{
+.boton-solicitar-turno{
     min-width: 200px;
     min-height: 5px;
     background: rgb(0 157 218);
@@ -75,12 +75,12 @@ p{
 }
 
   /*Estilo para el enlace */
-.boton_solicitar_turno a {
+.boton-solicitar-turno a {
     font-family: 'Gotham', sans-serif;
 }
 
 /*Estilo del texto*/
-.boton_solicitar_turno h2 {
+.boton-solicitar-turno h2 {
     font-family: 'Gotham', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
@@ -91,19 +91,19 @@ p{
     text-align: center;
 }
 
-.titulo_principal_main {
+.titulo-principal-main {
     position: relative;
     margin: 40px auto;
     font-size: 70px;
 }
 
-.titulo_principal {
+.titulo-principal {
     position: relative;
     top: 150px;
     font-size: 4rem;
 }
 
-.seccion_profesionales_main {
+.seccion-profesionales-main {
     position: relative;
     height: 600px;
     width: 100%;
@@ -113,7 +113,7 @@ p{
     background-color: rgba(238, 241, 239, 1);
 }
 
-.div_buscador_profesionales {
+.div-buscador-profesionales {
     position: relative;
     height: 50px;
     width: 90%;
@@ -123,7 +123,7 @@ p{
     border-radius: 30px;
 }
 
-.form_buscador_profesionales {
+.form-buscador-profesionales {
     position: relative;
     min-width: 80%;
     margin: 0px auto;
@@ -132,7 +132,7 @@ p{
     align-items: center;
 }
 
-.input_buscador {
+.input-buscador {
     font-size: 15px;
     height: 30px;
     min-width: 60%;
@@ -140,20 +140,20 @@ p{
     border-radius: 10px;
 }
 
-.selector_filtro_busqueda {
+.selector-filtro-busqueda {
     text-align: center;
     height: 30px;
     width: 75px;
     margin-right: 5px;
 }
 
-.boton_buscador {
+.boton-buscador {
     font-size: 15px;
     padding: 5px 20px;
     border-radius: 10px;
 }
 
-.seccion_listado_profesionales {
+.seccion-listado-profesionales {
     position: relative;
     height: 500px;
     width: 95%;
@@ -163,25 +163,25 @@ p{
     overflow-x: hidden;
 }
 
-.lista_profesionales {
+.lista-profesionales {
     list-style: none;
 }
   
-.elemento_profesional {
+.elemento-profesional {
     min-height: 150px;
     min-width: 100%;
     padding: 0px;
     margin-bottom: 20px;
 }
 
-.articulo_profesional {
+.articulo-profesional {
     height: 200px;
     width: 100%;
     display: flex;
     justify-content:left;
 }
 
-.div_imagen_profesional {
+.div-imagen-profesional {
     height: 200px;
     width: 200px;
     overflow: hidden;
@@ -189,13 +189,13 @@ p{
     border: solid 1px #000;
 }
 
-.imagen_profesional {
+.imagen-profesional {
     height: 100%;
     width: 100%;
     object-fit: contain;
 }
 
-.div_descripcion_profesional {
+.div-descripcion-profesional {
     height: 100%;
     width: 100%;
     display: flex;
@@ -203,19 +203,19 @@ p{
     justify-content:center;    
 }
 
-.div_nombre_profesional {
+.div-nombre-profesional {
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 40px;
     border: solid 1px #000;
 }
 
-.titulo_profesional {
+.titulo-profesional {
     margin-left: 20px;
     padding: 0px;
 }
 
-.subtitulo_cargo_profesional {
+.subtitulo-cargo-profesional {
     margin-left: 30px;
     padding: 0px;
 }
@@ -223,42 +223,42 @@ p{
 /* DESKTOP */
 @media screen and (min-width: 900px) {
 
-    .boton_solicitar_turno:hover {
+    .boton-solicitar-turno:hover {
         transform: scale(1.1);
     }
 
-    .div_buscador_profesionales {
+    .div-buscador-profesionales {
         height: 70px;
         width: 60%;
     }
 
-    .input_buscador {
+    .input-buscador {
         font-size: 20px;
         height: 40px;
         min-width: 70%;
     }
 
-    .selector_filtro_busqueda {
+    .selector-filtro-busqueda {
         font-size: 18px;
         height: 40px;
         width: 100px;
     }
 
-    .boton_buscador {
+    .boton-buscador {
         padding: 10px 20px;
         font-size: 20px;
     }
 
-    .boton_buscador:hover {
+    .boton-buscador:hover {
         transform: scale(1.05);
     }
 
-    .seccion_listado_profesionales {
+    .seccion-listado-profesionales {
         width: 70%;
         height: 460px;
     }
 
-    .boton_solicitar_turno::before{
+    .boton-solicitar-turno::before{
         content: '';
         border-radius: 1000px;
         min-width: calc(230px);
@@ -273,18 +273,18 @@ p{
         transition: all .3s ease-in-out 0s;
     }
       
-    .boton_solicitar_turno:hover,
-    .boton_solicitar_turno:focus{
+    .boton-solicitar-turno:hover,
+    .boton-solicitar-turno:focus{
         color: #d89e31;
         transform: translateY(-6px);
     }
       
-    .boton_solicitar_turno:hover::before, 
-    .boton_solicitar_turno:focus::before{
+    .boton-solicitar-turno:hover::before, 
+    .boton-solicitar-turno:focus::before{
         opacity: 1;
     }
       
-    .boton_solicitar_turno::after{
+    .boton-solicitar-turno::after{
         /* efecto circular en el centro
         content: '';
         width: 30px; height: 30px;
@@ -306,8 +306,8 @@ p{
         animation: ring 1.5s infinite;
     }
       
-    .boton_solicitar_turno:hover::after, 
-    .boton_solicitar_turno:focus::after{
+    .boton-solicitar-turno:hover::after, 
+    .boton-solicitar-turno:focus::after{
         animation: none;
         display: none;
     }
@@ -329,24 +329,24 @@ p{
 
 @media print {
     
-    .seccion_profesionales_main {
+    .seccion-profesionales-main {
         border: none;
     }
 
-    .boton_solicitar_turno {
+    .boton-solicitar-turno {
         display: none;
     }
 
-    .div_buscador_profesionales {
+    .div-buscador-profesionales {
         display: none;
     }
 
-    .seccion_listado_profesionales {
+    .seccion-listado-profesionales {
         overflow: visible;
         overflow-y: none;
     }
 
-    .imagen_profesional {
+    .imagen-profesional {
         filter: grayscale(100%);
     }
 

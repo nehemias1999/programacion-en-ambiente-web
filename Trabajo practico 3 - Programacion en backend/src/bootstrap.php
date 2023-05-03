@@ -21,23 +21,32 @@ $router->get("/institucional/directorio", "PageController@institucionalDirectori
 
 // Portal del paciente 
 $router->get("/portal-del-paciente/ingresar", "PortalController@ingresar");
+$router->post("/portal-del-paciente/ingresar", "FormController@ingresar"); // VER
 $router->get("/portal-del-paciente/recuperar-contrasena", "PortalController@recuperarContrasena");
+$router->post("/portal-del-paciente/recuperar-contrasena", "FormController@recuperarContrasena"); // VER
 
 // Crear cuenta
 $router->get("/portal-del-paciente/crear-cuenta/datos-personales", "PortalController@crearCuentaDatosPersonales");
+$router->post("/portal-del-paciente/crear-cuenta/datos-personales", "FormController@crearCuentaDatosPersonales"); // VER
 $router->get("/portal-del-paciente/crear-cuenta/domicilio", "PortalController@crearCuentaDomicilio");
+$router->post("/portal-del-paciente/crear-cuenta/domicilio", "FormController@crearCuentaDomicilio"); // VER
 $router->get("/portal-del-paciente/crear-cuenta/datos-de-la-cuenta", "PortalController@crearCuentaDatosDeLaCuenta");
+$router->post("/portal-del-paciente/crear-cuenta/datos-de-la-cuenta", "FormController@crearCuentaDatosDeLaCuenta"); // VER
 
 // Inicio
 $router->get("/portal-del-paciente/inicio/turnos-pendientes", "PortalController@inicioTurnosPendientes");
 $router->get("/portal-del-paciente/inicio/solicitar-turno", "PortalController@inicioSolicitarTurno");
+$router->post("/portal-del-paciente/inicio/solicitar-turno", "FormController@inicioSolicitarTurno"); // VER
 $router->get("/portal-del-paciente/inicio/vinculaciones", "PortalController@inicioVinculaciones");
+$router->port("/portal-del-paciente/inicio/vinculaciones", "FormController@inicioVinculaciones"); // VER
 $router->get("/portal-del-paciente/inicio/resultados", "PortalController@inicioResultados");
 
 // Mis datos
 $router->get("/portal-del-paciente/inicio/mis-datos", "PortalController@inicioMisDatos");
 $router->get("/portal-del-paciente/inicio/mis-datos/cambiar-contrasena", "PortalController@misDatosCambiarContrasena");
-$router->get("/portal-del-paciente/inicio/mis-datos/editar-datos", "PortalController@misDatosEditarDatos");
+$router->post("/portal-del-paciente/inicio/mis-datos/cambiar-contrasena", "PortalController@misDatosCambiarContrasena"); // VER
+$router->get("/portal-del-paciente/inicio/mis-datos/editar-datos", "FormController@misDatosEditarDatos");
+$router->post("/portal-del-paciente/inicio/mis-datos/editar-datos", "FormController@misDatosEditarDatos"); // VER
 
 // Obras sociales
 $router->get("/obras-sociales", "PageController@obrasSociales");
@@ -47,5 +56,6 @@ $router->get("/profesionales", "PageController@profesionales");
 
 // Contacto
 $router->get("/contacto", "PageController@contacto");
+$router->post("/contacto", "FormController@contacto"); // VER
 
 ?>
