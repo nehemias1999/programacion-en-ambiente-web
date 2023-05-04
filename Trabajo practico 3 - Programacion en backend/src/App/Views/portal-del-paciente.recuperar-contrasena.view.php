@@ -29,46 +29,53 @@
 
     <main>
 
-        <div class="div_principal_main">
+        <div class="div-principal-main">
 
-            <h1 class="titulo_principal">
+            <h1 class="titulo-principal">
                 Portal del paciente
             </h1>
         
         </div>
 
-        <section class="seccion_recuperar_contrasena_main">
+        <section class="seccion-recuperar-contrasena-main">
 
-            <div class="div_formulario_recuperar_contrasena">
+            <div class="div-formulario-recuperar-contrasena">
 
-                <form action="" method="post">
+                <?php
 
-                    <label for="input_documento select_tipo_documento">
+                    $mensajeCorrecto = "Sera notificado al mail.";
+
+                    require "parts/notification-form-state.view.php";                    
+                ?>
+
+                <form action="/portal-del-paciente/recuperar-contrasena" method="POST">
+
+                    <label for="input-documento select-tipo-documento">
                         Documento
                     </label>
-                    <div class="div_ingreso_documento">
+                    <div class="div-ingreso-documento">
 
-                        <input type="text" name="input_documento" class="input_documento" inputmode="numeric" pattern="[0-9]*">
+                        <input type="text" name="input-documento" inputmode="numeric" pattern="[0-9]*" required>
         
-                        <select name="select_tipo_documento" id="select_tipo_documento">
+                        <select name="select-tipo-documento" id="select-tipo-documento" required>
                             <option value="" disabled selected>Tipo</option>
-                            <option value="">Documento Nacional de Identidad</option>
-                            <option value="">Cédula de identidad</option>
-                            <option value="">CUIT/CUIL</option>
-                            <option value="">Libreta Cívica</option>
-                            <option value="">Pasaporte</option>
+                            <option value="documento-nacional-de-identidad">Documento Nacional de Identidad</option>
+                            <option value="cedula-de-identidad">Cédula de identidad</option>
+                            <option value="cuit-cuil">CUIT/CUIL</option>
+                            <option value="libreta-civica">Libreta Cívica</option>
+                            <option value="pasaporte">Pasaporte</option>
                         </select>
 
                     </div>
         
-                    <label for="input_email_recuperacion">
+                    <label for="input-email-recuperacion">
                         Email de recuperación
                     </label>
-                    <input type="email" name="input_email_recuperacion" class="input_email_recuperacion">
+                    <input type="email" name="input-email-recuperacion" required>
                         
-                    <div class="div_mensaje_aviso">
+                    <div class="div-mensaje-aviso">
     
-                        <p class="parrafo_mensaje_aviso">
+                        <p class="parrafo-mensaje-aviso">
                             A continuación provea una dirección de correo 
                             electrónico para otorgarle las indicaciones de recuperación 
                             de contraseña para su cuenta.
@@ -76,9 +83,9 @@
     
                     </div>
 
-                    <input type="button" value="Cancelar" class="boton_cancelar">
+                    <input type="button" value="Cancelar" class="boton-cancelar">
 
-                    <input type="submit" value="Recuperar" class="boton_submit">
+                    <input type="submit" value="Recuperar" class="boton-submit">
     
                 </form>
 

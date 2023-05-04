@@ -22,7 +22,7 @@
 <div class="div-estado-correcto">
 
     <p class="parrafo-mensaje-correcto">
-        Se proceso correctamente el formulario. Sera notificado a su mail.
+        <?php echo $mensajeCorrecto; ?>
     </p>
 
 </div>

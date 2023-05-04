@@ -2,6 +2,8 @@
 
 require __DIR__ . "/../vendor/autoload.php";
 
+use Dotenv\Dotenv;
+
 use Paw\Core\Request;
 use Paw\Core\Router; 
 
@@ -21,9 +23,9 @@ $router->get("/institucional/directorio", "PageController@institucionalDirectori
 
 // Portal del paciente 
 $router->get("/portal-del-paciente/ingresar", "PortalController@ingresar");
-$router->post("/portal-del-paciente/ingresar", "FormController@ingresar"); // VER
+$router->post("/portal-del-paciente/ingresar", "FormController@ingresar");
 $router->get("/portal-del-paciente/recuperar-contrasena", "PortalController@recuperarContrasena");
-$router->post("/portal-del-paciente/recuperar-contrasena", "FormController@recuperarContrasena"); // VER
+$router->post("/portal-del-paciente/recuperar-contrasena", "FormController@recuperarContrasena"); 
 
 // Crear cuenta
 $router->get("/portal-del-paciente/crear-cuenta/datos-personales", "PortalController@crearCuentaDatosPersonales");
@@ -38,15 +40,15 @@ $router->get("/portal-del-paciente/inicio/turnos-pendientes", "PortalController@
 $router->get("/portal-del-paciente/inicio/solicitar-turno", "PortalController@inicioSolicitarTurno");
 $router->post("/portal-del-paciente/inicio/solicitar-turno", "FormController@inicioSolicitarTurno"); // VER
 $router->get("/portal-del-paciente/inicio/vinculaciones", "PortalController@inicioVinculaciones");
-$router->port("/portal-del-paciente/inicio/vinculaciones", "FormController@inicioVinculaciones"); // VER
+$router->post("/portal-del-paciente/inicio/vinculaciones", "FormController@inicioVinculaciones"); // VER
 $router->get("/portal-del-paciente/inicio/resultados", "PortalController@inicioResultados");
 
 // Mis datos
 $router->get("/portal-del-paciente/inicio/mis-datos", "PortalController@inicioMisDatos");
 $router->get("/portal-del-paciente/inicio/mis-datos/cambiar-contrasena", "PortalController@misDatosCambiarContrasena");
-$router->post("/portal-del-paciente/inicio/mis-datos/cambiar-contrasena", "PortalController@misDatosCambiarContrasena"); // VER
-$router->get("/portal-del-paciente/inicio/mis-datos/editar-datos", "FormController@misDatosEditarDatos");
-$router->post("/portal-del-paciente/inicio/mis-datos/editar-datos", "FormController@misDatosEditarDatos"); // VER
+$router->post("/portal-del-paciente/inicio/mis-datos/cambiar-contrasena", "FormController@cambiarContrasena"); // REVISAR CSS
+$router->get("/portal-del-paciente/inicio/mis-datos/editar-datos", "PortalController@misDatosEditarDatos");
+$router->post("/portal-del-paciente/inicio/mis-datos/editar-datos", "FormController@editarDatos"); // REVISAR CSS
 
 // Obras sociales
 $router->get("/obras-sociales", "PageController@obrasSociales");
@@ -56,6 +58,6 @@ $router->get("/profesionales", "PageController@profesionales");
 
 // Contacto
 $router->get("/contacto", "PageController@contacto");
-$router->post("/contacto", "FormController@contacto"); // VER
+$router->post("/contacto", "FormController@contacto"); // REVISAR CSS
 
 ?>

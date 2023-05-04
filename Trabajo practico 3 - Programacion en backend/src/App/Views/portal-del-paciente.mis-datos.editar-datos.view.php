@@ -45,54 +45,62 @@
                 <h1 class="titulo-principal">
                     Editar campos
                 </h1>
+
+                <?php
+                
+                    $mensajeCorrecto = "Se guardaron los cambios con exito.";
+
+                    require "parts/notification-form-state.view.php";
+
+                ?>
     
-                <form action="ProcesorCambioDatos.js" method="post">
+                <form action="/portal-del-paciente/inicio/mis-datos/editar-datos" method="POST">
                      
                     <label for="select-provincia">Provincia</label>
-                    <select name="select-provincia" id="">
+                    <select name="select-provincia" id="select-provincia">
                         <option value="" disabled selected>---</option>
-                        <option value="">Buenos Aires</option>
-                        <option value="">Cordoba</option>
-                        <option value="">Santa Fe</option>
+                        <option value="buenos-aires">Buenos Aires</option>
+                        <option value="cordoba">Cordoba</option>
+                        <option value="santa-fe">Santa Fe</option>
                     </select>
     
                     <label for="select-localidad">Localidad</label>
-                    <select name="select-localidad" id="">
+                    <select name="select-localidad" id="select-localidad">
                         <option value="" disabled selected>---</option>
-                        <option value="">Ciudad Autonoma de Buenos Aires</option>
-                        <option value="">Lujan</option>
-                        <option value="">General Rodriguez</option>
-                        <option value="">Merlo</option>
-                        <option value="">Pilar</option>
+                        <option value="ciudad-autonoma-de-buenos-aires">Ciudad Autonoma de Buenos Aires</option>
+                        <option value="lujan">Lujan</option>
+                        <option value="general-rodriguez">General Rodriguez</option>
+                        <option value="merlo">Merlo</option>
+                        <option value="pilar">Pilar</option>
                     </select>
     
                     <label for="input-calle">Calle:</label>
-                    <input type="text" name="input-calle">
+                    <input type="text" id="input-calle" name="input-calle">
                 
                     <div class="div-domicilio">
 
                         <div class="div-dato">
-                            <label for="input-num">N°:</label>
-                            <input type="text" name="input-documento" class="input-documento" inputmode="numeric" pattern="[0-9]*">
+                            <label for="input-numero">Numero:</label>
+                            <input type="text" id="input-numero" name="input-numero" inputmode="numeric" pattern="[0-9]*">
                         </div>
                     
                         <div class="div-dato">
-                            <label for="input-depto">Depto:</label>
-                            <input type="text" name="input-depto">
+                            <label for="input-depto">Departamento:</label>
+                            <input type="text" id="input-departamento" name="input-departamento">
                         </div>
                         
                         <div class="div-dato">
                             <label for="input-piso">Piso:</label>
-                            <input type="text" name="input-documento" class="input-documento" inputmode="numeric" pattern="[0-9]*">
+                            <input type="text" id="input-piso" name="input-piso" inputmode="numeric" pattern="[0-9]*">
                         </div>
 
                     </div>
                     
                     <label for="input-email">Email:</label>
-                    <input type="email" name="input-email">
+                    <input type="email" id="input-email" name="input-email">
     
-                    <label for="input-tel">Tel:</label>
-                    <input type="tel" name="input-tel">
+                    <label for="input-celular">Celular:</label>
+                    <input type="tel" id="input-celular" name="input-celular">
                    
                     <div class="div-botones">
 

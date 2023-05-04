@@ -43,25 +43,29 @@
                 </p>
 
                 <?php
+
+                    $mensajeCorrecto = "Se proceso correctamente el formulario. Sera notificado a su mail.";
+
                     require "parts/notification-form-state.view.php";
+                    
                 ?>               
     
                 <form action="/contacto" method="POST">
     
                     <label for="input-nombre-apellido">Nombre y apellido (*)</label>
-                    <input type="text" id="input-nombre-apellido" name="nombre-apellido" required/>
+                    <input type="text" id="input-nombre-apellido" name="input-nombre-apellido" required/>
     
                     <label for="input-email">Email de contacto (*)</label>
-                    <input type="email" id="input-email" name="email" required/>
+                    <input type="email" id="input-email" name="input-email" required/>
     
                     <label for="input-celular">Celular (*)</label>
-                    <input type="tel" id="input-celular" name="celular" required/>
+                    <input type="tel" id="input-celular" name="input-celular" required/>
                     
                     <label for="input-asunto">Asunto (*)</label>
-                    <input type="text" id="input-asunto" name="asunto" required/>
+                    <input type="text" id="input-asunto" name="input-asunto" required/>
     
                     <label for="textarea-mensaje">Mensaje (*)</label>
-                    <textarea name="mensaje" id="textarea-mensaje" name="mensaje" cols="30" rows="10" required>
+                    <textarea name="mensaje" id="textarea-mensaje" name="textarea-mensaje" cols="30" rows="10" required>
                         
                     </textarea>
     

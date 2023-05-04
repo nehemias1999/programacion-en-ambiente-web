@@ -136,9 +136,10 @@ footer {
 .enlace-logo-footer {
     width: 200px;
     height: 100px;   
-    margin: auto;
+    margin: auto;  /* VER */
     margin-bottom: 20px;
     background-color: white;
+    border-radius: 10px 0px 10px 10px;
 }
 
 .imagen-logo-footer {
@@ -147,8 +148,8 @@ footer {
 }
 
 .parrafo-final-footer {
-    font-size: 15px;
-    margin: auto;
+    font-size: 5vw;  /* VER */
+    margin: 0px auto;
 }
 
 /* DESKTOP */

@@ -45,17 +45,25 @@
                 <h1 class="titulo-principal">
                     Modificación de contraseña
                 </h1>
+
+                <?php
+                
+                    $mensajeCorrecto = "Se cambio con exito la contrasena.";
+
+                    require "parts/notification-form-state.view.php";
+
+                ?>
     
-                <form action="ProcesarCambioContraseña.js" method="post">
+                <form action="/portal-del-paciente/inicio/mis-datos/cambiar-contrasena" method="POST">
                     
-                    <label for="input-contraseña-actual">Ingrese su contraseña actual:</label>
-                    <input type="text" name="input-contraseña-actual">
+                    <label for="input-contrasena-actual">Ingrese su contraseña actual:</label>
+                    <input type="password" id="input-contrasena-actual" name="input-contrasena-actual" required>
                     
-                    <label for="input-nueva-contraseña">Nueva contraseña:</label>
-                    <input type="text" name="input-nueva-contraseña">
+                    <label for="input-nueva-contrasena">Nueva contraseña:</label>
+                    <input type="password" id="input-nueva-contrasena" name="input-nueva-contrasena" required>
     
-                    <label for="input-confirmacion">Confirme contraseña nueva:</label>
-                    <input type="text" name="input-confirmacion">
+                    <label for="input-confirmacion-contrasena">Confirme contraseña nueva:</label>
+                    <input type="password" id="input-confirmacion-contrasena" name="input-confirmacion-contrasena" required>
     
                     <div class="div-botones">
     
