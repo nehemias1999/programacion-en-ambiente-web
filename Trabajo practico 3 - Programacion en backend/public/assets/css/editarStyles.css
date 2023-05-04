@@ -16,7 +16,7 @@ a {
 
 /* MOBILE */
 
-.seccion-principal {
+.section-principal {
     position: relative;
     width: 100%;
     margin: 20px auto;
@@ -40,10 +40,11 @@ a {
     font-size: 1.3rem;
 }
 
-.seccion-editar-campos {
+.section-editar-campos {
     position: relative;
     width: 75%;
-    margin: 20px auto;
+    margin: 0px auto;
+    margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px 0px 10px 10px;
     border: solid 2px #000;
@@ -68,14 +69,14 @@ label {
 }
 
 input {
-    height: 20px;
+    height: 25px;
     width: 90%;
     margin: 0px auto;
     margin-bottom: 10px;
 }
 
 select {
-    height: 25px;
+    height: 30px;
     width: 91.5%;
     margin: 0px auto;
     margin-bottom: 10px;
@@ -114,13 +115,8 @@ select {
     justify-content: space-around;
 }
 
-.boton-reset {
-    font-size: 3vw;
-    height: 35px;
-    width: calc(90% / 2);
-}
-
-.boton-submit {
+input[type="reset"],
+input[type="submit"] {
     font-size: 3vw;
     height: 35px;
     width: calc(90% / 2);
@@ -128,52 +124,24 @@ select {
 
 /* DESKTOP */
 @media screen and (min-width: 900px) {
-
-    .seccion-principal {
-        height: 685px;
-    }
-
-    .enlace-pagina-interna:hover {
-        transform: scale(1.1);
-    }
     
-    .nav-menu-paginas-internas {
-        position: absolute;
-        top: 20px;
-        right: 40px;
-        height: 60px;
-        width: 65%;
-        display: flex;
-        flex-direction: row;  
-        align-items: center;
-        justify-content: space-around; 
-    }
-
-    .seccion-editar-campos {
-        top: 120px;
+    .section-editar-campos {
         width: 40%;
     }
 
     .titulo-principal {
         font-size: 3vw;
         margin: 20px auto;
-    }
-
-    .boton-reset {
+    }  
+   
+    input[type="reset"],
+    input[type="submit"] {
         font-size: 1.5vw;
         height: 40px;
     }
     
-    .boton-submit {
-        font-size: 1.5vw;
-        height: 40px;
-    }
-        
-    .boton-reset:hover {
-        transform: scale(1.1);
-    }
-
-    .boton-submit:hover {
+    input[type="reset"]:hover,
+    input[type="submit"]:hover {
         transform: scale(1.1);
     }
 
@@ -181,7 +149,7 @@ select {
 
 @media print {
             
-    .seccion-principal {
+    .section-principal {
         border: none;
     } 
 
@@ -189,11 +157,12 @@ select {
         display: none;
     }
 
-    .seccion-editar-campos {
+    .section-editar-campos {
         background-color: white;
     }
     
-    .boton-reset, .boton-submit {
+    input[type="reset"],
+    input[type="submit"] {
         background-color: white;
     }
        

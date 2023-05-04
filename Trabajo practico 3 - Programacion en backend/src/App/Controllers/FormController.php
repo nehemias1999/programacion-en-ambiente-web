@@ -33,8 +33,26 @@ class FormController
         require $this->viewsDir . 'portal-del-paciente.recuperar-contrasena.view.php'; 
     }
 
-    // ...
+    public function solicitarTurno() 
+    {
+        $form = $_POST;
 
+        $formState = $this->formValidation->validateFormSolicitarTurno($form);
+        
+        require $this->viewsDir . 'portal-del-paciente.inicio.solicitar-turno.view.php'; 
+    }
+
+    public function vinculaciones() 
+    {
+        $form = $_POST;
+
+        $formState = $this->formValidation->validateFormVinculaciones($form);
+        
+        require $this->viewsDir . 'portal-del-paciente.inicio.vinculaciones.view.php'; 
+    }
+
+    // ...
+    
     public function cambiarContrasena() 
     {
         $form = $_POST;

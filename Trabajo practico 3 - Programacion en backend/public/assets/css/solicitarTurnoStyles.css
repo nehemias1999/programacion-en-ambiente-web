@@ -26,7 +26,6 @@ a {
 
 .seccion-solicitar-turno {
     position: relative;
-    height: 870px;
     width: 100%;
     margin: 0px auto;
     margin-bottom: 20px;
@@ -35,8 +34,10 @@ a {
 }
 
 .titulo-principal {
-    font-size: 40px;
     text-align: center;
+    font-size: 7vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .seccion-formulario-turno {
@@ -50,6 +51,7 @@ a {
 }
 
 form {
+    position: relative;
     width: 90%;
     margin: 0px auto;
     display: flex;
@@ -58,9 +60,8 @@ form {
 
 .div-vinculo {
     position: relative;
-    top: 30px;
     height: 100px;
-    margin-bottom: 30px;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
     border: solid 1px #000;
@@ -73,7 +74,7 @@ form {
     margin-right: 10px;
 }
 
-.checkbox-vinculo {
+input[type="checkbox"] {
     position: absolute;
     top: 16px;
     left: 35px;
@@ -115,7 +116,7 @@ form {
 }
 
 select {
-    height: 25px;
+    height:30px;
 }
 
 .label-turnos-disponibles {
@@ -124,7 +125,7 @@ select {
 }
 
 input {
-    height: 20px;
+    height: 25px;
     width: 400px;
     margin-bottom: 10px;
 }
@@ -183,33 +184,15 @@ input {
     justify-content: space-between;
 }
 
-.boton-reset {
-    font-size: 15px;
+input[type="reset"],
+input[type="submit"] {
+    font-size: 3vw;
     height: 35px;
-    width: 150px;
-}
-
-.boton-submit {
-    font-size: 15px;
-    height: 35px;
-    width: 150px;
+    width: calc(90% / 2);
 }
 
 /* DESKTOP */
 @media screen and (min-width: 900px) {
-
-    .seccion-principal {
-        min-height: 1075px;
-    }
-
-    .seccion-solicitar-turno {
-        top: 140px;
-        min-height: 915px;
-    }
-
-    .titulo-principal {
-        font-size: 50px;
-    }
 
     .div-vinculo {
         width: 85%;
@@ -217,7 +200,7 @@ input {
         margin-bottom: 30px;
     }
 
-    .checkbox-vinculo {
+    input[type="checkbox"] {
         left: 45px;
     }
 
@@ -229,11 +212,14 @@ input {
         justify-content: space-around;
     }
 
-    .boton-reset:hover {
-        transform: scale(1.1);
+    input[type="reset"],
+    input[type="submit"] {
+        font-size: 1.5vw;
+        height: 40px;
     }
-
-    .boton-submit:hover {
+    
+    input[type="reset"]:hover,
+    input[type="submit"]:hover {
         transform: scale(1.1);
     }
 
@@ -283,8 +269,9 @@ input {
         overflow-y: none;
     }
     
-    .boton-reset, .boton-submit {
-       display: none;
+    input[type="reset"],
+    input[type="submit"] {
+        display: none;
     }
        
 }

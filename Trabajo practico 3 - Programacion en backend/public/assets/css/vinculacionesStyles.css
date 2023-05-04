@@ -195,14 +195,8 @@ input {
     justify-content: center;
 }
 
-.boton-reset {
-    font-size: 15px;
-    height: 35px;
-    width: calc(100% / 2);
-    margin-right: 20px;
-}
-
-.boton-submit {
+input[type="reset"],
+input[type="submit"] {
     font-size: 15px;
     height: 35px;
     width: calc(100% / 2);
@@ -210,14 +204,6 @@ input {
 
 /* DESKTOP */
 @media screen and (min-width: 900px) {
-
-    .seccion-principal {
-        min-height: 1075px;
-    }
-
-    .seccion-vinculos-cargados {
-        margin-top: 140px;
-    }
 
     .titulo-principal {
         font-size: 50px;
@@ -239,14 +225,10 @@ input {
         width: 60%;
     }
 
-    .boton-reset:hover {
+    input[type="reset"]:hover,
+    input[type="submit"]:hover {
         transform: scale(1.1);
     }
-
-    .boton-submit:hover {
-        transform: scale(1.1);
-    }
-
 }
 
 @media print {

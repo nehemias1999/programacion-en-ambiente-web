@@ -30,7 +30,7 @@
 
     <main>
 
-        <section class="seccion-principal">
+        <section class="section-principal">
 
             <?php
 
@@ -40,7 +40,7 @@
 
             ?>
 
-            <section class="seccion-cambio-contrasena">
+            <section class="section-cambio-contrasena">
 
                 <h1 class="titulo-principal">
                     Modificación de contraseña

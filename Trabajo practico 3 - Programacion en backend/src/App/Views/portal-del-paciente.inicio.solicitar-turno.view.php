@@ -48,18 +48,26 @@
 
                 <section class="seccion-formulario-turno">
 
-                    <form action="" method="">
+                    <?php
+                    
+                        $mensajeCorrecto = "Se reservo el turno correctamente.";
+
+                        require "parts/notification-form-state.view.php";
+                    
+                    ?>
+
+                    <form action="/portal-del-paciente/inicio/solicitar-turno" method="POST">
 
                         <div class="div-vinculo">
 
                             <label for="checkbox-vinculo" class="label-vinculo">Solicitar turno para un tercero</label>
-                            <input type="checkbox" name="checkbox-vinculo" class="checkbox-vinculo">
+                            <input type="checkbox" id="checkbox-vinculo" name="checkbox-vinculo">
         
-                            <select name="select-vinculo" class="select-vinculo">
+                            <select name="select-vinculo" id="select-vinculo" class="select-vinculo">
                                 <option value="" disabled selected>---</option>
-                                <option value="">Vinculo 1</option>
-                                <option value="">Vinculo 2</option>
-                                <option value="">Vinculo 3</option>
+                                <option value="vinculo-1">Vinculo 1</option>
+                                <option value="vinculo-2">Vinculo 2</option>
+                                <option value="vinculo-3">Vinculo 3</option>
                             </select>
 
                         </div>
@@ -69,12 +77,12 @@
                             <div class="div-especialidad">
 
                                 <label for="select-especialidad">Especialidad</label>
-                                <select name="select-especialidad" id="">
+                                <select name="select-especialidad" id="select-especialidad">
                                     <option value="" disabled selected>---</option>
-                                    <option value="">Cardiologia</option>
-                                    <option value="">Traumatologia</option>
-                                    <option value="">Medicina clinica</option>
-                                    <option value="">Urologia</option>
+                                    <option value="cardiologia">Cardiologia</option>
+                                    <option value="traumatologia">Traumatologia</option>
+                                    <option value="medicina-clinica">Medicina clinica</option>
+                                    <option value="urologia">Urologia</option>
                                 </select>
 
                             </div>
@@ -82,12 +90,12 @@
                             <div class="div-profesional">
             
                                 <label for="select-profesional">Profesional</label>
-                                <select name="select-profesional" id="">
+                                <select name="select-profesional" id="select-profesional">
                                     <option value="" disabled selected>---</option>
-                                    <option value="">Pagani, Rocio</option>
-                                    <option value="">De negri, Gerardo</option>
-                                    <option value="">Fernandez, Gustavo</option>
-                                    <option value="">Solei, Sofia</option>
+                                    <option value="pagani-rocio">Pagani, Rocio</option>
+                                    <option value="denegri-gerardo">De negri, Gerardo</option>
+                                    <option value="fernandez-gustavo">Fernandez, Gustavo</option>
+                                    <option value="solei-sofia">Solei, Sofia</option>
                                 </select>
 
                             </div>

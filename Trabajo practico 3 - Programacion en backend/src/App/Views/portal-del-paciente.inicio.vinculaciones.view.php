@@ -121,94 +121,102 @@
                     Agregar vinculo
                 </h2>
 
-                <form action="procesarVinculo.js" method="post">
+                <?php
+                
+                    $mensajeCorrecto = "Se cargo un nuevo vinculo con exito.";
+
+                    require "parts/notification-form-state.view.php";
+
+                ?>
+
+                <form action="/portal-del-paciente/inicio/vinculaciones" method="POST">
 
                     <label for="select-obra-social">
                         Obra social
                     </label>
-                    <select name="select-obra-social" id="">
+                    <select name="select-obra-social" id="select-obra-social" required>
                         <option value="" disabled selected>---</option>
-                        <option value="">Medife</option>
-                        <option value="">OSDE</option>
-                        <option value="">IOMA</option>
-                        <option value="">OSFATUN</option>
-                        <option value="">DASMI</option>
+                        <option value="medife">Medife</option>
+                        <option value="osde">OSDE</option>
+                        <option value="ioma">IOMA</option>
+                        <option value="osfatun">OSFATUN</option>
+                        <option value="dasmi">DASMI</option>
                     </select>
 
                     <label for="input-afiliado">
                         Nº afiliado
                     </label>
-                    <input type="text" name="input-afiliado">
+                    <input type="text" name="input-afiliado" id="input-afiliado" required>
 
                     <label for="input-vinculo">
                         Vinculo
                     </label>
-                    <select name="select-vinculo" id="">
+                    <select name="select-vinculo" id="select-vinculo" required>
                         <option value="" disabled selected>---</option>
-                        <option value="">Hijo/a menor de 18 anos</option>
-                        <option value="">Hijo/a mayor de 18 anos</option>
-                        <option value="">Conyuge</option>
+                        <option value="hijo-menor-de-18-anos">Hijo/a menor de 18 anos</option>
+                        <option value="hijo-mayor-de-18-anos">Hijo/a mayor de 18 anos</option>
+                        <option value="conyuge">Conyuge</option>
                     </select>
                 
                     <label for="input-nombre">
                         Nombre
                     </label>
-                    <input type="text" name="input-nombre">
+                    <input type="text" name="input-nombre" id="input-nombre" required>
 
                     <label for="input-apellido">
                         Apellido
                     </label>
-                    <input type="text" name="input-apellido">            
+                    <input type="text" name="input-apellido" id="input-apellido" required>            
 
                     <label for="input-fecha-nacimiento">
                         Fecha de nacimiento
                     </label>
-                    <input type="date" name="input-fecha-nacimiento">
+                    <input type="date" name="input-fecha-nacimiento" id="input-fecha-nacimiento" required>
 
                     <label for="select-provincia">
                         Provincia
                     </label>
-                    <select name="select-provincia" id="">
+                    <select name="select-provincia" id="select-provincia" required>
                         <option value="" disabled selected>---</option>
-                        <option value="">Buenos Aires</option>
-                        <option value="">Cordoba</option>
-                        <option value="">Santa Fe</option>
+                        <option value="buenos-aires">Buenos Aires</option>
+                        <option value="cordoba">Cordoba</option>
+                        <option value="santa-fe">Santa Fe</option>
                     </select>
                 
                     <label for="select-localidad">
                         Localidad
                     </label>
-                    <select name="select-localidad" id="">
+                    <select name="select-localidad" id="select-localidad" required>
                         <option value="" disabled selected>---</option>
-                        <option value="">Ciudad Autonoma de Buenos Aires</option>
-                        <option value="">Lujan</option>
-                        <option value="">General Rodriguez</option>
-                        <option value="">Merlo</option>
-                        <option value="">Pilar</option>
+                        <option value="ciudad-autonoma-de-buenos-aires">Ciudad Autonoma de Buenos Aires</option>
+                        <option value="lujan">Lujan</option>
+                        <option value="general-rodriguez">General Rodriguez</option>
+                        <option value="merlo">Merlo</option>
+                        <option value="pilar">Pilar</option>
                     </select>
                                
                     <label for="input-calle">
                         Calle
                     </label>
-                    <input type="text" name="input-calle">
+                    <input type="text" name="input-calle" id="input-calle" required>
 
                     <div class="div-domicilio">
 
                         <div class="div-dato">
 
                             <label for="input-numero">
-                                Nro
+                                Numero
                             </label>
-                            <input type="text" name="input-numero" inputmode="numeric" pattern="[0-9]*">                            
+                            <input type="text" name="input-numero" id="input-numero" inputmode="numeric" pattern="[0-9]*" required>                            
 
                         </div>
 
                         <div class="div-dato">
 
                             <label for="input-depto">
-                                Depto
+                                Departamento
                             </label>
-                            <input type="text" name="input-depto">
+                            <input type="text" name="input-depto" id="input-depto" required>
 
                         </div>
 
@@ -217,7 +225,7 @@
                             <label for="input-piso">
                                 Piso
                             </label>
-                            <input type="number" name="input-piso">
+                            <input type="number" name="input-piso" id="input-piso" inputmode="numeric" pattern="[0-9]*" required>
 
                         </div>
 
@@ -225,9 +233,9 @@
 
                     <div class="div-botones">
 
-                        <input type="reset" value="Cancelar" class="boton-reset">
+                        <input type="reset" value="Cancelar">
                     
-                        <input type="submit" value="Agregar vinculo" class="boton-submit">
+                        <input type="submit" value="Agregar vinculo">
 
                     </div>
 
@@ -238,7 +246,6 @@
         </section>
 
     </main>
-
 
     <footer>  
         

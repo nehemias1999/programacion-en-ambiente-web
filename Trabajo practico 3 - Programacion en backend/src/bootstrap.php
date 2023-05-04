@@ -38,17 +38,17 @@ $router->post("/portal-del-paciente/crear-cuenta/datos-de-la-cuenta", "FormContr
 // Inicio
 $router->get("/portal-del-paciente/inicio/turnos-pendientes", "PortalController@inicioTurnosPendientes");
 $router->get("/portal-del-paciente/inicio/solicitar-turno", "PortalController@inicioSolicitarTurno");
-$router->post("/portal-del-paciente/inicio/solicitar-turno", "FormController@inicioSolicitarTurno"); // VER
+$router->post("/portal-del-paciente/inicio/solicitar-turno", "FormController@solicitarTurno"); // ARREGLAR CSS
 $router->get("/portal-del-paciente/inicio/vinculaciones", "PortalController@inicioVinculaciones");
-$router->post("/portal-del-paciente/inicio/vinculaciones", "FormController@inicioVinculaciones"); // VER
+$router->post("/portal-del-paciente/inicio/vinculaciones", "FormController@vinculaciones"); // VER
 $router->get("/portal-del-paciente/inicio/resultados", "PortalController@inicioResultados");
 
 // Mis datos
 $router->get("/portal-del-paciente/inicio/mis-datos", "PortalController@inicioMisDatos");
 $router->get("/portal-del-paciente/inicio/mis-datos/cambiar-contrasena", "PortalController@misDatosCambiarContrasena");
-$router->post("/portal-del-paciente/inicio/mis-datos/cambiar-contrasena", "FormController@cambiarContrasena"); // REVISAR CSS
+$router->post("/portal-del-paciente/inicio/mis-datos/cambiar-contrasena", "FormController@cambiarContrasena");
 $router->get("/portal-del-paciente/inicio/mis-datos/editar-datos", "PortalController@misDatosEditarDatos");
-$router->post("/portal-del-paciente/inicio/mis-datos/editar-datos", "FormController@editarDatos"); // REVISAR CSS
+$router->post("/portal-del-paciente/inicio/mis-datos/editar-datos", "FormController@editarDatos");
 
 // Obras sociales
 $router->get("/obras-sociales", "PageController@obrasSociales");

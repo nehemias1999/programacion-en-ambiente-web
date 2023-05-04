@@ -16,7 +16,7 @@ a {
 
 /* MOBILE */
 
-.seccion-principal {
+.section-principal {
     position: relative;
     width: 100%;
     margin: 20px auto;
@@ -24,10 +24,11 @@ a {
     border-bottom: solid 1px #000;
 }
 
-.seccion-cambio-contrasena {
+.section-cambio-contrasena {
     position: relative;
     width: 75%;
-    margin: 20px auto;
+    margin: 0px auto;
+    margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px 0px 10px 10px;
     border: solid 2px #000;
@@ -35,6 +36,7 @@ a {
 }
 
 .titulo-principal {
+    position: relative;
     text-align: center;
     font-size: 5vw;
     margin-top: 20px;
@@ -52,7 +54,8 @@ label {
 }
 
 input {
-    height: 20px;
+    position: relative;
+    height: 25px;
     width: 90%;
     margin: 0px auto;
     margin-bottom: 10px;
@@ -66,13 +69,8 @@ input {
     justify-content: space-around;
 }
 
-.boton-reset {
-    font-size: 3vw;
-    height: 35px;
-    width: calc(90% / 2);
-}
-
-.boton-submit {
+input[type="reset"], 
+input[type="submit"] {
     font-size: 3vw;
     height: 35px;
     width: calc(90% / 2);
@@ -81,12 +79,11 @@ input {
 /* DESKTOP */
 @media screen and (min-width: 900px) {
 
-    .seccion-principal {
-        height: 520px;
+    .section-principal {
+        min-height: 540px;
     }
 
-    .seccion-cambio-contrasena {
-        top: 120px;
+    .section-cambio-contrasena {
         width: 40%;
     }
 
@@ -95,37 +92,31 @@ input {
         margin: 20px auto;
     }
 
-    .boton-reset {
+    input[type="reset"], 
+    input[type="submit"] {
         font-size: 1.5vw;
         height: 40px;
     }
-    
-    .boton-submit {
-        font-size: 1.5vw;
-        height: 40px;
+
+    input[type="reset"]:hover,
+    input[type="submit"]:hover {
+        transform: scale(1.1);
     }
         
-    .boton-reset:hover {
-        transform: scale(1.1);
-    }
-
-    .boton-submit:hover {
-        transform: scale(1.1);
-    }
-
 }
 
 @media print {
         
-    .seccion-principal {
+    .section-principal {
         border: none;
     } 
 
-    .seccion-cambio-contrasena {
+    .section-cambio-contrasena {
         background-color: white;
     }
     
-    .boton-reset, .boton-submit {
+    input[type="reset"],
+    input[type="submit"] {
         background-color: white;
     }
             

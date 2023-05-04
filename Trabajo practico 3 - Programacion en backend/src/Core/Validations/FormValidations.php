@@ -86,6 +86,80 @@ class FormValidations
 
   // ...
 
+  public function validateFormVinculaciones($form) 
+  {
+    $errorMessages = array();
+
+    if(!$this->validateGenericText($form["select-obra-social"])) {
+      array_push($errorMessages, "- Obra social erroneo");
+    }
+
+    if(!$this->validateGenericText($form["input-numero-afiliado"])) {
+      array_push($errorMessages, "- Numero afiliado erroneo");
+    }
+
+    if(!$this->validateGenericText($form["select-vinculo"])) {
+      array_push($errorMessages, "- Vinculo erroneo");
+    }
+
+    if(!$this->validateFirstName($form["input-nombre"])) {
+      array_push($errorMessages, "- Nombre erroneo");
+    }
+
+    if(!$this->validateLastName($form["input-apellido"])) {
+      array_push($errorMessages, "- Apellido erroneo");
+    }
+
+    if(!$this->validateBirthDate($form["input-fecha-nacimiento"])) {
+      array_push($errorMessages, "- fecha de nacimiento erronea");
+    }
+
+    if(!$this->validateBirthDate($form["select-provincia"])) {
+      array_push($errorMessages, "- Provincia erronea");
+    }
+
+    if(!$this->validateBirthDate($form["select-localidad"])) {
+      array_push($errorMessages, "- Localidad erronea");
+    }
+
+    if(!$this->validateBirthDate($form["input-calle"])) {
+      array_push($errorMessages, "- Calle erronea");
+    }
+
+    if(!$this->validateBirthDate($form["input-numero"])) {
+      array_push($errorMessages, "- Numero erroneo");
+    }
+
+    if(!$this->validateBirthDate($form["input-departamento"])) {
+      array_push($errorMessages, "- Departamento erroneo");
+    }
+
+    if(!$this->validateBirthDate($form["input-piso"])) {
+      array_push($errorMessages, "- Piso erroneo");
+    }
+
+    return $errorMessages;
+  }
+
+  public function validateFormSolicitarTurno($form) 
+  {
+    $errorMessages = array();
+
+    if(!$this->validateGenericText($form["select-vinculo"])) {
+      array_push($errorMessages, "- vinculo erroneo");
+    }
+
+    if(!$this->validateGenericText($form["select-especialidad"])) {
+      array_push($errorMessages, "- especialidad erronea");
+    }
+
+    if(!$this->validateGenericText($form["select-profesional"])) {
+      array_push($errorMessages, "- profesional erroneo");
+    }
+
+    return $errorMessages;
+  }
+
   public function validateFormCambiarContrasena($form)
   {
     $errorMessages = array();

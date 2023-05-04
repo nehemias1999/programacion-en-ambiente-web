@@ -30,7 +30,7 @@
 
     <main class="main">
 
-        <section class="seccion-principal">
+        <section class="section-principal">
 
             <?php
 
@@ -40,7 +40,7 @@
                 
             ?>
 
-            <section class="seccion-editar-campos">
+            <section class="section-editar-campos">
             
                 <h1 class="titulo-principal">
                     Editar campos
@@ -104,9 +104,9 @@
                    
                     <div class="div-botones">
 
-                        <input type="reset" value="Cancelar" class="boton-reset">
+                        <input type="reset" value="Cancelar">
     
-                        <input type="submit" value="Guardar cambios" class="boton-submit">
+                        <input type="submit" value="Guardar cambios">
 
                     </div>
                     
