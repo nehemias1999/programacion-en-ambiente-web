@@ -100,10 +100,6 @@ dd {
 /* DESKTOP */
 @media screen and (min-width: 900px) {
 
-    .seccion-principal {
-        min-height: 970px;
-    }
-
     .boton-cambiar-contrasena {
         top: 30px;
         right: 180px;
@@ -121,7 +117,6 @@ dd {
     }
 
     .seccion-mis-datos {
-        top: 140px;
         width: 70%;
     }
 

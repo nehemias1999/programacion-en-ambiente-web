@@ -66,8 +66,9 @@ class FormController
         if(!empty($formState)) {
             require $this->viewsDir . 'portal-del-paciente.crear-cuenta.datos-personales.view.php'; 
         } else {
-            require $this->viewsDir . 'portal-del-paciente.crear-cuenta.domicilio.view.php'; 
-        }
+            header('Location: /portal-del-paciente/crear-cuenta/domicilio');
+            exit();
+        }   
     }
 
     public function domicilio() 
@@ -79,7 +80,8 @@ class FormController
         if(!empty($formState)) {
             require $this->viewsDir . 'portal-del-paciente.crear-cuenta.domicilio.view.php'; 
         } else {
-            require $this->viewsDir . 'portal-del-paciente.crear-cuenta.datos-de-la-cuenta.view.php'; 
+            header('Location: /portal-del-paciente/crear-cuenta/datos-de-la-cuenta');
+            exit();
         }
     }
 
@@ -88,14 +90,12 @@ class FormController
         $form = $_POST;
 
         $formState = $this->formValidation->validateFormDatosDeLaCuenta($form);
-        
+
         if(!empty($formState)) {
             require $this->viewsDir . 'portal-del-paciente.crear-cuenta.datos-de-la-cuenta.view.php'; 
         } else {
-
-            // VALIDACION ?
-
-            require $this->viewsDir . 'portal-del-paciente.inicio.turnos-pendientes.view.php'; 
+            header('Location: /portal-del-paciente/inicio/turnos-pendientes'); // HARDCODEADO
+            exit();
         }
     }
     

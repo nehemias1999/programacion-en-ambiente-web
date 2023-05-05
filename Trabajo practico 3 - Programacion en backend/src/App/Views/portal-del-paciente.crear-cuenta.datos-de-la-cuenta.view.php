@@ -52,7 +52,7 @@
 
                 <?php
                 
-                    $mensajeCorrecto = "Okey";
+                    $mensajeCorrecto = "Cuenta creada con exito.";
 
                     require "parts/notification-form-state.view.php";
 
@@ -81,10 +81,8 @@
 
                 <div class="div-botones">
 
-                    <button class="boton-volver">
-                        <a href="domicilio">
-                            Volver
-                        </a>
+                    <button onclick="window.location.href='domicilio'">
+                        Volver
                     </button>
     
                     <button form="formulario">

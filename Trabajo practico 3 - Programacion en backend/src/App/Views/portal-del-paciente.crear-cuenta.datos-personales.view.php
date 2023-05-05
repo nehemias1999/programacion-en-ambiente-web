@@ -52,7 +52,7 @@
 
                 <?php
                 
-                    $mensajeCorrecto = "okey";
+                    $mensajeCorrecto = "Datos agregados con exito.";
 
                     require "parts/notification-form-state.view.php";
 
@@ -128,10 +128,8 @@
 
                 <div class="div-botones">
 
-                    <button>
-                        <a href="../ingresar">
-                            Volver
-                        </a>
+                    <button onclick="window.location.href='../ingresar'">
+                        Volver
                     </button>
     
                     <button form="formulario">
