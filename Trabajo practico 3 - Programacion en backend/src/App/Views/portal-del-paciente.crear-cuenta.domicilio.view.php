@@ -50,44 +50,64 @@
                     Domicilio
                 </h3> 
 
-                <form action="procesarDatosCuenta.js" method="post">
+                <?php
+                
+                    $mensajeCorrecto = "okey";
 
-                    <label for="select-provincia">Provincia</label>
-                    <select name="select-provincia" id="">
+                    require "parts/notification-form-state.view.php";
+
+                ?>
+
+                <form id="formulario" action="/portal-del-paciente/crear-cuenta/domicilio" method="POST">
+
+                    <label for="select-provincia">
+                        Provincia
+                    </label>
+                    <select name="select-provincia" id="select-provincia" required>
                         <option value="" disabled selected>---</option>
-                        <option value="">Buenos Aires</option>
-                        <option value="">Córdoba</option>
-                        <option value="">Santa Fe</option>
+                        <option value="buenos-aires">Buenos Aires</option>
+                        <option value="cordoba">Córdoba</option>
+                        <option value="santa-fe">Santa Fe</option>
                     </select>
 
-                    <label for="select-localidad">Localidad</label>
-                    <select name="select-localidad" id="">
+                    <label for="select-localidad">
+                        Localidad
+                    </label>
+                    <select name="select-localidad" id="select-localidad" required>
                         <option value="" disabled selected>---</option>
-                        <option value="">Ciudad Autónoma de Buenos Aires</option>
-                        <option value="">Luján</option>
-                        <option value="">General Rodriguez</option>
-                        <option value="">Merlo</option>
-                        <option value="">Pilar</option>
+                        <option value="ciudad-autonoma-de-buenos-aires">Ciudad Autónoma de Buenos Aires</option>
+                        <option value="lujan">Luján</option>
+                        <option value="general-rodriguez">General Rodriguez</option>
+                        <option value="merlo">Merlo</option>
+                        <option value="pilar">Pilar</option>
                     </select>
 
-                    <label for="input-calle">Calle</label>
-                    <input type="text" name="input-calle">
+                    <label for="input-calle">
+                        Calle
+                    </label>
+                    <input type="text" name="input-calle" id="input-calle" required>
 
                     <div class="div-domicilio">
 
                         <div class="div-dato">
-                            <label for="input-numero">Número</label>
-                            <input type="text" name="input-numero" inputmode="numeric" pattern="[0-9]*">
+                            <label for="input-numero">
+                                Número
+                            </label>
+                            <input type="text" name="input-numero" id="input-numero" inputmode="numeric" pattern="[0-9]*" required>
                         </div>
 
                         <div class="div-dato">
-                            <label for="input-depto">Depto</label>
-                            <input type="text" name="input-depto">
+                            <label for="input-depto">
+                                Depto
+                            </label>
+                            <input type="text" name="input-depto" id="input-depto">
                         </div>    
                         
                         <div class="div-dato">
-                            <label for="input-piso">Piso</label>
-                            <input type="text" name="input-piso" inputmode="numeric" pattern="[0-9]*">
+                            <label for="input-piso">
+                                Piso
+                            </label>
+                            <input type="text" name="input-piso" id="input-piso" inputmode="numeric" pattern="[0-9]*">
                         </div> 
                     
                     </div>
@@ -104,10 +124,8 @@
                         </a>
                     </button>
 
-                    <button class="boton-siguiente">
-                        <a href="datos-de-la-cuenta">
-                            Siguiente
-                        </a>
+                    <button form="formulario">
+                        Siguiente
                     </button>
 
                 </div>

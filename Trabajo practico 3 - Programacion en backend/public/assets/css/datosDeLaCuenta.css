@@ -18,7 +18,7 @@ p {
 
 /* MOBILE */
 
-.div_principal_main {
+.div-principal-main {
     position: relative;
     top: 0px;
     left: 0px;
@@ -27,13 +27,13 @@ p {
     display: flex;
 }
 
-.titulo_principal {
+.titulo-principal {
     position: relative;
     margin: 40px auto;
     font-size: 9vw;
 } 
 
-.seccion_ingresar_portal_main {
+.seccion-ingresar-portal-main {
     position: relative;
     width: 100%;
     margin-bottom: 20px;
@@ -41,12 +41,12 @@ p {
     border-bottom: solid 1px #000;
 }
 
-.titulo_crear_cuenta {
+.titulo-crear-cuenta {
     font-size: 35px;
     margin-left: 8%;
 }
 
-.div_formulario_datos_cuenta {
+.div-formulario-datos-cuenta {
     position: relative;
     width: 75%;
     margin: 20px auto;
@@ -56,7 +56,7 @@ p {
     background-color: rgb(238, 241, 239);
 }
 
-.titulo_datos_cuenta {
+.titulo-datos-cuenta {
     text-align: center;
     font-size: 25px;
 }
@@ -82,7 +82,7 @@ progress {
     margin: 20px auto;
 }
 
-.div_botones {
+.div-botones {
     position: relative;
     width: 90%;
     margin: 10px auto;
@@ -99,16 +99,16 @@ button {
 /* DESKTOP */
 @media screen and (min-width: 900px) {
 
-    .titulo_crear_cuenta {
+    .titulo-crear-cuenta {
         font-size: 40px;
         margin-left: 28%;
     }
 
-    .div_formulario_datos_cuenta {
+    .div-formulario-datos-cuenta {
         width: 40%;
     }
 
-    .titulo_datos_cuenta {
+    .titulo-datos-cuenta {
         font-size: 30px;
     }
 
@@ -120,11 +120,11 @@ button {
 
 @media print {
     
-    .seccion_ingresar_portal_main {
+    .seccion-ingresar-portal-main {
         border: none;
     }
     
-    .div_formulario_datos_cuenta {
+    .div-formulario-datos-cuenta {
         background-color: white;
     }
     

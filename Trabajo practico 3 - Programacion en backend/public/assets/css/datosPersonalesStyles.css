@@ -85,12 +85,12 @@ input {
     display: flex;
 }
 
-.input-documento {
+.div-ingreso-documento input {
     width: 70%;
     margin-right: 10px;
 }
 
-.select-documento {
+.div-ingreso-documento select {
     width: 30%;
 }
 
@@ -113,7 +113,7 @@ select {
     margin-right: 10px;
 }
 
-.input-telefono {
+.input-celular {
     width: 70%;
 }
 

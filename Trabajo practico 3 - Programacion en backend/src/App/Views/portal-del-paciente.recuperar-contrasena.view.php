@@ -83,9 +83,9 @@
     
                     </div>
 
-                    <input type="button" value="Cancelar" class="boton-cancelar">
+                    <input type="button" value="Cancelar">
 
-                    <input type="submit" value="Recuperar" class="boton-submit">
+                    <input type="submit" value="Recuperar">
     
                 </form>
 

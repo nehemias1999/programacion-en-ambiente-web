@@ -29,11 +29,11 @@ $router->post("/portal-del-paciente/recuperar-contrasena", "FormController@recup
 
 // Crear cuenta
 $router->get("/portal-del-paciente/crear-cuenta/datos-personales", "PortalController@crearCuentaDatosPersonales");
-$router->post("/portal-del-paciente/crear-cuenta/datos-personales", "FormController@crearCuentaDatosPersonales"); // VER
+$router->post("/portal-del-paciente/crear-cuenta/datos-personales", "FormController@datosPersonales"); // VER
 $router->get("/portal-del-paciente/crear-cuenta/domicilio", "PortalController@crearCuentaDomicilio");
-$router->post("/portal-del-paciente/crear-cuenta/domicilio", "FormController@crearCuentaDomicilio"); // VER
+$router->post("/portal-del-paciente/crear-cuenta/domicilio", "FormController@domicilio"); // VER
 $router->get("/portal-del-paciente/crear-cuenta/datos-de-la-cuenta", "PortalController@crearCuentaDatosDeLaCuenta");
-$router->post("/portal-del-paciente/crear-cuenta/datos-de-la-cuenta", "FormController@crearCuentaDatosDeLaCuenta"); // VER
+$router->post("/portal-del-paciente/crear-cuenta/datos-de-la-cuenta", "FormController@datosDeLaCuenta"); // VER
 
 // Inicio
 $router->get("/portal-del-paciente/inicio/turnos-pendientes", "PortalController@inicioTurnosPendientes");

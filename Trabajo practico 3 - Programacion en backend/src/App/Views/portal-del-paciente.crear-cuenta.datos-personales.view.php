@@ -50,17 +50,25 @@
                     Datos personales
                 </h3> 
 
-                <form action="" method="post">
+                <?php
+                
+                    $mensajeCorrecto = "okey";
 
-                    <label for="input-nombre" required="true">
+                    require "parts/notification-form-state.view.php";
+
+                ?>
+
+                <form id="formulario" action="/portal-del-paciente/crear-cuenta/datos-personales" method="POST">
+
+                    <label for="input-nombre">
                         Nombre
                     </label>
-                    <input type="text" name="input-nombre">
+                    <input type="text" name="input-nombre" id="input-nombre" required>
     
-                    <label for="input-apellido" required="true">
+                    <label for="input-apellido">
                         Apellido
                     </label>
-                    <input type="text" name="input-apellido">
+                    <input type="text" name="input-apellido" id="input-apellido" required>
        
                     <label for="input-documento select-tipo-documento">
                         Documento
@@ -68,15 +76,15 @@
 
                     <div class="div-ingreso-documento">
 
-                        <input type="text" name="input-documento" class="input-documento" inputmode="numeric" pattern="[0-9]*">
+                        <input type="text" name="input-documento" id="input-documento" inputmode="numeric" pattern="[0-9]*" required>
         
-                        <select name="select-tipo-documento" id="select-tipo-documento" class="select-documento">
+                        <select name="select-tipo-documento" id="select-tipo-documento" required>
                             <option value="" disabled selected>Tipo</option>
-                            <option value="">Documento Nacional de Identidad</option>
-                            <option value="">Cédula de identidad</option>
-                            <option value="">CUIT/CUIL</option>
-                            <option value="">Libreta Cívica</option>
-                            <option value="">Pasaporte</option>
+                            <option value="documento-nacional-de-identidad">Documento Nacional de Identidad</option>
+                            <option value="cedula-de-identidad">Cédula de identidad</option>
+                            <option value="cuit-cuil">CUIT/CUIL</option>
+                            <option value="libreta-civica">Libreta Cívica</option>
+                            <option value="pasaporte">Pasaporte</option>
                         </select>
 
                     </div>
@@ -84,33 +92,35 @@
                     <label for="input-fecha-nacimiento">
                         Fecha de nacimiento
                     </label>
-                    <input type="date" name="input-fecha-nacimiento">
+                    <input type="date" name="input-fecha-nacimiento" id="input-fecha-nacimiento" required>
             
-                    <label for="input-caracteristica input-telefono">
-                        Teléfono
+                    <label for="input-caracteristica input-celular">
+                        Celular
                     </label>
                     <div class="div-telefono">
 
-                        <input type="text" name="input-caracteristica" class="input-caracteristica" inputmode="numeric" pattern="[0-9]*">
+                        <input type="text" name="input-caracteristica" id="input-caracteristica" class="input-caracteristica" inputmode="numeric" pattern="[0-9]*" required>
     
-                        <input type="text" name="input-telefono" class="input-telefono" inputmode="numeric" pattern="[0-9]*">
+                        <input type="text" name="input-celular"  id="input-celular" class="input-celular" inputmode="numeric" pattern="[0-9]*" required>
 
                     </div>
     
-                    <label for="select-obra-social" required="true">
+                    <label for="select-obra-social">
                         Obra social
                     </label>
-                    <select name="select-obra-social" id="" class="select-obra-social">
+                    <select name="select-obra-social" id="select-obra-social" required>
                         <option value="" disabled selected>---</option>
-                        <option value="">Medife</option>
-                        <option value="">OSDE</option>
-                        <option value="">IOMA</option>
-                        <option value="">OSFATUN</option>
-                        <option value="">DASMI</option>
+                        <option value="medife">Medife</option>
+                        <option value="osde">OSDE</option>
+                        <option value="ioma">IOMA</option>
+                        <option value="osfatun">OSFATUN</option>
+                        <option value="dasmi">DASMI</option>
                     </select>
     
-                    <label for="input-afiliado" required="true">Nº afiliado</label>
-                    <input type="text" name="input-afiliado">
+                    <label for="input-numero-afiliado">
+                        Nº afiliado
+                    </label>
+                    <input type="text" name="input-numero-afiliado" id="input-numero-afiliado">
         
                     <progress value="30" max="90"></progress>
     
@@ -118,16 +128,14 @@
 
                 <div class="div-botones">
 
-                    <button class="boton-volver">
+                    <button>
                         <a href="../ingresar">
                             Volver
                         </a>
                     </button>
     
-                    <button class="boton-siguiente">
-                        <a href="domicilio">
-                            Siguiente
-                        </a>
+                    <button form="formulario">
+                        Siguiente
                     </button>
 
                 </div>

@@ -30,48 +30,56 @@
 
     <main>
 
-        <div class="div_principal_main">
+        <div class="div-principal-main">
 
-            <h1 class="titulo_principal">
+            <h1 class="titulo-principal">
                 Portal del paciente
             </h1>
         
         </div>
 
-        <section class="seccion_ingresar_portal_main">
+        <section class="seccion-ingresar-portal-main">
 
-            <h2 class="titulo_crear_cuenta">
+            <h2 class="titulo-crear-cuenta">
                 Crear cuenta
             </h2>            
 
-            <div class="div_formulario_datos_cuenta">
+            <div class="div-formulario-datos-cuenta">
 
-                <h3 class="titulo_datos_cuenta">
+                <h3 class="titulo-datos-cuenta">
                     Datos de la cuenta
-                </h3> 
+                </h3>
 
-                <form action="procesarDatosCuenta.js" method="post">
+                <?php
+                
+                    $mensajeCorrecto = "Okey";
 
-                    <label for="input_email">
+                    require "parts/notification-form-state.view.php";
+
+                ?>
+
+                <form id="formulario" action="/portal-del-paciente/crear-cuenta/datos-de-la-cuenta" method="POST">
+
+                    <label for="input-email">
                         Email
                     </label>
-                    <input type="email" name="input_email">
+                    <input type="email" name="input-email" required>
     
-                    <label for="input_contrasena">
+                    <label for="input-contrasena">
                         Contraseña
                     </label>
-                    <input type="password" name="input_contrasena">
+                    <input type="password" name="input-contrasena" required>
     
-                    <label for="input_repetir_contrasena">
+                    <label for="input-repetir-contrasena">
                         Repetir contraseña
                     </label>
-                    <input type="password" name="input_repetir_contrasena">              
+                    <input type="password" name="input-repetir-contrasena" required>              
                                 
                     <progress value="90" max="90"></progress>
     
                 </form>
 
-                <div class="div_botones">
+                <div class="div-botones">
 
                     <button class="boton-volver">
                         <a href="domicilio">
@@ -79,10 +87,8 @@
                         </a>
                     </button>
     
-                    <button class="boton-submit">
-                        <a href="">
-                            Siguiente
-                        </a>
+                    <button form="formulario">
+                        Crear cuenta
                     </button>
 
                 </div>

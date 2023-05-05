@@ -94,7 +94,7 @@ p{
 .titulo-principal-main {
     position: relative;
     margin: 40px auto;
-    font-size: 70px;
+    font-size: 70px; /* CAMBIAR */
 }
 
 .titulo-principal {

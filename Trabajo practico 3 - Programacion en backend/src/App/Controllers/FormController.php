@@ -15,6 +15,8 @@ class FormController
         $this->formValidation = new FormValidations();
     }
 
+    // PORTAL DEL PACIENTE
+
     public function ingresar() 
     {
         $form = $_POST;
@@ -32,6 +34,8 @@ class FormController
         
         require $this->viewsDir . 'portal-del-paciente.recuperar-contrasena.view.php'; 
     }
+
+    // INICIO
 
     public function solicitarTurno() 
     {
@@ -51,8 +55,52 @@ class FormController
         require $this->viewsDir . 'portal-del-paciente.inicio.vinculaciones.view.php'; 
     }
 
-    // ...
+    // CREAR CUENTA
+
+    public function datosPersonales() 
+    {
+        $form = $_POST;
+
+        $formState = $this->formValidation->validateFormDatosPersonales($form);
+        
+        if(!empty($formState)) {
+            require $this->viewsDir . 'portal-del-paciente.crear-cuenta.datos-personales.view.php'; 
+        } else {
+            require $this->viewsDir . 'portal-del-paciente.crear-cuenta.domicilio.view.php'; 
+        }
+    }
+
+    public function domicilio() 
+    {
+        $form = $_POST;
+
+        $formState = $this->formValidation->validateFormDomicilio($form);
+        
+        if(!empty($formState)) {
+            require $this->viewsDir . 'portal-del-paciente.crear-cuenta.domicilio.view.php'; 
+        } else {
+            require $this->viewsDir . 'portal-del-paciente.crear-cuenta.datos-de-la-cuenta.view.php'; 
+        }
+    }
+
+    public function datosDeLaCuenta() 
+    {
+        $form = $_POST;
+
+        $formState = $this->formValidation->validateFormDatosDeLaCuenta($form);
+        
+        if(!empty($formState)) {
+            require $this->viewsDir . 'portal-del-paciente.crear-cuenta.datos-de-la-cuenta.view.php'; 
+        } else {
+
+            // VALIDACION ?
+
+            require $this->viewsDir . 'portal-del-paciente.inicio.turnos-pendientes.view.php'; 
+        }
+    }
     
+    // MIS DATOS
+
     public function cambiarContrasena() 
     {
         $form = $_POST;
@@ -70,6 +118,8 @@ class FormController
         
         require $this->viewsDir . 'portal-del-paciente.mis-datos.editar-datos.view.php';
     }
+
+    // CONTACTO
 
     public function contacto() 
     {
