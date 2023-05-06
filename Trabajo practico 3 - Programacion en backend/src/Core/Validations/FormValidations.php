@@ -348,6 +348,11 @@ class FormValidations
     if(!$this->validateText($form["textarea-mensaje"])) {
       array_push($errorMessages, "- Mensaje erroneo");
     }
+
+    $image = $_FILES['input-imagen'];
+    if(isset($image) && (($image['error'] !== UPLOAD_ERR_OK) || (!getimagesize($image['tmp_name'])))) {
+      array_push($errorMessages, "- Imagen cargada erronea");
+    }
     
     return $errorMessages;
   }

@@ -20,22 +20,17 @@ p {
 
 .div-principal-main {
     position: relative;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    min-height: 150px;
     display: flex;
 }
 
 .titulo-principal {
     position: relative;
     margin: 40px auto;
-    font-size: 9vw;
+    font-size: 9vw; /**/
 }
 
 .seccion-ingresar-portal-main {
     position: relative;
-    width: 100%;
     margin-bottom: 20px;
     border-top: solid 1px #000;
     border-bottom: solid 1px #000;
@@ -48,9 +43,9 @@ p {
 
 .div-formulario-datos-personales {
     position: relative;
-    width: 75%;
+    width: 80%;
     margin: 20px auto;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px 0px 10px 10px;
     border: solid 2px #000;
     background-color: rgb(238, 241, 239);
@@ -80,7 +75,7 @@ input {
 
 .div-ingreso-documento {
     position: relative;
-    width: 92.5%;
+    width: 91.5%;
     margin: 0px auto;
     display: flex;
 }
@@ -91,6 +86,7 @@ input {
 }
 
 .div-ingreso-documento select {
+    text-align: center;
     width: 30%;
 }
 
@@ -101,19 +97,19 @@ select {
     margin-bottom: 10px;
 }
 
-.div-telefono {
+.div-celular {
     position: relative;
     width: 92.5%;
     margin: 0px auto;
     display: flex;
 }
 
-.input-caracteristica {
+.div-celular input:first-child {
     width: 30%;
     margin-right: 10px;
 }
 
-.input-celular {
+.div-celular input:nth-child(2) {
     width: 70%;
 }
 
@@ -133,11 +129,6 @@ button {
     font-size: 15px;
     height: 35px;
     width: calc(90% / 2);
-}
-
-button a {
-    height: 100%;
-    width: 100%;
 }
 
 /* DESKTOP */

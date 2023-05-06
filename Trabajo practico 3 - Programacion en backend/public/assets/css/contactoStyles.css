@@ -12,6 +12,7 @@ h1, h2, h3 {
 }
 
 p {
+    text-align: center;
     color: rgb(2, 82, 85);
     font-family: 'Gotham', sans-serif;
 }
@@ -46,10 +47,6 @@ p {
     background-color: rgb(238, 241, 239);
 }
 
-p {
-    text-align: center;
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -75,6 +72,22 @@ textarea {
     margin-bottom: 10px;
     resize: none;
     text-align: left;
+}
+
+.div-celular {
+    position: relative;
+    width: 91%;
+    margin: 0px auto;
+    display: flex;
+}
+
+.div-celular input:first-child {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.div-celular input:nth-child(2) {
+    width: 70%;
 }
 
 .div-botones {

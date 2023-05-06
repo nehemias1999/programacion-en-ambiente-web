@@ -7,7 +7,7 @@
 
         <?php foreach($formState as $error): ?>
 
-            <p class="parrafo-mensaje-error">
+            <p>
                 <?php echo $error; ?>
             </p>
 
@@ -21,7 +21,7 @@
 
 <div class="div-estado-correcto">
 
-    <p class="parrafo-mensaje-correcto">
+    <p>
         <?php echo $mensajeCorrecto; ?>
     </p>
 

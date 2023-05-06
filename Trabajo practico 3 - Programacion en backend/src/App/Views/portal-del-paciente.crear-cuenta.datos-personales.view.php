@@ -97,11 +97,11 @@
                     <label for="input-caracteristica input-celular">
                         Celular
                     </label>
-                    <div class="div-telefono">
+                    <div class="div-celular">
 
-                        <input type="text" name="input-caracteristica" id="input-caracteristica" class="input-caracteristica" inputmode="numeric" pattern="[0-9]*" required>
+                        <input type="text" name="input-caracteristica" id="input-caracteristica" inputmode="numeric" pattern="[0-9]*" required>
     
-                        <input type="text" name="input-celular"  id="input-celular" class="input-celular" inputmode="numeric" pattern="[0-9]*" required>
+                        <input type="text" name="input-celular"  id="input-celular" inputmode="numeric" pattern="[0-9]*" required>
 
                     </div>
     

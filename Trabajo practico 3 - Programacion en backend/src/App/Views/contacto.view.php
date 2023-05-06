@@ -50,30 +50,51 @@
                     
                 ?>               
     
-                <form action="/contacto" method="POST">
+                <form action="/contacto" method="POST" enctype="multipart/form-data">
     
-                    <label for="input-nombre-apellido">Nombre y apellido (*)</label>
+                    <label for="input-nombre-apellido">
+                        Nombre y apellido (*)
+                    </label>
                     <input type="text" id="input-nombre-apellido" name="input-nombre-apellido" required/>
     
-                    <label for="input-email">Email de contacto (*)</label>
+                    <label for="input-email">
+                        Email de contacto (*)
+                    </label>
                     <input type="email" id="input-email" name="input-email" required/>
     
-                    <label for="input-celular">Celular (*)</label>
-                    <input type="tel" id="input-celular" name="input-celular" required/>
+                    <label for="input-caracteristica input-celular">
+                        Celular (*)
+                    </label>
+                    <div class="div-celular">
+
+                        <input type="text" id="input-caracteristica" name="input-caracteristica" class="input-caracteristica" inputmode="numeric" pattern="[0-9]*" required>
+    
+                        <input type="text" id="input-celular" name="input-celular" class="input-celular" inputmode="numeric" pattern="[0-9]*" required>
+
+                    </div>
                     
-                    <label for="input-asunto">Asunto (*)</label>
+                    <label for="input-asunto">
+                        Asunto (*)
+                    </label>
                     <input type="text" id="input-asunto" name="input-asunto" required/>
     
-                    <label for="textarea-mensaje">Mensaje (*)</label>
-                    <textarea name="mensaje" id="textarea-mensaje" name="textarea-mensaje" cols="30" rows="10" required>
+                    <label for="textarea-mensaje">
+                        Mensaje (*)
+                    </label>
+                    <textarea id="textarea-mensaje" name="textarea-mensaje" cols="30" rows="10" required>
                         
                     </textarea>
+
+                    <label for="input-imagen">
+                        Seleccione una imagen:
+                    </label>
+		            <input type="file" name="input-imagen" id="input-imagen" accept="image/*">
     
                     <div class="div-botones">
 
-                        <input type="reset" value="limpiar pantalla" class="boton-reset">
+                        <input type="reset" value="limpiar pantalla">
     
-                        <input type="submit" value="enviar mensaje" class="boton-submit">
+                        <input type="submit" value="enviar mensaje">
                     
                     </div>
     
