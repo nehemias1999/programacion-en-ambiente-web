@@ -321,7 +321,7 @@ class FormValidations
 
   // CONTACTO
 
-  public function validateFormContacto($form)  // VER
+  public function validateFormContacto($form)  
   {
     $errorMessages = array();
 
@@ -333,11 +333,11 @@ class FormValidations
       array_push($errorMessages, "- Email erroneo");
     }
 
-    if(!$this->validateInteger($form["input-caracteristica"])) { // VER
+    if(!$this->validateInteger($form["input-caracteristica"])) { 
       array_push($errorMessages, "- Caracteristica erronea ");
     }
 
-    if(!$this->validateCellphone($form["input-celular"])) { // VER
+    if(!$this->validateCellphone($form["input-celular"])) {
       array_push($errorMessages, "- Celular erroneo ");
     }
 

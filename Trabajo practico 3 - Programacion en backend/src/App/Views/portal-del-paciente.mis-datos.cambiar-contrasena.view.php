@@ -20,7 +20,7 @@
 
         <?php
         
-            $path = "../../";
+            $path = "../../../";
 
             require "parts/header.portal.view.php";
         
@@ -85,7 +85,7 @@
         
         <?php
         
-            $path = "../../";
+            $path = "../../../";
 
             require "parts/footer.view.php";
 

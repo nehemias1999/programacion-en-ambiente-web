@@ -42,9 +42,13 @@
 
             <section class="seccion-solicitar-turno">
 
-                <h1 class="titulo-principal">
-                    Solicitar turno
-                </h1>
+                <div class="div-titulo-principal">
+
+                    <h1>
+                        Solicitar turno
+                    </h1>
+
+                </div>
 
                 <section class="seccion-formulario-turno">
 
@@ -60,10 +64,12 @@
 
                         <div class="div-vinculo">
 
-                            <label for="checkbox-vinculo" class="label-vinculo">Solicitar turno para un tercero</label>
+                            <label for="checkbox-vinculo select-vinculo">
+                                Solicitar turno para un tercero
+                            </label>
                             <input type="checkbox" id="checkbox-vinculo" name="checkbox-vinculo">
         
-                            <select name="select-vinculo" id="select-vinculo" class="select-vinculo">
+                            <select id="select-vinculo" name="select-vinculo">
                                 <option value="" disabled selected>---</option>
                                 <option value="vinculo-1">Vinculo 1</option>
                                 <option value="vinculo-2">Vinculo 2</option>
@@ -74,10 +80,12 @@
     
                        <div class="div-alineacion">
 
-                            <div class="div-especialidad">
+                            <div>
 
-                                <label for="select-especialidad">Especialidad</label>
-                                <select name="select-especialidad" id="select-especialidad">
+                                <label for="select-especialidad">
+                                    Especialidad
+                                </label>
+                                <select id="select-especialidad" name="select-especialidad">
                                     <option value="" disabled selected>---</option>
                                     <option value="cardiologia">Cardiologia</option>
                                     <option value="traumatologia">Traumatologia</option>
@@ -87,10 +95,12 @@
 
                             </div>
 
-                            <div class="div-profesional">
+                            <div>
             
-                                <label for="select-profesional">Profesional</label>
-                                <select name="select-profesional" id="select-profesional">
+                                <label for="select-profesional">
+                                    Profesional
+                                </label>
+                                <select id="select-profesional" name="select-profesional">
                                     <option value="" disabled selected>---</option>
                                     <option value="pagani-rocio">Pagani, Rocio</option>
                                     <option value="denegri-gerardo">De negri, Gerardo</option>

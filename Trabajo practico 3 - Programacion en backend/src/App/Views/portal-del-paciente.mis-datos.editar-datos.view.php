@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mis datos - editar </title>
+    <title>Mis datos - editar datos</title>
 
     <link rel='stylesheet' type='text/css' media='all' href='/assets/css/baseCuentaStyles.css'>
     <link rel='stylesheet' type='text/css' media='all' href='/assets/css/editarStyles.css'>
@@ -20,7 +20,7 @@
 
         <?php
         
-            $path = "../";
+            $path = "../../../";
 
             require "parts/header.portal.view.php";
 
@@ -34,7 +34,7 @@
 
             <?php
 
-                $path = "../../";
+                $path = "../";
 
                 require "parts/nav.portal.view.php";
                 
@@ -122,7 +122,7 @@
         
         <?php
         
-            $path = "../../";
+            $path = "../../../";
 
             require "parts/footer.view.php";
         

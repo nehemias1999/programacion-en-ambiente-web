@@ -31,11 +31,15 @@ a {
     border-bottom: solid 1px #000;
 }
 
-.titulo-principal {
-    text-align: center;
+.div-titulo-principal {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-titulo-principal h1 {
     font-size: 7vw;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .seccion-formulario-turno {
@@ -59,26 +63,28 @@ form {
 .div-vinculo {
     position: relative;
     height: 100px;
-    margin: 30px auto;
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     border: solid 1px #000;
 }
 
-.label-vinculo {
+.div-vinculo label {
     position: absolute;
     top: 20px;
     left: 5%;
     margin-right: 10px;
 }
 
-input[type="checkbox"] {
+.div-vinculo input {
     position: absolute;
-    top: 16px;
+    top: 13px;
     left: 35px;
 }
 
-.select-vinculo {
+.div-vinculo select {
     position: relative;
     top: 50px;
     height: 25px;
@@ -88,26 +94,15 @@ input[type="checkbox"] {
 
 .div-alineacion {
     position: relative;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.div-especialidad {
+.div-alineacion div {
     position: relative;
     height: 60px;
-    width: 40%;
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.div-profesional {
-    position: relative;
-    height: 60px;
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,8 +113,8 @@ select {
 }
 
 .label-turnos-disponibles {
+    margin-top: 20px;
     margin-bottom: 10px;
-    margin-left: 10px;
 }
 
 input {
@@ -182,8 +177,7 @@ input {
     justify-content: space-between;
 }
 
-input[type="reset"],
-input[type="submit"] {
+.div-botones input {
     font-size: 3vw;
     height: 35px;
     width: calc(90% / 2);
@@ -192,14 +186,22 @@ input[type="submit"] {
 /* DESKTOP */
 @media screen and (min-width: 900px) {
 
-    .div-vinculo {
-        width: 85%;
-        margin: 0px auto;
-        margin-bottom: 30px;
+    .div-titulo-principal {
+        height: 120px;
     }
 
-    input[type="checkbox"] {
+    .div-vinculo {
+        width: 85%;
+    }
+
+    .div-vinculo input {
         left: 45px;
+    }
+
+    .div-alineacion {
+        margin: 0px auto;
+        margin-top: 20px;
+        width: 85%;
     }
 
     .seccion-formulario-turno {
@@ -210,14 +212,12 @@ input[type="submit"] {
         justify-content: space-around;
     }
 
-    input[type="reset"],
-    input[type="submit"] {
+    .div-botones input {
         font-size: 1.5vw;
         height: 40px;
     }
     
-    input[type="reset"]:hover,
-    input[type="submit"]:hover {
+    .div-botones input:hover {
         transform: scale(1.1);
     }
 
@@ -267,8 +267,7 @@ input[type="submit"] {
         overflow-y: none;
     }
     
-    input[type="reset"],
-    input[type="submit"] {
+    .div-vinculo input {
         display: none;
     }
        
