@@ -33,10 +33,10 @@
             </h1>
     
             
-            <a href="../Punto 4 - HTML/portal del paciente/ingresar.html" class="boton_solicitar_turno">
-                <h2>
-                    Solicitar turno
-                </h2>
+            <a href="/portal-del-paciente/ingresar" class="boton_solicitar_turno">
+              <h2>
+                Solicitar turno
+              </h2>
             </a>
                        
         </div>
@@ -59,19 +59,19 @@
                     <li class="elemento_obra_social">
     
                         <article class="articulo_obra_social">
-    
-                            <div class="div_imagen_obra_social">
-                                <img src="" alt="imagen_obra_social" class="imagen_obra_social">
-                            </div>
-                            
-                            <div class="div_descripcion_obra_social">
-    
-                                <h3 class="titulo_obra_social">
-                                    Nombre obra social
-                                </h3>
-        
-                            </div>
-    
+                            <a href="https://www.ioma.gba.gob.ar/">
+                                <div class="div_imagen_obra_social">
+                                    <img src="/assets/images/ioma.png" alt="imagen_obra_social" class="imagen_obra_social">
+                                </div>
+                           </a>
+
+                           <a href="https://www.ioma.gba.gob.ar/">
+                                 <div class="div_descripcion_obra_social">
+                                    <h3 class="titulo_obra_social">
+                                         IOMA
+                                     </h3>
+                                 </div>
+                            </a>
                         </article>
     
                     </li>
@@ -79,19 +79,21 @@
                     <li class="elemento_obra_social">
     
                         <article class="articulo_obra_social">
-    
-                            <div class="div_imagen_obra_social">
-                                <img src="images/ambulancia.jpg" alt="imagen_obra_social" class="imagen_obra_social">
-                            </div>
-                            
-                            <div class="div_descripcion_obra_social">
-    
-                                <h3 class="titulo_obra_social">
-                                    Nombre obra social
-                                </h3>
+                            <a href="https://www.osfatun.com.ar/">
+                                <div class="div_imagen_obra_social">
+                                    <img src="/assets/images/osfatun.jpg" alt="imagen_obra_social" class="imagen_obra_social">
+                                </div>
+                            </a>
+
+                            <a href="https://www.osfatun.com.ar/">
+                                <div class="div_descripcion_obra_social">
         
-                            </div>
-    
+                                    <h3 class="titulo_obra_social">
+                                        OSFATUN
+                                    </h3>
+            
+                                </div>
+                            </a>
                         </article>
     
                     </li>
@@ -99,98 +101,110 @@
                     <li class="elemento_obra_social">
     
                         <article class="articulo_obra_social">
-    
-                            <div class="div_imagen_obra_social">
-                                <img src="" alt="imagen_obra_social" class="imagen_obra_social">
-                            </div>
                             
-                            <div class="div_descripcion_obra_social">
-    
-                                <h3 class="titulo_obra_social">
-                                    Nombre obra social
-                                </h3>
-        
-                            </div>
-    
+                            <a href="https://www.galeno.com.ar/">
+                                <div class="div_imagen_obra_social">
+                                    <img src="/assets/images/galeno.png" alt="imagen_obra_social" class="imagen_obra_social">
+                                </div>
+                            </a>
+
+                            <a href="https://www.galeno.com.ar/">
+                                <div class="div_descripcion_obra_social">
+
+                                    <h3 class="titulo_obra_social">
+                                        Galeno
+                                    </h3>
+
+                                </div>
+                            </a>
                         </article>
                     </li>
 
                     <li class="elemento_obra_social">
-    
+
                         <article class="articulo_obra_social">
-    
-                            <div class="div_imagen_obra_social">
-                                <img src="" alt="imagen_obra_social" class="imagen_obra_social">
-                            </div>
                             
-                            <div class="div_descripcion_obra_social">
-    
-                                <h3 class="titulo_obra_social">
-                                    Nombre obra social
-                                </h3>
-        
-                            </div>
-    
+                            <a href="https://www.sancorsalud.com.ar/">
+                                <div class="div_imagen_obra_social">
+                                    <img src="/assets/images/sancor.jpg" alt="imagen_obra_social" class="imagen_obra_social">
+                                </div>
+                            </a>
+
+                            <a href="https://www.sancorsalud.com.ar/">
+                                <div class="div_descripcion_obra_social">
+
+                                    <h3 class="titulo_obra_social">
+                                        Sancor Salud
+                                    </h3>
+
+                                </div>
+                            </a>
                         </article>
-    
+
                     </li>
 
                     <li class="elemento_obra_social">
-    
+
                         <article class="articulo_obra_social">
-    
-                            <div class="div_imagen_obra_social">
-                                <img src="" alt="imagen_obra_social" class="imagen_obra_social">
-                            </div>
-                            
-                            <div class="div_descripcion_obra_social">
-    
-                                <h3 class="titulo_obra_social">
-                                    Nombre obra social
-                                </h3>
-        
-                            </div>
-    
+                            <a href="https://medicus.com.ar/#/">
+                                <div class="div_imagen_obra_social">
+                                    <img src="/assets/images/medicus.png" alt="imagen_obra_social" class="imagen_obra_social">
+                                </div>
+                            </a>
+
+                            <a href="https://medicus.com.ar/#/">
+                                <div class="div_descripcion_obra_social">
+
+                                    <h3 class="titulo_obra_social">
+                                        Medicus
+                                    </h3>
+
+                                </div>
+                            </a>
                         </article>
-    
+
                     </li>
 
                     <li class="elemento_obra_social">
-    
+
                         <article class="articulo_obra_social">
-    
-                            <div class="div_imagen_obra_social">
-                                <img src="" alt="imagen_obra_social" class="imagen_obra_social">
-                            </div>
-                            
-                            <div class="div_descripcion_obra_social">
-    
-                                <h3 class="titulo_obra_social">
-                                    Nombre obra social
-                                </h3>
-        
-                            </div>
-    
+                            <a href="https://www.osde.com.ar/index.html#!homepage.html">
+                                <div class="div_imagen_obra_social">
+                                    <img src="/assets/images/osde.png" alt="imagen_obra_social" class="imagen_obra_social">
+                                </div>
+                            </a>
+
+                            <a href="https://www.osde.com.ar/index.html#!homepage.html">
+                                <div class="div_descripcion_obra_social">
+
+                                    <h3 class="titulo_obra_social">
+                                        OSDE
+                                    </h3>
+
+                                </div>
+                            </a>
                         </article>
-    
+
                     </li>
 
                     <li class="elemento_obra_social">
-    
+
                         <article class="articulo_obra_social">
-    
-                            <div class="div_imagen_obra_social">
-                                <img src="" alt="imagen_obra_social" class="imagen_obra_social">
-                            </div>
-                            
-                            <div class="div_descripcion_obra_social">
-    
-                                <h3 class="titulo_obra_social">
-                                    Nombre obra social
-                                </h3>
-        
-                            </div>
-    
+                            <a href="https://www.swissmedical.com.ar/prepagaclientes/">
+                                <div class="div_imagen_obra_social">
+                                    <img src="/assets/images/swiss.png" alt="imagen_obra_social" class="imagen_obra_social">
+                                </div>
+                            </a>
+
+                            <a href="https://www.swissmedical.com.ar/prepagaclientes/">
+                                <div class="div_descripcion_obra_social">
+
+                                    <h3 class="titulo_obra_social">
+                                        Swiss Medical
+                                    </h3>
+
+                                </div>
+                            </a>
                         </article>
     
                     </li>

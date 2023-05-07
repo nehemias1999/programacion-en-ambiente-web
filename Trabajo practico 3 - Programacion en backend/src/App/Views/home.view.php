@@ -27,7 +27,7 @@
     <main>
 
         <div class="div_principal_main">  
-            <a href="../portal del paciente/ingresar.html" class="boton_solicitar_turno">
+            <a href="/portal-del-paciente/ingresar" class="boton_solicitar_turno">
               <h2>
                 Solicitar turno
               </h2>
@@ -65,7 +65,7 @@
 
             <article class="articulo_enlace_pagina_interna">
                 
-                <a href="obras-sociales">
+                <a href="/obras-sociales">
 
                     <img src="/assets/images/obra_social.jpeg" alt="imagen_pagina_interna" class="imagen_pagina_interna">
 
@@ -87,7 +87,7 @@
 
             <article class="articulo_enlace_pagina_interna">
                 
-                <a href="profesionales">
+                <a href="/profesionales">
 
                     <img src="/assets/images/profesionales1.jpg" alt="imagen_pagina_interna" class="imagen_pagina_interna">
 

@@ -36,10 +36,10 @@
                 Directorio
             </h1>
     
-            <a href="../portal del paciente/ingresar.html" class="boton_solicitar_turno">
-                <h2>
-                  Solicitar turno
-                </h2>
+            <a href="/portal-del-paciente/ingresar" class="boton_solicitar_turno">
+              <h2>
+                Solicitar turno
+              </h2>
             </a>
             
         </div>
