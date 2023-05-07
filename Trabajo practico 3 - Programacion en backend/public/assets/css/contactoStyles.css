@@ -22,6 +22,12 @@ p {
 .div-principal-main {
     position: relative;
     display: flex;
+    top: 0px;
+    left: 0px;
+    height: 150px;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(0,157,218,0.41778709774925593) 110%);
 }
 
 .titulo-principal {

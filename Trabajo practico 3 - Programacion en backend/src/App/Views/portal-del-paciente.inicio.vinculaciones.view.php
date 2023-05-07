@@ -43,7 +43,7 @@
             <section class="seccion-vinculos-cargados">
 
                 <h1 class="titulo-principal">
-                    Vinculos
+                    Vínculos
                 </h1>
     
                <div class="div-vinculos-cargados">

@@ -4,7 +4,8 @@
 @import url('https://fonts.cdnfonts.com/css/gotham');
 
 a{
-    font-family: 'Gotham', sans-serif;
+    
+    font-family: 'Gotham Light', sans-serif;
 }  
 
 h1{
@@ -12,23 +13,21 @@ h1{
     font-family: 'Gotham', sans-serif;
 }
 
-h3{
+h4{
     color: rgb(2, 82, 85);
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Gotham Medium Italic', sans-serif;
     text-transform: uppercase;
 }
 
 p{
-     color: rgb(2, 82, 85);
+     color: black;
      font-family: 'Gotham', sans-serif;
 }
 
 /* MOBILE */
 
-
-
 main{
-    background-color: rgba(252, 196, 68, 50% );
+    /*background-color: rgba(252, 196, 68, 50% );*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,18 +41,7 @@ main{
     min-height: 250px;
     display: flex;
 }
-/*
-.boton_solicitar_turno {
-    position: absolute;
-    top: 150px;
-    right: 20px; 
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(252, 196, 68);
-}*/
 
- /*Estilos para el boton*/
  .boton_solicitar_turno{
     min-width: 200px;
     min-height: 5px;
@@ -68,7 +56,7 @@ main{
     position: absolute;
     padding: 10px;
     top: 150px;
-    right: 90px;
+    right: 105px;
 }
 
   /*Estilo para el enlace */
@@ -84,14 +72,13 @@ main{
     letter-spacing: 1.3px;
     font-weight: 700;
     color: black;
-   
     text-align: center;
 }
 
 .titulo_principal_main {
     position: relative;
     margin: 40px auto;
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .seccion_mision_main {
@@ -249,9 +236,14 @@ main{
 
 @media screen and (min-width: 900px) {
 
+    main{
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 37%, rgba(252,196,68,1) 120%); 
+    }
+
     .titulo_principal_main {
         top: 10px;
-        font-size: 100px;
+        font-size: 4rem;
     }
 
     .seccion_valores_main {
@@ -266,6 +258,11 @@ main{
     .articulo_pagina_interna:hover {
         transform: scale(1.03);
     }   
+
+    .boton_solicitar_turno{
+        top: 150px;
+        right: 90px;
+    }
 
     .boton_solicitar_turno::before{
         content: '';
@@ -294,13 +291,6 @@ main{
     }
       
     .boton_solicitar_turno::after{
-        /* efecto circular en el centro
-        content: '';
-        width: 30px; height: 30px;
-        border-radius: 100%;
-        border: 6px solid rgb(0 157 218);
-        position: absolute;*/
-        /*efecto alrededor del boton*/
         content: '';
         border-radius: 1000px;
         min-width: calc(230px);
@@ -308,7 +298,7 @@ main{
         border: 3px solid rgb(0 157 218);
         /*box-shadow: 0 0 60px rgb(0 157 218);*/
         position: absolute;
-        z-index: -1;
+        z-index: 1;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -333,6 +323,75 @@ main{
           opacity: 0;
         }
     }
-    /*fin prueba*/
+}
+
+
+@media print {
+
+    .boton_solicitar_turno{
+        display: none;
+    }
+
+    .imagen_mision{
+        filter:grayscale();
+    }
+
+    .titulo_mision{
+        color:black;
+    }
+
+    .imagen_valores{
+        filter:grayscale();
+    }
+
+    .titulo_valores{
+        color:black;
+    }
+
+    .imagen_pagina_interna{
+        filter: grayscale();
+    }
+
+    .titulo_pagina_interna{
+        color:black;
+    }
+
+    .seccion_mision_main{
+        border:none;
+    }
+
+    .seccion_valores_main{
+        border:none;
+    }
+
+    .seccion_paginas_internas_main{
+        border:none;
+    }
+
+    .div_introduccion_mision{
+        border:none;
+    }
+
+    .div_introduccion_valores{
+        border:none;
+    }
+
+    .div_introduccion_pagina_interna{
+        border:none;
+    }
+
+    .articulo_mision_main{
+        border:none;
+    }
+
+    .articulo_pagina_interna{
+        border:none;
+    }
+
+    .articulo_valores{
+        border:none;
+    }
+
+
 
 }

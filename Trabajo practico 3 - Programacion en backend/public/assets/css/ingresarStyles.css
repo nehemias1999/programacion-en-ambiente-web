@@ -21,6 +21,7 @@ p {
 .div-principal-main {
     position: relative;
     display: flex;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(208,36,74,0.2469187504103204) 98%); 
 }
 
 .titulo-principal {
@@ -92,6 +93,10 @@ form > a {
 
 /* DESKTOP */
 @media screen and (min-width: 900px) {
+
+    .titulo_principal{
+        font-size: 4rem;
+    }
 
     .div-formulario-ingreso {
         width: 40%;

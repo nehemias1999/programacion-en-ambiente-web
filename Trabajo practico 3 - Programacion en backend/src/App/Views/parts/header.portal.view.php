@@ -12,7 +12,7 @@
     </h4>
     
     <div class="div-imagen-cuenta">
-        <img src="" alt="imagen-usuario" class="imagen-usuario">
+        <img src="/assets/images/usuario(1).png" alt="imagen-usuario" class="imagen-usuario">
     </div>
 
 </section>

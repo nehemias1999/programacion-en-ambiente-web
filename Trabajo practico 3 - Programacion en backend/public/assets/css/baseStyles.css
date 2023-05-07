@@ -129,8 +129,9 @@ footer {
 }
 
 .seccion-final-footer p {
-    color: black;
+    color:white;
     font-size: 1rem;
+    text-align: center;
 }
 
 .enlace-logo-footer {

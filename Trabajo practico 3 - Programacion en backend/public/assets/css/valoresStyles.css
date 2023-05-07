@@ -18,11 +18,16 @@ h1{
 
 p {
     font-size: large;
-    color: rgb(2, 82, 85);
+    color: black;
     font-family: 'Gotham', sans-serif;
 }
 
 /* MAIN */
+
+main{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 37%, rgba(252,196,68,1) 120%); 
+}
 
 .div_principal_main {
     position: relative;
@@ -48,7 +53,7 @@ p {
     position: absolute;
     padding: 10px;
     top: 150px;
-    right: 90px;
+    right: 105px;
 }
 
   /*Estilo para el enlace */
@@ -64,14 +69,13 @@ p {
     letter-spacing: 1.3px;
     font-weight: 700;
     color: black;
-   
     text-align: center;
 }
 
 .titulo_principal_main {
     position: relative;
     margin: 40px auto;
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .titulo_principal {
@@ -120,7 +124,7 @@ p {
     
     .titulo_principal_main {
         top: 10px;
-        font-size: 100px;
+        font-size: 5rem;
     }
 
     .boton_solicitar_turno:hover {
@@ -142,6 +146,11 @@ p {
 
     .boton_vuelta_arriba:hover {
         transform: scale(1.1);
+    }
+
+    .boton_solicitar_turno{
+        top: 150px;
+        right: 90px;
     }
 
     .boton_solicitar_turno::before{
@@ -171,13 +180,6 @@ p {
     }
       
     .boton_solicitar_turno::after{
-        /* efecto circular en el centro
-        content: '';
-        width: 30px; height: 30px;
-        border-radius: 100%;
-        border: 6px solid rgb(0 157 218);
-        position: absolute;*/
-        /*efecto alrededor del boton*/
         content: '';
         border-radius: 1000px;
         min-width: calc(230px);
@@ -185,7 +187,7 @@ p {
         border: 3px solid rgb(0 157 218);
         /*box-shadow: 0 0 60px rgb(0 157 218);*/
         position: absolute;
-        z-index: -1;
+        z-index: 1;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -210,6 +212,22 @@ p {
           opacity: 0;
         }
     }
-    /*fin prueba*/
+}
 
+
+@media print {
+
+    .boton_solicitar_turno{
+        display: none;
+    }
+
+    .imagen_valores{
+        filter:grayscale();
+        border:none;
+    }
+
+
+    .boton_vuelta_arriba{
+        display: none;
+    }
 }
