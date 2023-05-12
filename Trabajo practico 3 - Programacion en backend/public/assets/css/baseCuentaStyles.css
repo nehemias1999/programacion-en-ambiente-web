@@ -16,59 +16,59 @@ a {
 
 /* MOBILE */
 
-/* Header */
+/* header */
 
 header {
     position: relative;
-    min-width: 100%;
-    min-height: 16rem;
+    min-height: 15rem;
     display: flex;
     flex-direction: column;
     z-index: 1;
     background-color: rgb(2, 82, 85);
 }
 
-.div-logo-header {
+/* div logo */
+
+header div:first-child {
     position: relative;
-    top: 20px;
-    height: 100px;
     width: 200px;
+    height: 100px;
     margin: 0px auto;
+    margin-top: 20px;
 }
 
-.div-logo-header a {
-    min-height: 100%;
-    min-width: 100%;
-    display: flex;
-}
-
-.div-logo-header a img {
-    min-width: 100%;
-    min-height: 100%;
-    border-radius: 10px 0px 10px 10px;
+header div:first-child a img {
+    width: 100%;
+    height: 100%;
     background-color: white;
+    border-radius: 10px 0px 10px 10px;
 }
 
-.seccion-logo-cuenta {
+/* seccion logo cuenta */
+
+header section {
     position: relative;
-    top: 40px;
     height: 100px;
     width: 300px;
     margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 60px;
     border: solid 1px #000;
+    background-color: rgb(252 196 68);
 }
 
-.seccion-logo-cuenta h4 {
-    font-size: 18px;
-    margin-left: 40px;
+header section h4 {
+    position: relative;
+    font-size: 18px; /* ver */
+    margin-left: 32px;
 }
 
-.seccion-logo-cuenta div {
-    position: absolute;
+header section div {
+    position: relative;
     right: 15px;
     height: 80px;
     width: 80px;
@@ -77,54 +77,49 @@ header {
     border: solid 1px #000;
 }
 
-.seccion-logo-cuenta div img {
+header section div img {
     min-height: 100%;
     min-width: 100%;
 }
 
-/* Nav */
+/* body */
 
-.seccion-principal {
+/* nav */
+
+body section:first-child {
     position: relative;
-    width: 100%;
     margin: 20px auto;
-    border-top: solid 1px #000;
-    border-bottom: solid 1px #000;
 }
 
-.nav-paginas-internas {
+body section:first-child nav {
     position: relative;
-    width: 90%;
+    width: 70%;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
     border-radius: 10px 0px 10px 10px;
     background-color: rgb(238, 241, 239);   
 }
-    
-.nav-paginas-internas a {
-    padding: 10px;
+   
+body section:first-child nav ul {
+    list-style: none;
+    padding: 10px 0px;
+}
+
+body section:first-child nav ul li {
     text-align: center;
-    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-size: clamp(16px, 4vw, 20px); /* ver */
 }
 
-.seccion-solicitar-turno {
-    position: relative;
-    height: 870px;
-    width: 100%;
-    margin: 0px auto;
-    margin-bottom: 20px;
-    border-top: solid 1px #000;
-    border-bottom: solid 1px #000;
+body section:first-child nav ul li:last-child {
+    margin-bottom: 0px;
 }
 
-/* Footer */
+/* footer */
 
 footer {
     position: relative;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
     min-height: 18rem;
     display: flex;
     flex-direction: column;
@@ -132,140 +127,124 @@ footer {
     background-color: rgb(2, 82, 85);
 }
 
+/* nav contactos */
+
 footer nav {
-    position: relative;
-    top: 20px;
-    width: 100%;
+    margin-top: 20px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
-footer nav a {
-    width: 80px;
-    height: 80px;  
-    margin-left: 5px;
-    margin-right: 5px;
+footer nav ul {
+    padding: 0px;
+    display: flex;
+    list-style: none;
 }
 
-footer nav a img {
+footer nav ul li {
+    width: 100%;
+    height: 100%; 
+    max-width: 90px;
+    max-height: 90px;  
+    margin: 0px 5px;
+}
+
+footer nav ul li a img {
     max-width: 100%;
     max-height: 100%;
 }
 
-.seccion-final-footer {
-    position: absolute;
-    bottom: 30px;
-    width: 100%;
+/* seccion final */
+
+footer section {
+    position: relative;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
 }
 
-.seccion-final-footer p {
-    color: black;
-    font-size: 1rem;
-}
-
-.enlace-logo-footer {
+footer section a {
     width: 200px;
-    height: 100px;   
-    margin: auto;
-    margin-bottom: 20px;
+    height: 100px;  
+    margin: 0px auto; 
+    margin-top: 10px;
+}
+
+footer section a img {
+    width: 100%;
+    height: 100%;
     background-color: white;
+    border-radius: 10px 0px 10px 10px;
 }
 
-.imagen-logo-footer {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.parrafo-final-footer {
-    font-size: 15px;
-    margin: auto;
+footer section p {
+    font-size: clamp(16px, 4vw, 20px); 
+    color:white;
+    text-align: center;
 }
 
 /* DESKTOP */
 @media screen and (min-width: 900px) {
     
-    /* Header */
+    /* header */
 
     header {
-        position: relative;
-        top: 0px;
-        left: 0px;
-        min-width: 100%;
         min-height: 9rem;
-        background-color: rgb(2, 82, 85);
     }
     
-    .div-logo-header {
+    /* div logo */
+
+    header div:first-child {
         position: absolute;
-        top: 20px;
         left: 20px;
-        height: 100px;
-        width: 200px;
     }
 
-    .div-logo-header:hover {
+    header div:first-child:hover {
         transform: scale(1.1);
     }
+
+    /* seccion logo cuenta */
     
-    .enlace-logo {
-        min-height: 100%;
-        min-width: 100%;
-        display: flex;
-    }
-    
-    .imagen-logo {
-        min-width: 100%;
-        min-height: 100%;
-        background-color: white;
-    }
-    
-    .seccion-logo-cuenta {
+    header section {
         position: absolute;
-        top: 20px;
         right: 20px;
+        margin-top: 20px;
     }
 
-    /* Nav */
+    /* body */
 
-    .section-nav-paginas-internas {
+    /* nav */
+
+    body section:first-child {
         position: relative;
-        height: 150px;
+        margin: 20px auto;
+    }
+       
+    body section:first-child nav ul {
         display: flex;
-        flex-direction: row;
-        justify-content: right;
-        align-items: center;
+        justify-content: space-around;
+    }
+    
+    body section:first-child nav ul li {
+        margin-bottom: 0px;
     }
 
-    .nav-paginas-internas {
-        position: absolute;
-        right: 20px;
-        height: 60px;
-        width: 65%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;  
-        align-items: center;   
-    }
-
-    .enlace-pagina-interna:hover {
+    body section:first-child nav ul li:hover {
         transform: scale(1.1);
     }
+    
+    /* footer */
 
-    /* Footer */
-
-    .enlace-contacto-footer:hover {
-        transform: scale(1.1);
+    footer nav {
+        margin: 0px auto;
     }
 
-    .enlace-logo-footer:hover {
+    footer nav ul li:hover {
         transform: scale(1.1);
-    }
+    }  
 
-    .parrafo-final-footer {
-        font-size: 20px;
+    footer section a:hover {
+        transform: scale(1.1);
     }
 
 }

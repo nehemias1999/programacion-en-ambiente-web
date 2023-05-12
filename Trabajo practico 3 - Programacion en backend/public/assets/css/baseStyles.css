@@ -16,80 +16,90 @@ a {
 
 /* MOBILE */
 
-/* Header */
+/* header */
 
 header {
     position: relative;
-    min-width: 100%;
     min-height: 15rem;
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
     z-index: 1;
     background-color: rgb(2, 82, 85);
 }
 
-.div-logo-header {
+/* div logo */
+
+header div {
     position: relative;
-    top: 20px;
-    height: 100px;
     width: 200px;
+    height: 100px;
     margin: 0px auto;
+    margin-top: 20px;
 }
 
-.enlace-logo {
-    min-height: 100%;
-    min-width: 100%;
-    display: flex;
-}
-
-.imagen-logo {
-    min-width: 100%;
-    min-height: 100%;
+header div a img {
+    width: 100%;
+    height: 100%;
     background-color: white;
     border-radius: 10px 0px 10px 10px;
 }
 
-.nav-contactos-header {
-    margin: 40px auto;
-    display: flex;
-    flex-direction: row;
+/* nav contactos */
+
+header nav:nth-child(2) {
+    margin: 0px auto;
+    margin-top: 10px;
 }
 
-.enlace-contacto {
+header nav:nth-child(2) ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav:nth-child(2) ul li {
     width: 40px;
     height: 40px;
-    padding-right: 2px;
+    margin-right: 2px;
 }
 
-.imagen-contacto {
+header nav:nth-child(2) ul li a img {
     max-width: 100%;
     max-height: 100%;
 }
 
-.nav-enlaces-header {
+/* nav enlaces */
+
+header nav:nth-child(3) {
     position: relative;
-    top: -20px;
-    width: 90%;
+    width: 70%;
     margin: 0px auto;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     border-radius: 10px 0px 10px 10px;
     background-color: rgb(238, 241, 239);
 }
 
-.enlace-pagina {
-    padding: 15px;
-    text-align: center;
-    font-size: 1.3rem;
+header nav:nth-child(3) ul {
+    list-style: none;
+    padding: 10px 0px;
 }
 
-/* Footer */
+header nav:nth-child(3) ul li {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: clamp(16px, 4vw, 20px); /* ver */
+}
+
+header nav:nth-child(3) ul li:last-child {
+    margin-bottom: 0px;
+}
+
+/* footer */
 
 footer {
     position: relative;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
     min-height: 18rem;
     display: flex;
     flex-direction: column;
@@ -97,156 +107,129 @@ footer {
     background-color: rgb(2, 82, 85);
 }
 
+/* nav contactos */
+
 footer nav {
-    position: relative;
-    top: 20px;
-    width: 100%;
+    margin-top: 20px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
-footer nav a {
-    width: 13%;
-    height: 13%; 
-    max-width: 90px;
-    max-height: 90px;  
-    margin-left: 5px;
-    margin-right: 5px;
+footer nav ul {
+    padding: 0px;
+    display: flex;
+    list-style: none;
 }
 
-footer nav a img {
+footer nav ul li {
+    width: 100%;
+    height: 100%; 
+    max-width: 90px;
+    max-height: 90px;  
+    margin: 0px 5px;
+}
+
+footer nav ul li a img {
     max-width: 100%;
     max-height: 100%;
 }
 
-.seccion-final-footer {
-    position: absolute;
-    bottom: 30px;
-    width: 100%;
+/* seccion final */
+
+footer section {
+    position: relative;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
 }
 
-.seccion-final-footer p {
-    color: black;
-    font-size: 1rem;
+footer section a {
+    width: 200px;
+    height: 100px;  
+    margin: 0px auto; 
+    margin-top: 10px;
 }
 
-.enlace-logo-footer {
-    width: 200px;
-    height: 100px;   
-    margin: auto;  /* VER */
-    margin-bottom: 20px;
+footer section a img {
+    width: 100%;
+    height: 100%;
     background-color: white;
     border-radius: 10px 0px 10px 10px;
 }
 
-.imagen-logo-footer {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.parrafo-final-footer {
-    font-size: 5vw;  /* VER */
-    margin: 0px auto;
+footer section p {
+    font-size: clamp(16px, 4vw, 20px); 
+    color:white;
+    text-align: center;
 }
 
 /* DESKTOP */
 @media screen and (min-width: 900px) {
     
-    /* Header */
+    /* header */
 
     header {
-        position: relative;
-        top: 0px;
-        left: 0px;
-        min-width: 100%;
         min-height: 10rem;
-        background-color: rgb(2, 82, 85);
     }
+
+    /* div logo */
     
-    .div-logo-header {
+    header div {
         position: absolute;
-        top: 20px;
         left: 20px;
-        height: 100px;
-        width: 200px;
     }
 
-    .div-logo-header:hover {
+    header div:hover {
         transform: scale(1.1);
     }
+
+    /* nav contactos */
     
-    .enlace-logo {
-        min-height: 100%;
-        min-width: 100%;
-        display: flex;
-    }
-    
-    .imagen-logo {
-        min-width: 100%;
-        min-height: 100%;
-        background-color: white;
-    }
-    
-    .nav-contactos-header {
+    header nav:nth-child(2) {
         position: absolute;
-        top: -20px;  /* VER */
         right: 20px;
-        display: flex;
-        flex-direction: row;
     }
     
-    .enlace-contacto {
-        width: 40px;
-        height: 40px;
-        padding-right: 2px;
-    }
-
-    .enlace-contacto:hover {
+    header nav:nth-child(2) ul li:hover {
         transform: scale(1.1);
     }
     
-    .imagen-contacto {
-        max-width: 100%;
-        max-height: 100%;
-    }
-    
-    .nav-enlaces-header {
+    /* nav enlaces */
+
+    header nav:nth-child(3) {
         position: relative;
         top: 8.5rem;
-        width: 750px;
+        width: 70%;
         margin: 0px auto;
-        padding: 5px;
+        margin-top: 10px;        
+    }
+
+    header nav:nth-child(3) ul {
+        padding: 0px;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        background-color: rgb(238, 241, 239);
+        justify-content: space-around;
     }
 
-    .enlace-pagina {
-        padding: 15px;
-        text-align: center;
-        font-size: 1.11rem;
-    }
+    header nav:nth-child(3) ul li {
+        margin-bottom: 0px;
+    }    
 
-    .enlace-pagina:hover {
+    header nav:nth-child(3) ul li:hover {
         transform: scale(1.1);
     }
 
-    /* Footer */
+    /* footer */
 
-    .enlace-contacto-footer:hover {
-        transform: scale(1.1);
+    footer nav {
+        margin: 0px auto;
     }
 
-    .enlace-logo-footer:hover {
+    footer nav ul li:hover {
         transform: scale(1.1);
-    }
+    }  
 
-    .parrafo-final-footer {
-        font-size: 20px;
+    footer section a:hover {
+        transform: scale(1.1);
     }
 
 }
@@ -257,11 +240,11 @@ footer nav a img {
         min-height: 5rem;
     }
     
-    .imagen-logo {
+    header div a {
         filter: grayscale(100%);
     }
     
-    .nav-contactos-header, .nav-enlaces-header {
+    header nav:nth-child(2), header nav:nth-child(3) {
         display: none;
     }
 

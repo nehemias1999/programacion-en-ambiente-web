@@ -33,11 +33,11 @@
             </h1>
 
             <div class="div_principal_main">  
-                <a href="../portal del paciente/ingresar.html" class="boton_solicitar_turno">
-                  <h2>
-                    Solicitar turno
-                  </h2>
-                </a>
+                 <a href="/portal-del-paciente/ingresar" class="boton_solicitar_turno">
+                     <h2>
+                      Solicitar turno
+                    </h2>
+                 </a>
             </div>
 
         </div>
@@ -46,7 +46,7 @@
 
             <article class="articulo_mision_main">
 
-                <img src="../images/mision3.jpg" alt="imagen_mision" class="imagen_mision">
+                <img src="/assets/images/mision3.jpg" alt="imagen_mision" class="imagen_mision">
 
                 <div class="div_introduccion_mision">
 
@@ -72,7 +72,7 @@
 
                 <article class="articulo_valores">
 
-                    <img src="../images/valores.jpg" alt="imagen_valores" class="imagen_valores">
+                    <img src="/assets/images/valores.jpg" alt="imagen_valores" class="imagen_valores">
     
                     <div class="div_introduccion_valores">
     
@@ -81,10 +81,7 @@
                         </h3>
         
                         <P class="parrafo_introductorio_valores">
-                            
-                            Calidad médica
-                            Ética profesional
-                            Servicio personalizado
+                             Conozca en detalle los valores que fomentamos dentro de la institución
                         </P>
         
                     </div>
@@ -101,7 +98,7 @@
             
                 <a href="institucional/galeria-de-fotos">
 
-                    <img src="../images/galeria_principal.jpg" alt="imagen_pagina_interna" class="imagen_pagina_interna">
+                    <img src="/assets/images/galeria_principal.jpg" alt="imagen_pagina_interna" class="imagen_pagina_interna">
 
                     <div class="div_introduccion_pagina_interna">
 
@@ -122,7 +119,7 @@
 
                 <a href="institucional/directorio">
 
-                    <img src="../images/reunion.jpg" alt="imagen_pagina_interna" class="imagen_pagina_interna">
+                    <img src="/assets/images/reunion.jpg" alt="imagen_pagina_interna" class="imagen_pagina_interna">
 
                     <div class="div_introduccion_pagina_interna">
 

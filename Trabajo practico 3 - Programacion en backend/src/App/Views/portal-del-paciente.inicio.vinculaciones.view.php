@@ -43,7 +43,7 @@
             <section class="seccion-vinculos-cargados">
 
                 <h1 class="titulo-principal">
-                    Vinculos
+                    Vínculos
                 </h1>
     
                <div class="div-vinculos-cargados">
@@ -71,7 +71,7 @@
                                         <div class="div-datos-vinculo">
 
                                             <dl class="datos-usuario">
-            
+                                            start
                                                 <dt>Vinculo:</dt> 
                                                     <dd>tipo vinculo</dd>
                                                 <dt>Obra social:</dt> 

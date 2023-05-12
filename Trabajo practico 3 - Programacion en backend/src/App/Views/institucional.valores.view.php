@@ -36,36 +36,24 @@
                 Valores
             </h1>
     
-            <a href="../portal del paciente/ingresar.html" class="boton_solicitar_turno">
-                <h2>
-                   Solicitar turno
-                </h2>
+            <a href="/portal-del-paciente/ingresar" class="boton_solicitar_turno">
+              <h2>
+                Solicitar turno
+              </h2>
             </a>
+
+          
         </div>
 
         <section class="seccion_valores_main">
 
             <p class="parrafo_top">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut ipsum diam. 
-                Nam et quam finibus, vehicula nisl nec, consequat nulla. Morbi luctus odio sollicitudin 
-                ipsum pretium accumsan eget vitae ipsum. Mauris lacinia magna semper ante sodales vulputate. 
-                Proin gravida condimentum ullamcorper. Nam ultricies dolor nec augue gravida ultrices. 
-                Etiam egestas diam ut nibh dignissim, vel dignissim mauris dictum.
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut ipsum diam. 
-                Nam et quam finibus, vehicula nisl nec, consequat nulla. Morbi luctus odio sollicitudin 
-                ipsum pretium accumsan eget vitae ipsum. Mauris lacinia magna semper ante sodales vulputate. 
-                Proin gravida condimentum ullamcorper. Nam ultricies dolor nec augue gravida ultrices. 
-                Etiam egestas diam ut nibh dignissim, vel dignissim mauris dictum.
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut ipsum diam. 
-                Nam et quam finibus, vehicula nisl nec, consequat nulla. Morbi luctus odio sollicitudin 
-                ipsum pretium accumsan eget vitae ipsum. Mauris lacinia magna semper ante sodales vulputate. 
-                Proin gravida condimentum ullamcorper. Nam ultricies dolor nec augue gravida ultrices. 
-                Etiam egestas diam ut nibh dignissim, vel dignissim mauris dictum.
+                Calidad médica
+                Ética profesional
+                Servicio personalizado
             </p>
 
-            <img src="../images/valores.jpg" alt="imagen_valores" class="imagen_valores">         
+            <img src="/assets/images/valores.jpg" alt="imagen_valores" class="imagen_valores">         
 
         </section>
 

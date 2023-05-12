@@ -30,16 +30,12 @@
 
     <main>
 
-        <div class="div_principal_main">
-    
-            <button class="boton_solicitar_turno" >
-                <a href="../home/home.html">
-                    <h2>
-                        Solicitar turno
-                    </h2>
-                </a>
-            </button>
-
+         <div class="div_principal_main">  
+            <a href="/portal-del-paciente/ingresar" class="boton_solicitar_turno">
+              <h2>
+                Solicitar turno
+              </h2>
+            </a>
         </div>
 
         <section class="seccion_noticia_main">
@@ -61,35 +57,18 @@
             <article class="articulo_noticia">
 
                 <h2 class="titulo_noticia">
-                    Título noticia
+                     Sala angiográfica 2023
                 </h2>
 
                 <p class="parrafo_noticia">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis ab minus 
-                    nobis non iste optio rerum rem? Itaque, adipisci laborum maxime debitis consequatur
-                    rem expedita numquam ipsam veniam provident at. 
+                    UNLu Paw inaguró la nueva sala angiográfica con la más alta tecnología permitiendo así tratar pacientes
+                    con problemas vasculares neurologicos, cardiacos y vasculares periféricos 
 
                     <br>
-
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis ab minus 
-                    nobis non iste optio rerum rem? Itaque, adipisci laborum maxime debitis consequatur
-                    rem expedita numquam ipsam veniam provident at.
-
-                    <br>
-
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis ab minus 
-                    nobis non iste optio rerum rem? Itaque, adipisci laborum maxime debitis consequatur
-                    rem expedita numquam ipsam veniam provident at.
-
-                    <br>
-
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis ab minus 
-                    nobis non iste optio rerum rem? Itaque, adipisci laborum maxime debitis consequatur
-                    rem expedita numquam ipsam veniam provident at.
                 </p>
 
                 <div class="div_imagen_noticia">
-                    <img src="" alt="imagen_noticia" class="imagen_noticia">
+                    <img src="/assets/images/equipamiento.jpg" alt="imagen_noticia" class="imagen_noticia">
                 </div>
 
             </article>

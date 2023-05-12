@@ -36,10 +36,10 @@
                 Galería de fotos
             </h1>
     
-            <a href="../portal del paciente/ingresar.html" class="boton_solicitar_turno">
-                <h2>
-                  Solicitar turno
-                </h2>
+            <a href="/portal-del-paciente/ingresar" class="boton_solicitar_turno">
+              <h2>
+                Solicitar turno
+              </h2>
             </a>
         </div>
 
@@ -58,11 +58,7 @@
             
                                     <img src="" alt="imagen_galeria_fotos" class="imagen_galeria">
             
-                                    <div class="div_titulo_imagen">
-                                        <h3 class="titulo_imagen">
-                                            Título foto
-                                        </h3>
-                                    </div>
+                                    
             
                                 </article>
                             </li>

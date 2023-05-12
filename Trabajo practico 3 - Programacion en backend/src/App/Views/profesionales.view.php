@@ -33,11 +33,13 @@
             </h1>
     
           
-                <a href="../Punto 4 - HTML/portal del paciente/ingresar.html" class="boton-solicitar-turno">
-                  <h2>
-                    Solicitar turno
-                  </h2>
-                </a>
+            <div class="div-principal-main">  
+                 <a href="/portal-del-paciente/ingresar" class="boton-solicitar-turno">
+                     <h2>
+                      Solicitar turno
+                      </h2>
+                 </a>
+            </div>
            
     
         </div>
@@ -67,7 +69,7 @@
                         <article class="articulo-profesional">
     
                             <div class="div-imagen-profesional">
-                                <img src="images/fondo-noticia-principal.png" alt="imagen-profesional" class="imagen-profesional">
+                                <img src="/assets/images/medico_1.jpg" alt="imagen-profesional" class="imagen-profesional">
                             </div>
 
                             <div class="div-descripcion-profesional">
@@ -75,13 +77,13 @@
                                 <div class="div-nombre-profesional">
 
                                     <h3 class="titulo-profesional">
-                                        Nombre profesional
+                                        Esteban Illia
                                     </h3>    
 
                                 </div>
 
                                 <h4 class="subtitulo-cargo-profesional">
-                                    Cargo profesional
+                                    Médico cirujano
                                 </h4>
     
                             </div>
@@ -95,7 +97,7 @@
                         <article class="articulo-profesional">
     
                             <div class="div-imagen-profesional">
-                                <img src="images/fondo-noticia-principal.png" alt="imagen-profesional" class="imagen-profesional">
+                                <img src="/assets/images/medico_2.jpg" alt="imagen-profesional" class="imagen-profesional">
                             </div>
 
                             <div class="div-descripcion-profesional">
@@ -103,13 +105,13 @@
                                 <div class="div-nombre-profesional">
 
                                     <h3 class="titulo-profesional">
-                                        Nombre profesional
+                                        Gustavo Marchesin 
                                     </h3>    
 
                                 </div>
 
                                 <h4 class="subtitulo-cargo-profesional">
-                                    Cargo profesional
+                                    Médico obstetra 
                                 </h4>
     
                             </div>
@@ -123,7 +125,7 @@
                         <article class="articulo-profesional">
     
                             <div class="div-imagen-profesional">
-                                <img src="images/fondo-noticia-principal.png" alt="imagen-profesional" class="imagen-profesional">
+                                <img src="/assets/images/medico_3.jpg" alt="imagen-profesional" class="imagen-profesional">
                             </div>
 
                             <div class="div-descripcion-profesional">
@@ -131,13 +133,13 @@
                                 <div class="div-nombre-profesional">
 
                                     <h3 class="titulo-profesional">
-                                        Nombre profesional
+                                        Martin Sotelo
                                     </h3>    
 
                                 </div>
 
                                 <h4 class="subtitulo-cargo-profesional">
-                                    Cargo profesional
+                                    Médico cardiólogo 
                                 </h4>
     
                             </div>
@@ -151,7 +153,7 @@
                         <article class="articulo-profesional">
     
                             <div class="div-imagen-profesional">
-                                <img src="images/fondo-noticia-principal.png" alt="imagen-profesional" class="imagen-profesional">
+                                <img src="/assets/images/medico_4.jpg" alt="imagen-profesional" class="imagen-profesional">
                             </div>
 
                             <div class="div-descripcion-profesional">
@@ -159,13 +161,13 @@
                                 <div class="div-nombre-profesional">
 
                                     <h3 class="titulo-profesional">
-                                        Nombre profesional
+                                        Santiago Chamorro
                                     </h3>    
 
                                 </div>
 
                                 <h4 class="subtitulo-cargo-profesional">
-                                    Cargo profesional
+                                    Médico gastroenterólogo 
                                 </h4>
     
                             </div>

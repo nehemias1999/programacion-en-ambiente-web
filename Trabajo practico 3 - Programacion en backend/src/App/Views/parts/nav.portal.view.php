@@ -1,27 +1,37 @@
 
-<section class="section-nav-paginas-internas">
+<section>
 
-    <nav class="nav-paginas-internas">
+    <nav>
 
-        <a href="<?php echo $path . "turnos-pendientes";?>">
-            Turnos pendientes
-        </a>
+        <ul>
 
-        <a href="<?php echo $path . "solicitar-turno";?>">
-            Ingresar turno
-        </a>
+            <li>
+                <a href="<?php echo $path . "turnos-pendientes";?>">
+                    Turnos pendientes
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo $path . "solicitar-turno";?>">
+                    Ingresar turno
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo $path . "vinculaciones";?>">
+                    Vinculaciones
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo $path . "resultados";?>">
+                    Resultados
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo $path . "mis-datos";?>">
+                    Mis datos
+                </a>
+            </li>
 
-        <a href="<?php echo $path . "vinculaciones";?>">
-            Vinculaciones
-        </a>
-
-        <a href="<?php echo $path . "resultados";?>">
-            Resultados
-        </a>
-
-        <a href="<?php echo $path . "mis-datos";?>">
-            Mis datos
-        </a>
+        </ul>
 
     </nav>
 
