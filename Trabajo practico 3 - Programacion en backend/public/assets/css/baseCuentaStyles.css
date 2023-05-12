@@ -36,13 +36,13 @@ header {
     margin: 0px auto;
 }
 
-.enlace-logo {
+.div-logo-header a {
     min-height: 100%;
     min-width: 100%;
     display: flex;
 }
 
-.imagen-logo {
+.div-logo-header a img {
     min-width: 100%;
     min-height: 100%;
     border-radius: 10px 0px 10px 10px;
@@ -62,12 +62,12 @@ header {
     border: solid 1px #000;
 }
 
-.titulo-nombre-cuenta {
+.seccion-logo-cuenta h4 {
     font-size: 18px;
     margin-left: 40px;
 }
 
-.div-imagen-cuenta {
+.seccion-logo-cuenta div {
     position: absolute;
     right: 15px;
     height: 80px;
@@ -77,7 +77,7 @@ header {
     border: solid 1px #000;
 }
 
-.imagen-usuario {
+.seccion-logo-cuenta div img {
     min-height: 100%;
     min-width: 100%;
 }
@@ -102,7 +102,7 @@ header {
     background-color: rgb(238, 241, 239);   
 }
     
-.enlace-pagina-interna {
+.nav-paginas-internas a {
     padding: 10px;
     text-align: center;
     font-size: 1.3rem;
@@ -132,7 +132,7 @@ footer {
     background-color: rgb(2, 82, 85);
 }
 
-.nav-contactos-footer {
+footer nav {
     position: relative;
     top: 20px;
     width: 100%;
@@ -141,14 +141,14 @@ footer {
     justify-content: center;
 }
 
-.enlace-contacto-footer {
+footer nav a {
     width: 80px;
     height: 80px;  
     margin-left: 5px;
     margin-right: 5px;
 }
 
-.imagen-contacto-footer {
+footer nav a img {
     max-width: 100%;
     max-height: 100%;
 }

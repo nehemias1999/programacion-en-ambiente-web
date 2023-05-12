@@ -1,28 +1,28 @@
 
-<nav class="nav-contactos-footer">
+<nav>
 
-    <a href="https://www.facebook.com/" class="enlace-contacto-footer">
-        <img src="/assets/images/icono_facebook.png" alt="logo-facebook" class="imagen-contacto-footer"/>
+    <a href="https://www.facebook.com/">
+        <img src="/assets/images/icono_facebook.png" alt="logo-facebook"/>
     </a>
 
-    <a href="https://twitter.com/" class="enlace-contacto-footer">
-        <img src="/assets/images/icono_twitter.png" alt="logo-twitter" class="imagen-contacto-footer"/>
+    <a href="https://twitter.com/">
+        <img src="/assets/images/icono_twitter.png" alt="logo-twitter"/>
     </a>
 
-    <a href="https://instagram.com/" class="enlace-contacto-footer">
-        <img src="/assets/images/icono_instagram.png" alt="logo-instagram" class="imagen-contacto-footer"/>
+    <a href="https://instagram.com/">
+        <img src="/assets/images/icono_instagram.png" alt="logo-instagram"/>
     </a>
 
-    <a href="https://www.youtube.com/" class="enlace-contacto-footer">
-        <img src="/assets/images/icono_youtube.png" alt="logo-youtube" class="imagen-contacto-footer"/>
+    <a href="https://www.youtube.com/">
+        <img src="/assets/images/icono_youtube.png" alt="logo-youtube"/>
     </a>
 
-    <a href="tel:011-15XXXXXX" class="enlace-contacto-footer">
-        <img src="/assets/images/icono_telefono.png" alt="logo-telefono" class="imagen-contacto-footer"/>
+    <a href="tel:011-15XXXXXX">
+        <img src="/assets/images/icono_telefono.png" alt="logo-telefono"/>
     </a>
 
-    <a href="mailto:clinica@email.com" class="enlace-contacto-footer">
-        <img src="/assets/images/icono_email.png" alt="logo-mail" class="imagen-contacto-footer"/>
+    <a href="mailto:clinica@email.com">
+        <img src="/assets/images/icono_email.png" alt="logo-mail"/>
     </a>
 
 </nav>

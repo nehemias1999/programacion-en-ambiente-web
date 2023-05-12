@@ -3,23 +3,23 @@
 
     <nav class="nav-paginas-internas">
 
-        <a href="<?php echo $path . "turnos-pendientes";?>" class="enlace-pagina-interna">
+        <a href="<?php echo $path . "turnos-pendientes";?>">
             Turnos pendientes
         </a>
 
-        <a href="<?php echo $path . "solicitar-turno";?>" class="enlace-pagina-interna">
+        <a href="<?php echo $path . "solicitar-turno";?>">
             Ingresar turno
         </a>
 
-        <a href="<?php echo $path . "vinculaciones";?>" class="enlace-pagina-interna">
+        <a href="<?php echo $path . "vinculaciones";?>">
             Vinculaciones
         </a>
 
-        <a href="<?php echo $path . "resultados";?>" class="enlace-pagina-interna">
+        <a href="<?php echo $path . "resultados";?>">
             Resultados
         </a>
 
-        <a href="<?php echo $path . "mis-datos";?>" class="enlace-pagina-interna">
+        <a href="<?php echo $path . "mis-datos";?>">
             Mis datos
         </a>
 
