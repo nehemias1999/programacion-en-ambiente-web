@@ -8,10 +8,10 @@
     
     <title>Profesionales</title>
 
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/baseStyles.css'>
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/profesionalesStyles.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/generic.style.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/profesionales.style.css'>
 
-    <script src='main.js'></script>
+    <script src="/assets/js/profesionales.functionalities.js"></script>
 
 </head>
 <body>
@@ -28,7 +28,7 @@
 
         <div class="div-principal-main">
 
-            <h1 class="titulo-principal-main">
+            <h1>
                 Profesionales
             </h1>
     
@@ -46,20 +46,44 @@
 
         <section class="seccion-profesionales-main">
 
-            <div class="div-buscador-profesionales">
+            <section class="seccion-filtro-busqueda">
 
-                <form action="" method="" name="" class="form-buscador-profesionales">
-                    <input type="search" class="input-buscador">
-                    <select name="select-filter" id="" class="selector-filtro-busqueda">
+                <div>
+
+                    <input type="search" name="input-buscador-profesionales">
+
+                    <select>
                         <option value="" disabled selected>Filtrar</option>
-                        <option value="">Nombre</option>
-                        <option value="">Especialidad</option>
+                        <option value="nombre">Nombre</option>
+                        <option value="apellido">Apellido</option>
+                        <option value="especialidad">Especialidad</option>
                     </select>
-                    <input type="submit" value="buscar" class="boton-buscador">
-                </form>
 
-            </div>       
-            
+                </div>
+
+                <div>
+
+                    <button>
+                        Ordenar ascendente
+                    </button>
+                                        
+                    <div>
+
+                        <label for="input-cantidad-resultados">
+                            Resultados por página:
+                        </label>
+                        <input type="number" name="input-cantidad-resultados" id="input-cantidad-resultados" min="10" max="30" value="10">
+
+                    </div>
+
+                    <button>
+                        Buscar
+                    </button>
+
+                </div>
+        
+            </section>
+    
             <section class="seccion-listado-profesionales">
 
                 <ul class="lista-profesionales">

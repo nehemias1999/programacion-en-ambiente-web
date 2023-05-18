@@ -1,0 +1,117 @@
+
+/* GENERALES */
+
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    font-family: 'Gotham', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+/* MOBILE */
+
+main > section:nth-child(2) {
+    position: relative;
+    width: 95%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    border: solid 2px #000;
+    border-radius: 10px 0px 10px 10px;
+    background-color: rgba(238, 241, 239, 1);
+}
+
+.div-encabezado {
+    position: relative;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-encabezado > h1 {
+    position: relative;
+    margin: 30px auto;
+    font-size: 40px; /* ver */
+}
+
+.div-encabezado > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-encabezado > div > button {
+    position: relative;
+    height: 50px;
+    width: 40%;
+}
+
+.seccion-datos {
+    margin: 0px auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: first baseline;
+    justify-content:space-evenly;
+}
+
+dl {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    margin-top: 50px;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+  
+dd {
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 900px) {
+
+    main > section:nth-child(2) {
+        width: 50%;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+    }
+
+    .seccion-datos {
+        width: 100%;
+    }
+
+    dl {
+        margin-top: 20px;
+    }
+
+}
+
+@media print {
+            
+    main > section:nth-child(2) {
+        border: none;
+    } 
+
+    button {
+        display: none;
+    }
+
+    .seccion- {
+        background-color: white;
+    }
+           
+}

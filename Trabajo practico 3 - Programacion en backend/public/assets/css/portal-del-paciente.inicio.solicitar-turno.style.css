@@ -14,17 +14,15 @@ a {
     color: black;
 }
 
-h1{
+h1 {
     color: black;
     font-family: 'Gotham Medium Italic', sans-serif;
 }
 
-p{
+p {
     color: black;
     font-family: 'Gotham', sans-serif;
 }
-
-
 
 /* MOBILE */
 
@@ -32,7 +30,6 @@ p{
     position: relative;
     margin: 20px auto;
     border-top: solid 1px #000;
-    border-bottom: solid 1px #000;
 }
 
 .seccion-solicitar-turno {
@@ -181,8 +178,45 @@ input {
     height: 35px;
 }
 
-.div-botones {
+.div-drag-and-drop {
+    width: 100%;
+    height: 100px;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed black;
+    font-size: 18px;
+}
+
+.div-drag-over {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed blue;
+    font-size: 18px;
+}
+
+.list-images {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.list-images li:not(:first-child) {
+    margin-top: 10px;
+}
+
+.remove-button {
+    margin-left: 10px;
+}
+
+.div-botones {
+    margin-top: 0px;
     margin-bottom: 15px;
     display: flex;
     justify-content: center;

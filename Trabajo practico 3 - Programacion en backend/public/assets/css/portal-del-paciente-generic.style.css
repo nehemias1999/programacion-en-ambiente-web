@@ -82,16 +82,16 @@ header section div img {
     min-width: 100%;
 }
 
-/* body */
+/* main */
 
 /* nav */
 
-body section:first-child {
+main section:first-child {
     position: relative;
     margin: 20px auto;
 }
 
-body section:first-child nav {
+main section:first-child nav {
     position: relative;
     width: 70%;
     margin: 20px auto;
@@ -101,18 +101,18 @@ body section:first-child nav {
     background-color: rgb(238, 241, 239);   
 }
    
-body section:first-child nav ul {
+main section:first-child nav ul {
     list-style: none;
     padding: 10px 0px;
 }
 
-body section:first-child nav ul li {
+main section:first-child nav ul li {
     text-align: center;
     margin-bottom: 10px;
     font-size: clamp(16px, 4vw, 20px); /* ver */
 }
 
-body section:first-child nav ul li:last-child {
+main section:first-child nav ul li:last-child {
     margin-bottom: 0px;
 }
 
@@ -211,25 +211,25 @@ footer section p {
         margin-top: 20px;
     }
 
-    /* body */
+    /* main */
 
     /* nav */
 
-    body section:first-child {
+    main section:first-child {
         position: relative;
         margin: 20px auto;
     }
        
-    body section:first-child nav ul {
+    main section:first-child nav ul {
         display: flex;
         justify-content: space-around;
     }
     
-    body section:first-child nav ul li {
+    main section:first-child nav ul li {
         margin-bottom: 0px;
     }
 
-    body section:first-child nav ul li:hover {
+    main section:first-child nav ul li:hover {
         transform: scale(1.1);
     }
     
@@ -263,7 +263,7 @@ footer section p {
         display: none;
     }
 
-    .nav-menu-paginas-internas {
+    main section:first-child {
         display: none;
     }
 

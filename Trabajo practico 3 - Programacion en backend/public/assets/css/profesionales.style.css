@@ -32,7 +32,6 @@ p{
 
 /* MOBILE */
 
-
 .div-principal-main {
     position: relative;
     top: 0px;
@@ -42,7 +41,7 @@ p{
     display: flex;
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 56%, rgba(160,73,40,0.6614845767408526) 105%); 
-  }
+}
 
   /*Estilos para el boton*/
 .boton-solicitar-turno{
@@ -78,19 +77,13 @@ p{
     text-align: center;
 }
 
-.titulo-principal-main {
+.div-principal-main h1:first-child {
     position: relative;
     margin: 40px auto;
     font-size: 50px;
 }
 
-.titulo-principal {
-    position: relative;
-    top: 150px;
-    font-size: 4rem;
-}
-
-.seccion-profesionales_main {
+.seccion-profesionales-main {
     position: relative;
     height: 600px;
     width: 100%;
@@ -100,52 +93,70 @@ p{
     background-color: rgba(238, 241, 239, 1);
 }
 
-.div-buscador_profesionales {
+/* FILTRO DE BUSQUEDA */
+
+.seccion-filtro-busqueda {
     position: relative;
-    height: 50px;
+    height: 100px;
     width: 95%;
     margin: 20px auto;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px 0px 10px 10px;
     border: solid 1px #000;
-    border-radius: 30px;
-    border-radius: 0px 10px 10px 10px;
     background-color: rgba(59, 74, 90, 0.2);
 }
 
-.form-buscador-profesionales {
-    position: relative;
-    min-width: 80%;
-    margin: 0px auto;
+.seccion-filtro-busqueda div:first-child {
+    height: 50px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
-.input-buscador {
-    font-size: 15px;
+.seccion-filtro-busqueda div:first-child input[type="search"] {
     height: 30px;
-    min-width: 60%;
-    margin-right: 5px;
-    border-radius: 10px;
+    width: 60%;
 }
 
-.selector-filtro-busqueda {
+.seccion-filtro-busqueda div:first-child select {
+    height: 30px;
+    width: 30%;
     text-align: center;
-    height: 30px;
-    width: 75px;
-    margin-right: 5px;
-    font-family: 'Gotham Bold', sans-serif;
 }
 
-.boton-buscador {
-    font-size: 10px;
-    height: 30px;
-    padding: 5px 20px;
-    border-radius: 7px;
-    font-family: 'Gotham Bold', sans-serif;
-    text-transform: uppercase;
+.seccion-filtro-busqueda div:nth-child(2) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.seccion-filtro-busqueda div:nth-child(2) button:first-child {
+    height: 30px;
+    width: 30%;
+}
+
+.seccion-filtro-busqueda div:nth-child(2) div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion-filtro-busqueda div:nth-child(2) div input:nth-child(2) {
+    width: 90%;
+}
+
+.seccion-filtro-busqueda div:nth-child(2) button:nth-child(3) {
+    height: 30px;
+    width: 30%;
+}
+
+/* FIN */
 
 .seccion-listado-profesionales {
     position: relative;
@@ -232,7 +243,7 @@ p{
         font-size: 70px;
     }
 
-    .div-imagen_profesional {
+    .div-imagen-profesional {
         height: 12vw;
         width: 12vw;
     }

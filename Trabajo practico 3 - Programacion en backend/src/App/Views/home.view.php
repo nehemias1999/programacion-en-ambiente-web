@@ -8,10 +8,10 @@
 
     <title>home</title>
 
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/baseStyles.css'>
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/homeStyles.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/generic.style.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/home.style.css'>
 
-    <script src='main.js'></script>
+    <script src="/assets/js/home.functionalities.js"></script>
 
 </head>
 <body>
@@ -26,56 +26,90 @@
 
     <main>
 
-        <div class="div_principal_main">  
-            <a href="/portal-del-paciente/ingresar" class="boton_solicitar_turno">
+        <div class="div-principal-main">  
+            <a href="/portal-del-paciente/ingresar" class="boton-solicitar-turno">
               <h2>
                 Solicitar turno
               </h2>
             </a>
         </div>
           
-        <section class="seccion_carrousel_noticias_main">
+        <section class="seccion-carrousel-noticias-main">
 
-            <a href="home/noticia">
+            <article>
 
-                <article class="articulo_carrousel_main">
+                <img src="/assets/images/equipamiento.jpg" alt="imagen-noticia">
 
-                    <img src="/assets/images/equipamiento.jpg" alt="imagen_noticia" class="imagen_noticia_carrousel">
+                <div>
 
-                    <div class="div_introduccion_noticia">
+                    <h4>
+                        Sala angiográfica 2023
+                    </h4>
 
-                        <h4 class="titulo_noticia_carrousel">
-                            Sala angiográfica 2023
-                        </h4>
+                    <p>
+                        UNLu Paw inaguró la nueva sala angiográfica con la más alta tecnología permitiendo así tratar pacientes
+                        con problemas vasculares neurologicos, cardiacos y vasculares periféricos 
+                    </p>
 
-                        <p class="parrafo_introductorio_noticia_carrousel">
-                            UNLu Paw inaguró la nueva sala angiográfica con la más alta tecnología permitiendo así tratar pacientes
-                            con problemas vasculares neurologicos, cardiacos y vasculares periféricos 
-                        </p>
+                </div>
 
-                    </div>
+            </article>
 
-                </article>
+            <article>
 
-            </a>
+                <img src="/assets/images/equipamiento.jpg" alt="imagen-noticia">
+
+                <div>
+
+                    <h4>
+                        Sala angiográfica 2023
+                    </h4>
+
+                    <p>
+                        UNLu Paw inaguró la nueva sala angiográfica con la más alta tecnología permitiendo así tratar pacientes
+                        con problemas vasculares neurologicos, cardiacos y vasculares periféricos 
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article>
+
+                <img src="/assets/images/equipamiento.jpg" alt="imagen-noticia">
+
+                <div>
+
+                    <h4>
+                        Sala angiográfica 2023
+                    </h4>
+
+                    <p>
+                        UNLu Paw inaguró la nueva sala angiográfica con la más alta tecnología permitiendo así tratar pacientes
+                        con problemas vasculares neurologicos, cardiacos y vasculares periféricos 
+                    </p>
+
+                </div>
+
+            </article>
 
         </section>
 
-        <section class="seccion_paginas_internas_main">
+        <section class="seccion-paginas-internas-main">
 
-            <article class="articulo_enlace_pagina_interna">
+            <article class="articulo-enlace-pagina-interna">
                 
                 <a href="/obras-sociales">
 
-                    <img src="/assets/images/obra_social.jpeg" alt="imagen_pagina_interna" class="imagen_pagina_interna">
+                    <img src="/assets/images/obra-social.jpeg" alt="imagen-pagina-interna" class="imagen-pagina-interna">
 
-                    <div class="div_introduccion_pagina_interna">
+                    <div class="div-introduccion-pagina-interna">
 
-                        <h4 class="titulo_pagina_interna">
+                        <h4 class="titulo-pagina-interna">
                             Obras sociales
                         </h4>
     
-                        <p class="parrafo_introductorio_pagina_interna">
+                        <p class="parrafo-introductorio-pagina-interna">
                             Contamos con una gran cantidad de coberturas médicas asociadas 
                         </p>
 
@@ -85,19 +119,19 @@
 
             </article>
 
-            <article class="articulo_enlace_pagina_interna">
+            <article class="articulo-enlace-pagina-interna">
                 
                 <a href="/profesionales">
 
-                    <img src="/assets/images/profesionales1.jpg" alt="imagen_pagina_interna" class="imagen_pagina_interna">
+                    <img src="/assets/images/profesionales1.jpg" alt="imagen-pagina-interna" class="imagen-pagina-interna">
 
-                    <div class="div_introduccion_pagina_interna">
+                    <div class="div-introduccion-pagina-interna">
 
-                        <h4 class="titulo_pagina_interna">
+                        <h4 class="titulo-pagina-interna">
                             Profesionales
                         </h4>
     
-                        <p class="parrafo_introductorio_pagina_interna">
+                        <p class="parrafo-introductorio-pagina-interna">
                             La información completa de cada uno de los profesionales 
                         </p>
 
@@ -109,7 +143,7 @@
 
         </section>
 
-        <section class="seccion_ubicacion_main">
+        <section class="seccion-ubicacion-main">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.9678638195483!2d-58.86765139708054!3d-34.457138578792204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9c67ea60bb3b%3A0x40d0bcfe5b652e7b!2sHospital%20Universitario%20Austral!5e0!3m2!1ses!2sar!4v1679872560649!5m2!1ses!2sar" 
             ></iframe>
         </section>

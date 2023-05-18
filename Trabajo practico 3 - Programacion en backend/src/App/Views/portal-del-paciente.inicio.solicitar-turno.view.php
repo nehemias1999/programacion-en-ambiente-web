@@ -8,10 +8,10 @@
 
     <title>Solicitar turno</title>
 
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/baseCuentaStyles.css'>
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/solicitarTurnoStyles.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/portal-del-paciente-generic.style.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/portal-del-paciente.inicio.solicitar-turno.style.css'>
 
-    <script src='main.js'></script>
+    <script src="/assets/js/portal-del-paciente.inicio.solicitar-turno.functionalities.js"></script>
 
 </head>
 <body>
@@ -286,13 +286,21 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="div-drag-and-drop">
+                            Arrastra y suelta la imagen del estudio aquí
+                        </div>
+                        <ul class="list-images">
+
+                        </ul>
+                        <input type="hidden" name="imagen" id="imagen" value="">
     
-                       <div class="div-botones">
+                        <div class="div-botones">
 
                             <input type="reset" value="Cancelar" class="boton-reset">
                             <input type="submit" value="Solicitar turno" class="boton-submit">
 
-                       </div>
+                        </div>
     
                     </form>
 
