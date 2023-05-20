@@ -1,16 +1,18 @@
 
 class FilterAdministrator {
 
-    constructor(searchInput, filterSelect, sortTypeButton, amountResultButton, searchButton, table) {
+    constructor(searchInput, filterSelect, sortTypeButton, sortTypeLabel, amountResultButton, searchButton, table) {
         this.searchInput = ElementAdministrator.getElement(searchInput);
         this.filterSelect = ElementAdministrator.getElement(filterSelect);
         this.sortTypeButton = ElementAdministrator.getElement(sortTypeButton);
+        this.sortTypeLabel = ElementAdministrator.getElement(sortTypeLabel);
         this.amountResultButton = ElementAdministrator.getElement(amountResultButton);
         this.searchButton = ElementAdministrator.getElement(searchButton);
         this.table = table;
 
         // eventos
         this.searchButton.addEventListener("click", this.searchData.bind(this));
+        this.sortTypeButton.addEventListener("change", this.changeSortTypeLabel.bind(this));
     }
 
     filterData(dataList, enteredSearch, filterColumn) {
@@ -80,5 +82,11 @@ class FilterAdministrator {
         // ...
 
         this.updateTableData(selectedList, document.querySelector("table tbody"));
+    }
+
+    changeSortTypeLabel() {
+        (this.sortTypeButton.checked) 
+            ? this.sortTypeLabel.textContent = "Ordenar descendente"
+            : this.sortTypeLabel.textContent = "Ordenar ascendente";
     }
 }

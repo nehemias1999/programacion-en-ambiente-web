@@ -6,10 +6,6 @@ class TableAdministrator {
         this.setTableBody(bodyContent);
     }
 
-    getTableData() {
-        
-    }
-
     setTableHeader(headerContent) {
         const tableHead = ElementAdministrator.getElement("thead");
         const headerRow = document.createElement("tr");
@@ -34,10 +30,9 @@ class TableAdministrator {
 
             for(let dataField in contentRow) {
 
-                const tableData = document.createElement('td');
+                const tableData = document.createElement("td");
                 tableData.textContent = contentRow[dataField.toLowerCase()]; 
                 bodyRow.appendChild(tableData); 
-
             }
 
             tableBody.appendChild(bodyRow); 

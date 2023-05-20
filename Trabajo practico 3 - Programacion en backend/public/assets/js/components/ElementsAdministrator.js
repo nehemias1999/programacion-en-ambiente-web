@@ -24,4 +24,14 @@ class ElementAdministrator {
 
         return element;
     }
+
+    static updateClassName(element, actualClassName, newClassName) {
+        element.classList.remove(actualClassName);
+        element.classList.add(newClassName);
+    }
+
+    static getFileName(fileSrc) {
+        const arr = fileSrc.split("/");
+        return arr[arr.length - 1];
+    }
 }

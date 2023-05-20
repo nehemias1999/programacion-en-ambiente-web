@@ -47,21 +47,39 @@
 
             <section class="seccion-filtro-busqueda">
 
-                <input type="search" name="input-buscador-profesionales" id="input-search">
+                <div>
 
-                <select id="filterSelect">
-                    <option value="" disabled selected>Filtrar</option>
-                    <option value="nombre">Nombre</option>
-                    <option value="especialidad">Especialidad</option>
-                </select>
+                    <input type="search" name="input-buscador-profesionales" id="input-search" class="">
 
-                <input type="checkbox" id="input-checkbox" checked>
-                <label for="input-checkbox">Ordenar ascendente</label>
+                    <select id="filterSelect">
+                        <option value="" disabled selected>Filtrar</option>
+                        <option value="nombre">Nombre</option>
+                        <option value="especialidad">Especialidad</option>
+                    </select>
 
-                <label id="resultsPerPageInput" for="input-cantidad-resultados">
-                    Resultados por página:
-                </label>
-                <input type="number" name="input-cantidad-resultados" id="input-cantidad-resultados" min="1" max="30" value="10">
+                </div>
+
+                <div>
+
+                    <div>
+
+                        <input type="checkbox" id="input-checkbox">
+                        <label for="input-checkbox" id="label-checkbox">
+                            Ordenar ascendente
+                        </label>
+
+                    </div>
+
+                    <div>
+
+                        <label id="resultsPerPageInput" for="input-cantidad-resultados">
+                            Resultados por página:
+                        </label>
+                        <input type="number" name="input-cantidad-resultados" id="input-cantidad-resultados" min="10" max="30" value="10">
+
+                    </div>
+
+                </div>               
 
                 <button id="searchButton">
                     Buscar
@@ -71,21 +89,17 @@
     
             <section class="seccion-tabla-profesionales">
 
-                <div class="div-scrollbar">
+                <table>
 
-                    <table>
+                    <thead>
 
-                        <thead>
-                            
-                        </thead>
+                    </thead>
 
-                        <tbody>
-                            
-                        </tbody>
+                    <tbody>
 
-                    </table>
+                    </tbody>
 
-                </div>
+                </table>
 
             </section>
 

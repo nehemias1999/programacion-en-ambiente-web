@@ -25,4 +25,11 @@ class ScriptAdministrator {
 
         return script;
     }
+
+    static loadLink(urlLink) {
+    
+        const link= this.setNewScript("link", {rel:"stylesheet", type:"text/css", media:"all", href:urlLink});            
+    
+        return document.head.appendChild(link);;
+    }
 }

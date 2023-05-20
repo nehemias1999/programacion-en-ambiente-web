@@ -13,26 +13,27 @@ class ProfesionalesFunctionalities {
             ScriptAdministrator.loadScript("filter-administrator", "/assets/js/components/FilterAdministrator.js", () => {	
 
                 let table = [
-                    { imagen: "imagen1.jpg", nombre: "John Doe", especialidad: "Medico" },
-                    { imagen: "imagen2.jpg", nombre: "Jane Smith", especialidad: "Abogada" },
-                    { imagen: "imagen3.jpg", nombre: "David Johnson", especialidad: "Ingeniero" },
-                    { imagen: "imagen2.jpg", nombre: "Jane Smith", especialidad: "Abogada" },
-                    { imagen: "imagen3.jpg", nombre: "David Johnson", especialidad: "Ingeniero" },
-                    { imagen: "imagen2.jpg", nombre: "Jane Smith", especialidad: "Abogada" },
-                    { imagen: "imagen3.jpg", nombre: "David Johnson", especialidad: "Ingeniero" },
-                    { imagen: "imagen1.jpg", nombre: "John Doe", especialidad: "Medico" },
-                    { imagen: "imagen1.jpg", nombre: "John Doe", especialidad: "Medico" },
-                    { imagen: "imagen1.jpg", nombre: "John Doe", especialidad: "Medico" },
+                    {src:"/assets/images/medico.jpg", nombre:"John Doe", especialidad:"Medico clinico"},
+                    {src:"/assets/images/medico1.jpg", nombre:"Jane Smith", especialidad:"Cardiologa"},
+                    {src:"/assets/images/medico2.jpg", nombre:"David Johnson", especialidad:"Neumonologo"},
+                    {src:"/assets/images/medico.jpg", nombre:"John Doe", especialidad:"Medico clinico"},
+                    {src:"/assets/images/medico1.jpg", nombre:"Jane Smith", especialidad:"Traumatologo"},
+                    {src:"/assets/images/medico2.jpg", nombre:"David Johnson", especialidad:"Cirujano"},
+                    {src:"/assets/images/medico.jpg", nombre:"John Doe", especialidad:"Urologo"},
+                    {src:"/assets/images/medico1.jpg", nombre:"Jane Smith", especialidad:"Neumonologo"},
+                    {src:"/assets/images/medico2.jpg", nombre:"David Johnson", especialidad:"Neumonologo"}
                 ];
 
                 let filterAdministrator = new FilterAdministrator(
                     "#input-search",
                     "select",
                     "#input-checkbox",
+                    "#label-checkbox",
                     "#input-cantidad-resultados",
                     "#searchButton",
                     table
                 );
+
 			});
 
 			ScriptAdministrator.loadScript("table-administrator", "/assets/js/components/TableAdministrator.js", () => {	
@@ -40,18 +41,20 @@ class ProfesionalesFunctionalities {
                 let tableAdministrator = new TableAdministrator(
                     ["imagen", "nombre", "especialidad"],
                     [
-                        { imagen: "imagen1.jpg", nombre: "John Doe", especialidad: "Medico" },
-                        { imagen: "imagen2.jpg", nombre: "Jane Smith", especialidad: "Abogada" },
-                        { imagen: "imagen3.jpg", nombre: "David Johnson", especialidad: "Ingeniero" },
-                        { imagen: "imagen2.jpg", nombre: "Jane Smith", especialidad: "Abogada" },
-                        { imagen: "imagen3.jpg", nombre: "David Johnson", especialidad: "Ingeniero" },
-                        { imagen: "imagen2.jpg", nombre: "Jane Smith", especialidad: "Abogada" },
-                        { imagen: "imagen3.jpg", nombre: "David Johnson", especialidad: "Ingeniero" },
-                        { imagen: "imagen1.jpg", nombre: "John Doe", especialidad: "Medico" },
-                        { imagen: "imagen1.jpg", nombre: "John Doe", especialidad: "Medico" },
-                        { imagen: "imagen1.jpg", nombre: "John Doe", especialidad: "Medico" },
-                ]);
+                        {src:"/assets/images/medico.jpg", nombre:"John Doe", especialidad:"Medico clinico"},
+                        {src:"/assets/images/medico1.jpg", nombre:"Jane Smith", especialidad:"Cardiologa"},
+                        {src:"/assets/images/medico2.jpg", nombre:"David Johnson", especialidad:"Neumonologo"},
+                        {src:"/assets/images/medico.jpg", nombre:"John Doe", especialidad:"Medico clinico"},
+                        {src:"/assets/images/medico1.jpg", nombre:"Jane Smith", especialidad:"Traumatologo"},
+                        {src:"/assets/images/medico2.jpg", nombre:"David Johnson", especialidad:"Cirujano"},
+                        {src:"/assets/images/medico.jpg", nombre:"John Doe", especialidad:"Urologo"},
+                        {src:"/assets/images/medico1.jpg", nombre:"Jane Smith", especialidad:"Neumonologo"},
+                        {src:"/assets/images/medico2.jpg", nombre:"David Johnson", especialidad:"Neumonologo"}
+                    ]);
+                        
 			});
+
+            ScriptAdministrator.loadLink("/assets/css/jsStyle/Profesional.css");
         });
     }
 }

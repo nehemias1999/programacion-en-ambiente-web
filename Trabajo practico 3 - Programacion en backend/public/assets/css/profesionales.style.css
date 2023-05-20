@@ -88,6 +88,7 @@ p{
     height: 600px;
     width: 100%;
     margin-bottom: 20px;
+    padding-bottom: 20px;
     border-top: solid 1px #000;
     border-bottom: solid 1px #000;
     background-color: rgba(238, 241, 239, 1);
@@ -97,9 +98,10 @@ p{
 
 .seccion-filtro-busqueda {
     position: relative;
-    height: 100px;
     width: 95%;
     margin: 20px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,64 +112,61 @@ p{
     background-color: rgba(59, 74, 90, 0.2);
 }
 
-.seccion-filtro-busqueda div:first-child {
-    height: 50px;
-    width: 100%;
+.seccion-filtro-busqueda > div:first-child,
+.seccion-filtro-busqueda > div:nth-child(2) {
+    position: relative;
+    width: 50%;
+    margin-bottom: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.seccion-filtro-busqueda div:first-child input[type="search"] {
+.seccion-filtro-busqueda > div:first-child > input {
     height: 30px;
-    width: 60%;
+    width: 70%;
 }
 
-.seccion-filtro-busqueda div:first-child select {
-    height: 30px;
-    width: 30%;
+.seccion-filtro-busqueda > div:first-child > select {
     text-align: center;
+    height: 30px;
+    width: 30%;
 }
 
-.seccion-filtro-busqueda div:nth-child(2) {
+.seccion-filtro-busqueda > div:nth-child(2) > div:first-child {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.seccion-filtro-busqueda > div:nth-child(2) > div:nth-child(2) {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.seccion-filtro-busqueda > div:nth-child(2) > div:nth-child(2) > label {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.seccion-filtro-busqueda div:nth-child(2) button:first-child {
+.seccion-filtro-busqueda > div:nth-child(2) > div:nth-child(2) > input {
+    width: 100%;
+}
+
+.seccion-filtro-busqueda > button:last-child {
     height: 30px;
-    width: 30%;
-}
-
-.seccion-filtro-busqueda div:nth-child(2) div {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-}
-
-.seccion-filtro-busqueda div:nth-child(2) div input:nth-child(2) {
-    width: 90%;
-}
-
-.seccion-filtro-busqueda div:nth-child(2) button:nth-child(3) {
-    height: 30px;
-    width: 30%;
+    width: 50%;
 }
 
 /* FIN */
 
-.seccion-listado-profesionales {
-    position: relative;
-    height: 500px;
+.seccion-tabla-profesionales {
+    height: 400px;
     width: 95%;
-    margin: 0px auto;
-    margin-bottom: 20px;
-    margin-left: 1px;
+    margin: 20px auto;
+    overflow: hidden;
     overflow-y: auto;
-    overflow-x: hidden;
 }
+  
+/* FIN */
 
 .lista-profesionales {
     list-style: none;
@@ -300,9 +299,8 @@ p{
         transform: scale(1.05);
     }
 
-    .seccion-listado-profesionales {
+    .seccion-tabla-profesionales {
         width: 70%;
-        height: 460px;
     }
 
     .boton-solicitar-turno{
