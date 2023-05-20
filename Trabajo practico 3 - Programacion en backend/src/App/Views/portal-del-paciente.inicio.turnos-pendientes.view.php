@@ -8,8 +8,8 @@
 
     <title>Turnos pendientes</title>
 
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/baseCuentaStyles.css'>
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/turnosPendientesStyles.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/portal-del-paciente.generic.style.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/portal-del-paciente.inicio.turnos-pendientes.style.css'>
 
     <script src='main.js'></script>
 

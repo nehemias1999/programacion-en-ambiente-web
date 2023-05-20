@@ -8,8 +8,8 @@
 
     <title>Datos de la cuenta</title>
 
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/baseStyles.css'>
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/datosDeLaCuenta.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/generic.style.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/portal-del-paciente.crear-cuenta.datos-de-la-cuenta.style.css'>
 
     <script src='main.js'></script>
 

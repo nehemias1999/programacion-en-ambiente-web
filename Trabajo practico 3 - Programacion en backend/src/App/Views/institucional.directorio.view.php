@@ -8,8 +8,8 @@
 
     <title>Directorio</title>
 
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/baseStyles.css'>
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/directorioStyles.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/generic.style.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/institucional.directorio.style.css'>
 
     <script src='main.js'></script>
 
@@ -248,7 +248,7 @@
 
             $path = "../";
 
-            require "parts/header.view.php";
+            require "parts/footer.view.php";
 
         ?>
         

@@ -8,8 +8,8 @@
 
     <title>Ingresar</title>
 
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/baseStyles.css'>
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/ingresarStyles.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/generic.style.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/portal-del-paciente.ingresar.style.css'>
 
     <script src='main.js'></script>
 

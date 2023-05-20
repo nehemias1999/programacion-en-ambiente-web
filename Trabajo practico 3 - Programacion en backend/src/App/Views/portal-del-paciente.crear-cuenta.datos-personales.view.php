@@ -8,8 +8,8 @@
 
     <title>Datos personales</title>
 
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/baseStyles.css'>
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/datosPersonalesStyles.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/generic.style.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/portal-del-paciente.crear-cuenta.datos-personales.style.css'>
     
     <script src='main.js'></script>
 

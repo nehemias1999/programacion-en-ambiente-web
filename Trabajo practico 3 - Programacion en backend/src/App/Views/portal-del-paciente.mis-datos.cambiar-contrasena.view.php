@@ -8,8 +8,8 @@
 
     <title>Mis datos - modificar contraseña </title>
 
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/baseCuentaStyles.css'>
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/cambioDeContrasenaStyles.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/portal-del-paciente.generic.style.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/portal-del-paciente.mis-datos.cambiar-contrasena.style.css'>
 
     <script src='main.js'></script>
 

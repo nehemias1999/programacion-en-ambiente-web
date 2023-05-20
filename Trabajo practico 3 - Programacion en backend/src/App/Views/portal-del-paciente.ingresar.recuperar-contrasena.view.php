@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperar contraseña</title>
 
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/baseStyles.css'>
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/recuperarContrasenaStyles.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/generic.style.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/portal-del-paciente.ingresar.recuperar-contrasena.style.css'>
 
     <script src='main.js'></script>
 

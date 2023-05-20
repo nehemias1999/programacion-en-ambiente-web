@@ -8,7 +8,7 @@
 
     <title>Solicitar turno</title>
 
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/portal-del-paciente-generic.style.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/portal-del-paciente.generic.style.css'>
     <link rel='stylesheet' type='text/css' media='all' href='/assets/css/portal-del-paciente.inicio.solicitar-turno.style.css'>
 
     <script src="/assets/js/portal-del-paciente.inicio.solicitar-turno.functionalities.js"></script>

@@ -8,8 +8,8 @@
 
     <title>Galeria</title>
 
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/baseStyles.css'>
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/galeriaDeFotosStyle.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/generic.style.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/institucional.galeria-de-fotos.style.css'>
 
     <script src='main.js'></script>
 

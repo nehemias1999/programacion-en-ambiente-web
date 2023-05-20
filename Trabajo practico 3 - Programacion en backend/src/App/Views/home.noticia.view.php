@@ -8,8 +8,8 @@
 
     <title>Noticia del mes</title>
 
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css//baseStyles.css'>
-    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/noticiaHomeStyles.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css//generic.style.css'>
+    <link rel='stylesheet' type='text/css' media='all' href='/assets/css/home.noticia.style.css'>
 
     <script src='main.js'></script>
 
