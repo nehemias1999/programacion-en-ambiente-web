@@ -11,7 +11,8 @@
     <link rel='stylesheet' type='text/css' media='all' href='/assets/css/portal-del-paciente.generic.style.css'>
     <link rel='stylesheet' type='text/css' media='all' href='/assets/css/portal-del-paciente.inicio.solicitar-turno.style.css'>
 
-    <script src="/assets/js/portal-del-paciente.inicio.solicitar-turno.functionalities.js"></script>
+    <script src="/assets/js/components/ScriptAdministrator.js"></script>
+    <script src="/assets/js/SolicitarTurnoFunctionalities.js"></script>
 
 </head>
 <body>
@@ -287,14 +288,17 @@
                             </div>
                         </div>
 
-                        <div class="div-drag-and-drop">
+                        <div class="div-drag-and-drop" draggable="true">
+
                             Arrastra y suelta la imagen del estudio aquí
+                            <input type="hidden" name="input-image" id="input-image" class="input-image" value="">
+
                         </div>
+                        
                         <ul class="list-images">
 
                         </ul>
-                        <input type="hidden" name="imagen" id="imagen" value="">
-    
+                        
                         <div class="div-botones">
 
                             <input type="reset" value="Cancelar" class="boton-reset">

@@ -6,7 +6,6 @@ class ProfesionalesFunctionalities {
         document.addEventListener("DOMContentLoaded", () => {
 
             ScriptAdministrator.loadScript("element-administrator", "/assets/js/components/ElementsAdministrator.js", () => {	
-
                 let elementAdministrator = new ElementAdministrator();
 			});
 
