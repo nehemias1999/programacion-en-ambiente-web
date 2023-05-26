@@ -11,8 +11,8 @@
     <link rel='stylesheet' type='text/css' media='all' href='/assets/css/generic.style.css'>
     <link rel='stylesheet' type='text/css' media='all' href='/assets/css/home.style.css'>
 
-    <script src="/assets/js/home.functionalities.js"></script>
-
+    <script src="/assets/js/components/ScriptAdministrator.js"></script>
+    <script src="/assets/js/homeFuncionalities.js"></script>
 </head>
 <body>
 
@@ -33,68 +33,43 @@
               </h2>
             </a>
         </div>
-          
+
         <section class="seccion-carrousel-noticias-main">
 
-            <article>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
 
-                <img src="/assets/images/equipamiento.jpg" alt="imagen-noticia">
+            <div class="carousel">  
+                <a href="noticia-home.html"> <!-- ver como manejamos esto del href-->
+                    <img class="active" src="/assets/images/equipamiento.jpg" alt="Imagen 1">
+                </a>
+                
+                <img src="/assets/images/quirofano.jpg" alt="Imagen 2">
+                <img src="/assets/images/laboratorio2.jpg" alt="Imagen 3">
+            </div>
+            
+            <button class="carousel-btn prev" >&#10094;</button>
+            <button class="carousel-btn next" >&#10095;</button>
+            <button class="carousel-btn pause">&#10074;&#10074;</button>
 
-                <div>
+            <div class="div-introduccion-noticia">
+                <h4 id="titulo-noticia" class="titulo-noticia-carrousel">
+                    Sala angiográfica 2023
+                </h4>
+                <p id="contenido-noticia">
+                    UNLu Paw inauguró la nueva sala angiográfica con la más alta tecnología permitiendo así tratar pacientes con problemas vasculares neurológicos, cardiacos y vasculares periféricos
+                </p>
+            </div>
 
-                    <h4>
-                        Sala angiográfica 2023
-                    </h4>
-
-                    <p>
-                        UNLu Paw inaguró la nueva sala angiográfica con la más alta tecnología permitiendo así tratar pacientes
-                        con problemas vasculares neurologicos, cardiacos y vasculares periféricos 
-                    </p>
-
-                </div>
-
-            </article>
-
-            <article>
-
-                <img src="/assets/images/equipamiento.jpg" alt="imagen-noticia">
-
-                <div>
-
-                    <h4>
-                        Sala angiográfica 2023
-                    </h4>
-
-                    <p>
-                        UNLu Paw inaguró la nueva sala angiográfica con la más alta tecnología permitiendo así tratar pacientes
-                        con problemas vasculares neurologicos, cardiacos y vasculares periféricos 
-                    </p>
-
-                </div>
-
-            </article>
-
-            <article>
-
-                <img src="/assets/images/equipamiento.jpg" alt="imagen-noticia">
-
-                <div>
-
-                    <h4>
-                        Sala angiográfica 2023
-                    </h4>
-
-                    <p>
-                        UNLu Paw inaguró la nueva sala angiográfica con la más alta tecnología permitiendo así tratar pacientes
-                        con problemas vasculares neurologicos, cardiacos y vasculares periféricos 
-                    </p>
-
-                </div>
-
-            </article>
+            <div class="thumbnails">
+                <img src="/assets/images/equipamiento.jpg" alt="Imagen 1">
+                <img src="/assets/images/quirofano.jpg" alt="Imagen 2">
+                <img src="/assets/images/laboratorio2.jpg" alt="Imagen 3">
+            </div>
 
         </section>
-
+          
         <section class="seccion-paginas-internas-main">
 
             <article class="articulo-enlace-pagina-interna">

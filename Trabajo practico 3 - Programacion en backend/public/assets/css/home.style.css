@@ -16,7 +16,8 @@ h4{
 }
 
 p{
-     color: black;
+    font-family: 'Gotham XLight Italic', sans-serif;
+    color: black;
 }
 
 
@@ -95,14 +96,165 @@ main::before {
     font-size: 4rem;
 }
 
+/* Estilos de las animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+  
 .seccion-carrousel-noticias-main {
     position: relative;
     width: 100%;
     margin: auto;
     margin-bottom: 25px;
-    margin-top: 185px;
+    margin-top: 185px; /**/
     border-top: solid 1px #000;
     border-bottom: solid 1px #000;
+}
+
+/*estilos para el carousel y animaciones de imagenes*/
+.carousel {
+    position: relative;
+    height:800px;
+    overflow: hidden;
+    
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    animation-duration: 1s;
+}
+
+.carousel img.active {
+    display: block;
+  }
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.prev:hover {
+    background-color: rgb(2, 82, 85);
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.carousel-btn.next:hover {
+    background-color: rgb(252, 196, 68);
+}
+
+.carousel-btn.pause {
+    left:1300px;
+    top:40px;
+    font-size: 0.8em;
+}
+
+.carousel-btn.pause:hover {
+    background-color: red;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color:rgb(252, 196, 68);
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    width: 100%;
+    background-color:rgb(2, 82, 85);
+    transition: width 0.3s;
+}
+
+.thumbnails {
+    position: absolute;
+    bottom: 10px;
+    top:550px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.thumbnails img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.thumbnails img:hover {
+    border: 6px solid rgb(252, 196, 68); /* Cambia el color y el grosor del borde según tus preferencias */
+  }
+  
+
+.div-introduccion-noticia {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    min-width: 100%;
+    min-height: 5%;
+    padding: 0px;
+    border-top: solid 1px #000;
+    background:rgba(255,255,255,0.7);
+}
+
+.div-introduccion-noticia p{
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.titulo-noticia-carrousel {
+    font-size: 30px;
+    margin-top: 15px; 
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
 }
 
 .articulo-carrousel-main {
@@ -121,26 +273,6 @@ main::before {
     object-fit: cover;
     min-height: 100%;
     min-width: 100%;
-}
-
-.div-introduccion-noticia {
-    position: absolute;
-    left: 0px;
-    bottom: -1px;
-    min-width: 100%;
-    min-height: 5%;
-    padding: 0px;
-    border-top: solid 1px #000;
-    background:rgba(255,255,255,0.7);
-}
-
-.titulo-noticia-carrousel {
-    font-size: 30px;
-    margin-top: 15px; 
-    margin-left: 30px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    
 }
 
 .parrafo-introductorio-noticia-carrousel {
