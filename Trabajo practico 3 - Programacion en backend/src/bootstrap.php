@@ -58,6 +58,9 @@ $router->get("/profesionales", "PageController@profesionales");
 
 // Contacto
 $router->get("/contacto", "PageController@contacto");
-$router->post("/contacto", "FormController@contacto"); // REVISAR CSS
+$router->post("/contacto", "FormController@contacto"); 
+
+$router->get("/turnero-medico", "TurneroController@turneroMedico");
+$router->post("/turnero-medico", "TurneroController@turneroMedicoPost");
 
 ?>

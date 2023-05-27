@@ -12,7 +12,8 @@
     <link rel='stylesheet' type='text/css' media='all' href='/assets/css/home.style.css'>
 
     <script src="/assets/js/components/ScriptAdministrator.js"></script>
-    <script src="/assets/js/homeFuncionalities.js"></script>
+    <script src="/assets/js/HomeFuncionalities.js"></script>
+
 </head>
 <body>
 

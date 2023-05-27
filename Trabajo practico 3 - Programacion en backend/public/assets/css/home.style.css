@@ -355,11 +355,7 @@ main::before {
         top: 10px;
         font-size: 100px;
     }
-
-    .seccion-carrousel-noticias-main:hover {
-        transform: scale(1.03);
-    }
-
+    
     .articulo-enlace-pagina-interna:hover {
         transform: scale(1.03);
     }
