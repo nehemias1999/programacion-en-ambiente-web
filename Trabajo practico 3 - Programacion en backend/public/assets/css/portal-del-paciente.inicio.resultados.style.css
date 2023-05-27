@@ -14,20 +14,12 @@ a {
     color: black;
 }
 
-h1,h3{
+h1, h3{
     color: black;
     font-family: 'Gotham Medium Italic', sans-serif;
 }
 
 /* MOBILE */
-
-.seccion-principal {
-    position: relative;
-    width: 100%;
-    margin: 20px auto;
-    border-top: solid 1px #000;
-    border-bottom: solid 1px #000;
-}
 
 .seccion-resultados {
     position: relative;
@@ -39,10 +31,10 @@ h1,h3{
     background-color: rgb(238, 241, 239);
 }
 
-.titulo-principal {
-    font-size: 6vw;
+h1 {
+    font-size: 4vw;
     margin: 20px;
-    margin-left: 2%;
+    margin-left: 10%;
 }
 
 .div-nombre-columnas {

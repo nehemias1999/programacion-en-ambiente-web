@@ -1,0 +1,93 @@
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+
+header {
+    position: relative;
+    background-color: rgb(2, 82, 85);
+    border-bottom: solid 10px rgb(208, 36, 74);
+}
+
+header section {
+    text-align: center;
+}
+
+header section img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 60px;
+    width: 120px;
+    background-color: white;
+}
+
+/* main */
+
+main {
+    flex: 1;
+}
+
+/* seccion recuadro turno actual */
+
+.seccion-turno-actual {
+    position: relative; 
+    text-align: center; 
+    height: 100px; 
+}
+
+.tabla-turno-actual {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(59, 74, 90);
+    border: solid 5px rgb(252, 196, 68);
+    border-radius: 10px 0px 10px 10px;
+}
+
+/* seccion turnos pendientes */
+
+.seccion-turnos-pendientes {
+    position: relative; 
+    text-align: center; 
+    height: 432px; 
+}
+
+.div-scrollbar {
+    overflow: auto;
+}
+
+.tabla-turnos-pendientes {
+    position: absolute;
+    overflow: hidden;
+    width: 90%;
+    height: 90%;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(59, 74, 90);
+    border: solid 5px rgb(252, 196, 68);
+    border-radius: 10px 0px 10px 10px;
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    height: 30px;
+    margin-top: auto;
+    background-color: rgb(2, 82, 85);
+    border-top: solid 10px rgb(208, 36, 74);
+}

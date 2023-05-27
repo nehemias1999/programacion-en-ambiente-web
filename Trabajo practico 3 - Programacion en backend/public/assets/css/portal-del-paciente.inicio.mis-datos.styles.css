@@ -34,9 +34,9 @@ main > section:nth-child(2) {
 }
 
 .div-encabezado > h1 {
-    position: relative;
-    margin: 30px auto;
-    font-size: 40px; /* ver */
+    font-size: 4vw;
+    margin: 20px;
+    margin-left: 10%;
 }
 
 .div-encabezado > div {

@@ -30,149 +30,145 @@
 
     <main>
 
-        <section class="seccion-principal">
+        <?php
 
-            <?php
+            $path = "";
 
-                $path = "";
+            require "parts/nav.portal.view.php";
 
-                require "parts/nav.portal.view.php";
+        ?>
 
-            ?>
+        <section class="seccion-resultados">
 
-            <section class="seccion-resultados">
+            <h1>
+                Resultados
+            </h1>
+
+            <div class="div-nombre-columnas">
+
+                <h3 class="titulo-nombre-columna">
+                    Fecha realizado
+                </h3>
+
+                <h3 class="titulo-nombre-columna">
+                    Estado
+                </h3>
+
+                <h3 class="titulo-nombre-columna">
+                    Tipo de examen
+                </h3>
+
+                <h3 class="titulo-nombre-columna">
+                    Solicitud
+                </h3>
+
+                <h3 class="titulo-nombre-columna">
+                    Ver informe
+                </h3>
+
+            </div>
+
+            <div class="div-scrollbar">
+
+                <div class="div-contenido">
+
+                    <ul class="lista-resultados">
                 
-                <h1 class="titulo-principal">
-                    Resultados
-                </h1>
+                        <li class="elemento-resultado">
 
-                <div class="div-nombre-columnas">
+                            <article class="articulo-resultado">
+                            
+                                <p class="parrafo-fecha-realizado">
+                                    dd/mm/aaaa
+                                </p>
 
-                    <h3 class="titulo-nombre-columna">
-                        Fecha realizado
-                    </h3>
+                                <p class="parrafo-estado">
+                                    Estado
+                                </p>
 
-                    <h3 class="titulo-nombre-columna">
-                        Estado
-                    </h3>
+                                <p class="parrafo-tipo-examen">
+                                    Tipo examen
+                                </p>
 
-                    <h3 class="titulo-nombre-columna">
-                        Tipo de examen
-                    </h3>
+                                <p class="parrafo-solicitud">
+                                    Solicitud
+                                </p>
 
-                    <h3 class="titulo-nombre-columna">
-                        Solicitud
-                    </h3>
+                                <button class="boton-enlace-resultado">
+                                    <a href="">
+                                        PDF
+                                    </a>
+                                </button>
 
-                    <h3 class="titulo-nombre-columna">
-                        Ver informe
-                    </h3>
+                            </article>
+
+                        </li>
+                        
+                        <li class="elemento-resultado">
+
+                            <article class="articulo-resultado">
+                            
+                                <p class="parrafo-fecha-realizado">
+                                    dd/mm/aaaa
+                                </p>
+
+                                <p class="parrafo-estado">
+                                    Estado
+                                </p>
+
+                                <p class="parrafo-tipo-examen">
+                                    Tipo examen
+                                </p>
+
+                                <p class="parrafo-solicitud">
+                                    Solicitud
+                                </p>
+                                
+                                <button class="boton-enlace-resultado">
+                                    <a href="">
+                                        PDF
+                                    </a>
+                                </button>
+
+                            </article>
+
+                        </li>
+
+                        <li class="elemento-resultado">
+
+                            <article class="articulo-resultado">
+                            
+                                <p class="parrafo-fecha-realizado">
+                                    dd/mm/aaaa
+                                </p>
+
+                                <p class="parrafo-estado">
+                                    Estado
+                                </p>
+
+                                <p class="parrafo-tipo-examen">
+                                    Tipo examen
+                                </p>
+
+                                <p class="parrafo-solicitud">
+                                    Solicitud
+                                </p>
+
+                                <button class="boton-enlace-resultado">
+                                    <a href="">
+                                        PDF
+                                    </a>
+                                </button>
+
+                            </article>
+
+                        </li>
+
+                    </ul>
 
                 </div>
 
-                <div class="div-scrollbar">
-
-                    <div class="div-contenido">
-
-                        <ul class="lista-resultados">
-                    
-                            <li class="elemento-resultado">
-    
-                                <article class="articulo-resultado">
-                                
-                                    <p class="parrafo-fecha-realizado">
-                                        dd/mm/aaaa
-                                    </p>
-    
-                                    <p class="parrafo-estado">
-                                        Estado
-                                    </p>
-    
-                                    <p class="parrafo-tipo-examen">
-                                        Tipo examen
-                                    </p>
-    
-                                    <p class="parrafo-solicitud">
-                                        Solicitud
-                                    </p>
-    
-                                    <button class="boton-enlace-resultado">
-                                        <a href="">
-                                            PDF
-                                        </a>
-                                    </button>
-    
-                                </article>
-    
-                            </li>
-                            
-                            <li class="elemento-resultado">
-    
-                                <article class="articulo-resultado">
-                                
-                                    <p class="parrafo-fecha-realizado">
-                                        dd/mm/aaaa
-                                    </p>
-    
-                                    <p class="parrafo-estado">
-                                        Estado
-                                    </p>
-    
-                                    <p class="parrafo-tipo-examen">
-                                        Tipo examen
-                                    </p>
-    
-                                    <p class="parrafo-solicitud">
-                                        Solicitud
-                                    </p>
-                                    
-                                    <button class="boton-enlace-resultado">
-                                        <a href="">
-                                            PDF
-                                        </a>
-                                    </button>
-    
-                                </article>
-    
-                            </li>
-    
-                            <li class="elemento-resultado">
-    
-                                <article class="articulo-resultado">
-                                
-                                    <p class="parrafo-fecha-realizado">
-                                        dd/mm/aaaa
-                                    </p>
-    
-                                    <p class="parrafo-estado">
-                                        Estado
-                                    </p>
-    
-                                    <p class="parrafo-tipo-examen">
-                                        Tipo examen
-                                    </p>
-    
-                                    <p class="parrafo-solicitud">
-                                        Solicitud
-                                    </p>
-    
-                                    <button class="boton-enlace-resultado">
-                                        <a href="">
-                                            PDF
-                                        </a>
-                                    </button>
-    
-                                </article>
-    
-                            </li>
-    
-                        </ul>
-
-                    </div>
-
-                </div>              
-
-            </section>
+            </div>              
 
         </section>
 

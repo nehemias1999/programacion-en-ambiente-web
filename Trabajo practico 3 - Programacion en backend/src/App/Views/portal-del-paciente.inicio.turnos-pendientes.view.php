@@ -30,151 +30,147 @@
 
     <main>
 
-        <section class="seccion-principal">
-
-            <?php
+        <?php
             
-                $path = "";
+            $path = "";
 
-                require "parts/nav.portal.view.php";
+            require "parts/nav.portal.view.php";
+        
+        ?>
+
+        <section class="seccion-turnos-pendientes">
             
-            ?>
+            <h1>
+                Turnos pendientes
+            </h1>
 
-            <section class="seccion-turnos-pendientes">
-                
-                <h1 class="titulo-principal">
-                    Turnos pendientes
-                </h1>
+            <div class="div-nombre-columnas">
 
-                <div class="div-nombre-columnas">
+                <h3 class="titulo-nombre-columna">
+                    Fecha turno
+                </h3>
 
-                    <h3 class="titulo-nombre-columna">
-                        Fecha turno
-                    </h3>
+                <h3 class="titulo-nombre-columna">
+                    Profesional
+                </h3>
 
-                    <h3 class="titulo-nombre-columna">
-                        Profesional
-                    </h3>
+                <h3 class="titulo-nombre-columna">
+                    Especialidad
+                </h3>
 
-                    <h3 class="titulo-nombre-columna">
-                        Especialidad
-                    </h3>
+                <h3 class="titulo-nombre-columna">
+                    Estado
+                </h3>
 
-                    <h3 class="titulo-nombre-columna">
-                        Estado
-                    </h3>
+            </div>
+
+            <div class="div-scrollbar">
+
+                <div class="div-contenido">
+
+                    <ul class="lista-turnos-pendientes">
+                    
+                        <li class="elemento-turno-pendiente">
+
+                            <article class="articulo-turno-pendiente">
+                            
+                                <p class="parrafo-fecha-turno">
+                                    dd/mm/aaaa
+                                </p>
+
+                                <p class="parrafo-profesional">
+                                    Profesional
+                                </p>
+
+                                <p class="parrafo-especialidad">
+                                    Especialidad
+                                </p>
+
+                                <p class="parrafo-estado">
+                                    Estado
+                                </p>
+
+                            </article>
+
+                        </li>
+
+                        <li class="elemento-turno-pendiente">
+
+                            <article class="articulo-turno-pendiente">
+                            
+                                <p class="parrafo-fecha-turno">
+                                    dd/mm/aaaa
+                                </p>
+
+                                <p class="parrafo-profesional">
+                                    Profesional
+                                </p>
+
+                                <p class="parrafo-especialidad">
+                                    Especialidad
+                                </p>
+
+                                <p class="parrafo-estado">
+                                    Estado
+                                </p>
+
+                            </article>
+
+                        </li>
+
+                        <li class="elemento-turno-pendiente">
+
+                            <article class="articulo-turno-pendiente">
+                            
+                                <p class="parrafo-fecha-turno">
+                                    dd/mm/aaaa
+                                </p>
+
+                                <p class="parrafo-profesional">
+                                    Profesional
+                                </p>
+
+                                <p class="parrafo-especialidad">
+                                    Especialidad
+                                </p>
+
+                                <p class="parrafo-estado">
+                                    Estado
+                                </p>
+
+                            </article>
+
+                        </li>
+
+                        <li class="elemento-turno-pendiente">
+
+                            <article class="articulo-turno-pendiente">
+                            
+                                <p class="parrafo-fecha-turno">
+                                    dd/mm/aaaa
+                                </p>
+
+                                <p class="parrafo-profesional">
+                                    Profesional
+                                </p>
+
+                                <p class="parrafo-especialidad">
+                                    Especialidad
+                                </p>
+
+                                <p class="parrafo-estado">
+                                    Estado
+                                </p>
+
+                            </article>
+
+                        </li>
+                       
+                    </ul>
 
                 </div>
-
-                <div class="div-scrollbar">
-
-                    <div class="div-contenido">
-
-                        <ul class="lista-turnos-pendientes">
-                        
-                            <li class="elemento-turno-pendiente">
-    
-                                <article class="articulo-turno-pendiente">
-                                
-                                    <p class="parrafo-fecha-turno">
-                                        dd/mm/aaaa
-                                    </p>
-    
-                                    <p class="parrafo-profesional">
-                                        Profesional
-                                    </p>
-    
-                                    <p class="parrafo-especialidad">
-                                        Especialidad
-                                    </p>
-    
-                                    <p class="parrafo-estado">
-                                        Estado
-                                    </p>
-    
-                                </article>
-    
-                            </li>
-    
-                            <li class="elemento-turno-pendiente">
-    
-                                <article class="articulo-turno-pendiente">
-                                
-                                    <p class="parrafo-fecha-turno">
-                                        dd/mm/aaaa
-                                    </p>
-    
-                                    <p class="parrafo-profesional">
-                                        Profesional
-                                    </p>
-    
-                                    <p class="parrafo-especialidad">
-                                        Especialidad
-                                    </p>
-    
-                                    <p class="parrafo-estado">
-                                        Estado
-                                    </p>
-    
-                                </article>
-    
-                            </li>
-    
-                            <li class="elemento-turno-pendiente">
-    
-                                <article class="articulo-turno-pendiente">
-                                
-                                    <p class="parrafo-fecha-turno">
-                                        dd/mm/aaaa
-                                    </p>
-    
-                                    <p class="parrafo-profesional">
-                                        Profesional
-                                    </p>
-    
-                                    <p class="parrafo-especialidad">
-                                        Especialidad
-                                    </p>
-    
-                                    <p class="parrafo-estado">
-                                        Estado
-                                    </p>
-    
-                                </article>
-    
-                            </li>
-    
-                            <li class="elemento-turno-pendiente">
-    
-                                <article class="articulo-turno-pendiente">
-                                
-                                    <p class="parrafo-fecha-turno">
-                                        dd/mm/aaaa
-                                    </p>
-    
-                                    <p class="parrafo-profesional">
-                                        Profesional
-                                    </p>
-    
-                                    <p class="parrafo-especialidad">
-                                        Especialidad
-                                    </p>
-    
-                                    <p class="parrafo-estado">
-                                        Estado
-                                    </p>
-    
-                                </article>
-    
-                            </li>
-                           
-                        </ul>
-
-                    </div>
-                    
-                </div>                
-
-            </section>
+                
+            </div>                
 
         </section>
 

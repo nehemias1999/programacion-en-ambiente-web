@@ -26,31 +26,14 @@ label, p{
 
 /* MOBILE */
 
-.seccion-principal {
-    position: relative;
-    width: 100%;
-    margin: 20px auto;
-    padding-bottom: 20px;
-    border-top: solid 1px #000;
-}
-
-.seccion-vinculos-cargados {
-    position: relative;
-    width: 100%;
-    margin: 0px auto;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-top: solid 1px #000;
-    border-bottom: solid 1px #000;
-}
-
-.titulo-principal {
-    font-size: 40px;
-    margin-left: 20px;
+h1 {
+    font-size: 4vw;
+    margin: 20px;
+    margin-left: 10%;
 }
 
 .div-vinculos-cargados {
-    height: 400px;
+    height: 500px;
     width: 90%;
     margin: 0px auto;
     padding: 10px;
@@ -67,16 +50,18 @@ label, p{
 }
 
 .div-contenido {
-    padding: 20px;
+    margin: 0px;
+    padding-right: 10px;
 }
 
 .lista-vinculos-cargados {
     list-style: none;
+    margin: 0px;
     padding: 0px;
 }
 
 .elemento-vinculo {
-    width: 95%;
+    width: 100%;
     padding: 10px;
     border: solid 1px #000;
     background-color: whitesmoke;
@@ -138,15 +123,6 @@ dd {
     width: 30%;
 }
 
-.seccion-cargar-vinculos {
-    position: relative;
-    width: 100%;
-    margin: 0px auto;
-    padding-bottom: 20px;
-    border-top: solid 1px #000;
-    border-bottom: solid 1px #000;
-}
-
 .titulo-agregar-vinculo {
     font-size: 30px;
     margin-left: 20px;
@@ -158,6 +134,7 @@ form {
     margin: 0px auto;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,10 +191,14 @@ input[type="submit"] {
 /* DESKTOP */
 @media screen and (min-width: 900px) {
 
-    .titulo-principal {
-        font-size: 50px;
-        top: 10px;
-        margin-left: 50px;
+    .div-scrollbar {
+        margin: 0px auto;
+        width: 85%;
+    }
+
+    .div-contenido {
+        margin: 0px auto;
+        width: 95%;
     }
 
     .div-vinculos-cargados {
@@ -242,21 +223,12 @@ input[type="submit"] {
 
 @media print {
             
-    .seccion-principal {
-        border: none;
-    } 
-
     .nav-menu-paginas-internas {
         display: none;
     }
 
     button {
         visibility: hidden;
-    }
-
-    .seccion-vinculos-cargados {
-        border: none;
-        background-color: white;
     }
 
     .div-vinculos-cargados {
@@ -266,10 +238,6 @@ input[type="submit"] {
     .div-scrollbar {
         overflow: visible;
         overflow-y: none;
-    }
-
-    .seccion-cargar-vinculos {
-        display: none;
     }
            
 }

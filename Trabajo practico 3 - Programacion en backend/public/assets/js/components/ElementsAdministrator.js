@@ -10,7 +10,7 @@ class ElementAdministrator {
         return document.querySelector(element);
     }
 
-    static setNewElement(tagElement, content, attibutes = {}) {
+    static setNewElement(tagElement, content = null, attibutes = {}) {
         const element = document.createElement(tagElement);
 
         for(const attibute in attibutes) {
