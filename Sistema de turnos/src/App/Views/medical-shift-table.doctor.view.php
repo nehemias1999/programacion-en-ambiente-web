@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="/assets/css/turnero-medico.style.css">
+    <link rel="stylesheet" href="/assets/css/medical-shift-table.doctor.style.css">
 
     <Script src="/assets/js/components/ScriptAdministrator.js"></Script>
-    <script src="/assets/js/TurneroMedicoFunctionalities.js"></script>
+    <script src="/assets/js/DoctorShiftTableFunctionalities.js"></script>
 
     <title>Turnero - Vista medico</title>
 
