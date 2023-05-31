@@ -74,7 +74,6 @@ main {
     overflow: hidden;
     width: 90%;
     height: 95%;
-    max-height: 95%;
     top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%);
@@ -83,9 +82,8 @@ main {
     border-radius: 10px 0px 10px 10px;
 }
 
-tr {
+tr, td {
     height: 100px;
-    border: solid 2px #000;
 }
 
 /* footer */

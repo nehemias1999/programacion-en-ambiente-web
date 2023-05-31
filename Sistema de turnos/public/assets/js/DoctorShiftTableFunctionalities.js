@@ -1,5 +1,5 @@
 
-class TurneroMedicoFunctionalities {
+class DoctorShiftTableFunctionalities {
 
     constructor() {
 
@@ -9,18 +9,18 @@ class TurneroMedicoFunctionalities {
         
             ScriptAdministrator.loadScript("shift-table-administrator", "/assets/js/components/ShiftTableAdministrator.js", () => {
 
-                let data = [
-                    RowAdministrator.renderRow('9:00 AM', 'Juan Pérez'),
-                    RowAdministrator.renderRow('10:30 AM', 'María Gómez'),
-                    RowAdministrator.renderRow('11:00 AM', 'María Gómez'),
-                    RowAdministrator.renderRow('11:30 AM', 'María Gómez')
-                ];
-
-                let table = new ShiftTableAdministrator(".tabla-turnos-pendientes", data);
-            });
-                          
+                // Crear instancia de la tabla de atención
+                const actualShiftTable = new ActualShiftTableAdministrator(".tabla-turno-actual");
+                // Crear instancias de las tablas
+                const pendingShiftTable = new PendingShiftTableAdministrator(".tabla-turnos-pendientes", actualShiftTable, [
+                    {estimatedTime:"08:00 PM", patient:"Juan Perez"},
+                    {estimatedTime:"08:15 PM", patient:"Maria Gomez"},
+                    {estimatedTime:"08:30 PM", patient:"Pablo Gonzalez"},
+                    {estimatedTime:"09:00 PM", patient:"Marta Fernandez"}
+                ]);  
+            });       
         });
     };
 };
 
-let turneroMedicoFunctionalities = new TurneroMedicoFunctionalities();
+let doctorShiftTableFunctionalities = new DoctorShiftTableFunctionalities();

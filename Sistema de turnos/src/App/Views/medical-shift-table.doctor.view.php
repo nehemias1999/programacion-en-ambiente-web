@@ -40,10 +40,6 @@
             <div class="div-scrollbar">
 
                 <table class="tabla-turnos-pendientes">
-            
-                    <tbody>
-        
-                    </tbody>
                     
                 </table>   
 
