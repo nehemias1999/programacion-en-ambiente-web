@@ -1,0 +1,86 @@
+
+{
+    "especialistas": [
+        {
+            "nombre": "Pagani Rocio",
+            "diasQueAtiende": [
+                "LUNES",
+                "MARTES",
+                "JUEVES"
+            ],
+            "horarioInicio": {
+                "horas": 9,
+                "minutos": 0
+            },
+            "horarioFinalizacion": {
+                "horas": 12,
+                "minutos": 0
+            },
+            "duracionTurno": 20,
+            "turnosTomados": [
+                {
+                    "dia": "Lunes",
+                    "horas": 9,
+                    "minutos": 0
+                },
+                {
+                    "dia": "Martes",
+                    "horas": 10,
+                    "minutos": 40
+                },
+                {
+                    "dia": "Jueves",
+                    "horas": 9,
+                    "minutos": 20
+                },
+                {
+                    "dia": "Jueves",
+                    "horas": 10,
+                    "minutos": 40
+                }
+            ]
+        },
+        {
+            "nombre": "De Negri Gerardo",
+            "diasQueAtiende": [
+                "Martes",
+                "Jueves",
+                "Viernes"
+            ],
+            "horarioInicio": {
+                "horas": 13,
+                "minutos": 0
+            },
+            "horarioFinalizacion": {
+                "horas": 18,
+                "minutos": 0
+            },
+            "duracionTurno": 30,
+            "turnosTomados": [
+                {
+                    "dia": "Martes",
+                    "horas": 14,
+                    "minutos": 0
+                },
+                {
+                    "dia": "Jueves",
+                    "horas": 16,
+                    "minutos": 30
+                },
+                {
+                    "dia": "Jueves",
+                    "horas": 17,
+                    "minutos": 30
+                },
+                {
+                    "dia": "Viernes",
+                    "horas": 16,
+                    "minutos": 30
+                }
+            ]
+        }
+    ]
+}
+
+
+    

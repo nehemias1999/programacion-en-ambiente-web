@@ -26,8 +26,51 @@ label, p{
 
 
 
+
+
 /* MOBILE */
 
+  
+  #div_diasAtiende {
+    position: absolute;
+    margin-left: 10px;
+    top:500px;
+    background-color: white;
+    overflow: hidden; 
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    float: left;
+    display: block;
+    width: 14.2857%;
+    text-align: center;
+    list-style-type: none;
+    font-family: 'Gotham Book', sans-serif;
+  }
+  
+  li:nth-child(n+1):nth-child(-n+7) {
+    font-weight: 900;
+    color: rgb(0 157 218);
+    font-family: 'Gotham Book', sans-serif;
+    
+  }
+  
+  li:nth-child(n+39), li:nth-child(n+8):nth-child(-n+16) {
+  
+  }
+  
+  li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
+    border-radius: 5px;
+    background-color: rgb(2, 82, 85);
+    color: #ecf0f1;
+
+  }
+  
 .seccion_principal {
     position: relative;
     width: 100%;
@@ -69,7 +112,8 @@ label, p{
 
 .seccion_formulario_turno {
     position: relative;
-    width: 95%;
+    width: 90%;
+    height:81%;
     margin: 0px auto;
     margin-bottom: 20px;
     border-radius: 10px 0px 10px 10px;
@@ -150,10 +194,23 @@ select {
 
 .label_turnos_disponibles {
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 0px;
     font-family: 'Gotham', sans-serif;
     font-weight: 600;
+    position:absolute;
+    top:230px;
 }
+
+.label_turnos_disponibles_hora{
+    font-family: 'Gotham', sans-serif;
+    font-weight: 600;
+    position:absolute;
+    top:430px;
+    margin-bottom: 10px;
+}
+
+
+
 
 input {
     height: 20px;
@@ -164,9 +221,8 @@ input {
 
 .div_turnos_disponibles {
     position: relative;
-    height: 400px;
-    width: 100%;
-    margin: 0px auto;
+    height: 200px;
+    width: 90%;
     border: solid 1px #000;
 }
 
@@ -209,9 +265,10 @@ input {
 }
 
 .div_botones {
+    position: absolute;
+    top:500px;
     margin-top: 20px;
-    margin-bottom: 15px;
-    display: flex;
+    margin-bottom: 50px; 
     justify-content: center;
     justify-content: space-between;
 }
@@ -236,12 +293,13 @@ input {
 @media screen and (min-width: 900px) {
 
     .seccion_principal {
-        min-height: 1075px;
+        height: 1400px;
+      
     }
 
     .seccion_solicitar_turno {
         top: 140px;
-        min-height: 915px;
+        height: 1250px;
     }
 
     .titulo_principal {
@@ -275,10 +333,143 @@ input {
     }
 
     .seccion_formulario_turno {
-        width: 65%;
+        position: relative;
+        width: 90%;
+        height: 980px;
+        margin: 0px auto;
+        margin-bottom: 10px;
+        border-radius: 10px 0px 10px 10px;
+        border: solid 2px #000;
+        background-color: rgb(238, 241, 239);
     }
 
+  
+    #div_diasAtiende {
+        top: 260px;
+        left: 25px;
+        height: 150px;
+        width: 1150px;
+        border: 1px solid black;
+      }
+      
+      ul {
+        margin: 20px;
+      }
+      
+      li {
+        padding-top: 10px;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+    
+      }
+      
+      li:nth-child(n+39),
+      li:nth-child(n+8):nth-child(-n+16) {
+        font-weight: 200;
+        color: rgb(2, 82, 85);
+      }
+      
+      li.no-atencion , li.atencion{
+        height: 30px;
+        width: 155px;
+      }
+      }
+      li.no-atencion:hover,
+      li:nth-child(17) {
+        pointer-events: none;
+        cursor: default;
+      }
+      
+      li.no-atencion{
+        border: 1px solid red;
+        border-radius: 5px;
+      }
+
+      li.atencion{
+        border-radius: 5px;
+        border: 1px solid rgb(2, 82, 85);
+      }
+
+
+      li.atencion:hover {
+        border-radius: 5px;
+        background-color: rgb(2, 82, 85);
+        color: #ecf0f1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .no-seleccionable {
+        pointer-events: none;
+        background-color: transparent !important;
+      }
+      .div_turnos_disponibles label{
+        color: #000;
+      }
+      
+    
+      #div_turnosDisponibles {
+        position:absolute;
+        top:450px;
+        left: 25px;
+        height: 150px;
+        width: 1150px;
+        margin-left: 10px;
+        border: 1px solid black;
+        background-color: white;
+      }
+      
+      #div_turnosDisponibles ul {
+           position:absolute;
+           top:15px;
+      }
+
+      #div_turnosDisponibles li {
+        padding: 10px;
+        height: 60px;
+        width: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #div_turnosDisponibles li:hover{
+        border-radius: 5px;
+        background-color: rgb(2, 82, 85);
+        color: #ecf0f1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+     
+      li.no-disponibles {
+        color: red; /* Color de texto para indicar no disponibles */
+        font-style: italic; /* Estilo de texto para indicar no disponibles */
+      }
+      
+      #div_resultado{
+        position:absolute;
+        top:610px;
+        left: 25px;
+        height: 35px;
+        width: 1150px;
+        margin-left: 10px;
+        border: 1px solid rgb(126, 126, 126);
+        background-color: rgba(204, 201, 201, 0.743);
+        text-align: center;
+     }
+
+     #div_resultado p{
+        color: black;
+     }
+    
+    
     .div_botones {
+        position: absolute;
+        top:895px;
+        left:450px;
         justify-content: space-around;
     }
 
@@ -290,7 +481,35 @@ input {
         transform: scale(1.1);
     }
 
-}
+    
+    /* drag and drop */
+
+    .div-drag-and-drop {
+        width: 96%;
+        height: 100px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px dashed black;
+        font-size: 18px;
+        position: absolute;
+        top:700px;
+        left:20px;
+    }
+
+    .div-drag-over {
+        width: 100%;
+        height: 100px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px dashed blue;
+        font-size: 18px;
+    }
 
 @media print {
             
