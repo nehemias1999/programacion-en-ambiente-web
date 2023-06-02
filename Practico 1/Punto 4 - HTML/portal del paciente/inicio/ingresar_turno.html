@@ -10,12 +10,15 @@
     <link rel='stylesheet' type='text/css' media='all' href='../../styles/baseCuentaStyles.css'>
     <link rel='stylesheet' type='text/css' media='all' href='../../styles/ingresarTurnoStyles.css'>
 
-    <script src='main.js'></script>
+ <!---  <script src="../inicio/mis datos/agenda2.js"></script>-->
+   <script src="/programacion-en-ambiente-web/Practico 1/Punto 4 - HTML/home/ScriptAdministrator.js"></script> 
+    <script src="../inicio/mis datos/turnosFuncionalities.js"></script>
 
 </head>
 <body>
 
     <header>
+
 
         <div class="div_logo_header">
             <a href="/Punto 4 - HTML/home/home.html" class="enlace_logo">
@@ -30,7 +33,7 @@
             </h4>
             
             <div class="div_imagen_cuenta">
-                <img src="/Punto 4 - HTML/images/usuario(1).png" alt="imagen_usuario" class="imagen_usuario">
+                <img src="/programacion-en-ambiente-web/Practico 1/Punto 4 - HTML/images/usuario(1).png" alt="imagen_usuario" class="imagen_usuario">
             </div>
 
         </section>
@@ -89,212 +92,62 @@
 
                         </div>
     
-                       <div class="div_alineacion">
-
+                        <div class="div_alineacion">
                             <div class="div_especialidad">
-
                                 <label for="select_especialidad">Especialidad</label>
-                                <select name="select_especialidad" id="">
+                                <select name="select_especialidad" id="select_especialidad">
                                     <option value="" disabled selected>---</option>
-                                    <option value="">Cardiologia</option>
-                                    <option value="">Traumatologia</option>
-                                    <option value="">Medicina clinica</option>
-                                    <option value="">Urologia</option>
+                                    <option value="cardiologia">Cardiología</option>
+                                    <option value="traumatologia">Traumatología</option>
+                                    <option value="medicina_clinica">Medicina Clínica</option>
+                                    <option value="urologia">Urología</option>
                                 </select>
-
                             </div>
-
+                        
                             <div class="div_profesional">
-            
                                 <label for="select_profesional">Profesional</label>
-                                <select name="select_profesional" id="">
+                                <select id="select_pro" name="select_profesional" >
                                     <option value="" disabled selected>---</option>
-                                    <option value="">Pagani, Rocio</option>
-                                    <option value="">De negri, Gerardo</option>
-                                    <option value="">Fernandez, Gustavo</option>
-                                    <option value="">Solei, Sofia</option>
+                                    <option value="Pagani Rocio">Pagani Rocio</option>
+                                    <option value="De Negri Gerardo">De Negri Gerardo</option>
+                                    <option value="Fernandez Gustavo">Fernandez Gustavo</option>
+                                    <option value="Solei Sofia">Solei Sofia</option>
                                 </select>
-
-                            </div>
-
-                       </div>
-    
-                        <label for="div_turnos_disponibles" class="label_turnos_disponibles">
-                            Seleccione una fecha y horario
-                        </label>
-                        <div class="div_turnos_disponibles">
-                            <div class="div_scrollbar">
-                                <div class="div_contenido">
-                                    <ul class="lista_turnos_disponibles">
-
-                                        <li class="elemento_turno_disponible">
-                                            <article class="articulo_turno_disponible">
-
-                                                <p>
-                                                    dd/mm/aaaa
-                                                </p>
-
-                                                <p>
-                                                    hh:mm
-                                                </p>
-
-                                                <button class="boton_seleccionar">
-                                                    Seleccionar
-                                                </button>
-
-                                            </article>
-                                        </li>
-
-                                        <li class="elemento_turno_disponible">
-                                            <article class="articulo_turno_disponible">
-
-                                                <p>
-                                                    dd/mm/aaaa
-                                                </p>
-
-                                                <p>
-                                                    hh:mm
-                                                </p>
-
-                                                <button class="boton_seleccionar">
-                                                    Seleccionar
-                                                </button>
-
-                                            </article>
-                                        </li>
-
-                                        <li class="elemento_turno_disponible">
-                                            <article class="articulo_turno_disponible">
-
-                                                <p>
-                                                    dd/mm/aaaa
-                                                </p>
-
-                                                <p>
-                                                    hh:mm
-                                                </p>
-
-                                                <button class="boton_seleccionar">
-                                                    Seleccionar
-                                                </button>
-
-                                            </article>
-                                        </li>
-
-                                        <li class="elemento_turno_disponible">
-                                            <article class="articulo_turno_disponible">
-
-                                                <p>
-                                                    dd/mm/aaaa
-                                                </p>
-
-                                                <p>
-                                                    hh:mm
-                                                </p>
-
-                                                <button class="boton_seleccionar">
-                                                    Seleccionar
-                                                </button>
-
-                                            </article>
-                                        </li>
-
-                                        <li class="elemento_turno_disponible">
-                                            <article class="articulo_turno_disponible">
-
-                                                <p>
-                                                    dd/mm/aaaa
-                                                </p>
-
-                                                <p>
-                                                    hh:mm
-                                                </p>
-
-                                                <button class="boton_seleccionar">
-                                                    Seleccionar
-                                                </button>
-
-                                            </article>
-                                        </li>
-
-                                        <li class="elemento_turno_disponible">
-                                            <article class="articulo_turno_disponible">
-
-                                                <p>
-                                                    dd/mm/aaaa
-                                                </p>
-
-                                                <p>
-                                                    hh:mm
-                                                </p>
-
-                                                <button class="boton_seleccionar">
-                                                    Seleccionar
-                                                </button>
-
-                                            </article>
-                                        </li>
-
-                                        <li class="elemento_turno_disponible">
-                                            <article class="articulo_turno_disponible">
-
-                                                <p>
-                                                    dd/mm/aaaa
-                                                </p>
-
-                                                <p>
-                                                    hh:mm
-                                                </p>
-
-                                                <button class="boton_seleccionar">
-                                                    Seleccionar
-                                                </button>
-
-                                            </article>
-                                        </li>
-
-                                        <li class="elemento_turno_disponible">
-                                            <article class="articulo_turno_disponible">
-
-                                                <p>
-                                                    dd/mm/aaaa
-                                                </p>
-
-                                                <p>
-                                                    hh:mm
-                                                </p>
-
-                                                <button class="boton_seleccionar">
-                                                    Seleccionar
-                                                </button>
-
-                                            </article>
-                                        </li>
-
-                                        <li class="elemento_turno_disponible">
-                                            <article class="articulo_turno_disponible">
-
-                                                <p>
-                                                    dd/mm/aaaa
-                                                </p>
-
-                                                <p>
-                                                    hh:mm
-                                                </p>
-
-                                                <button class="boton_seleccionar">
-                                                    Seleccionar
-                                                </button>
-
-                                            </article>
-                                        </li>
-
-                                    </ul>
-                                </div>
                             </div>
                         </div>
     
-                       <div class="div_botones">
+                        <label for="div_diasAtiende" class="label_turnos_disponibles">
+                            Seleccione una fecha 
+                        </label>
+
+                        <div id="div_diasAtiende">
+                           <ul>
+                            <li></li>
+                           </ul>
+                        </div>
+
+                        <label for="div_turnosDisponibles" class="label_turnos_disponibles_hora">
+                            Seleccione un horario disponible
+                        </label>
+
+                        <div id="div_turnosDisponibles">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+
+                        <div id="div_resultado">
+
+                        </div>
+
+                        <div class="div-drag-and-drop" draggable="true">
+
+                            Arrastra y suelta la imagen del estudio aquí
+                            <input type="hidden" name="input-image" id="input-image" class="input-image" value="">
+
+                        </div>
+                          
+                        <div class="div_botones">
 
                             <input type="reset" value="Cancelar" class="boton_reset">
                             <input type="submit" value="Solicitar turno" class="boton_submit">
@@ -302,6 +155,7 @@
                        </div>
     
                     </form>
+
 
                 </section>
 
@@ -355,3 +209,5 @@
 
 </body>
 </html>
+
+
