@@ -19,22 +19,101 @@ h1,h4{
     font-family: 'Gotham Medium Italic', sans-serif;
 }
 
-label, p {
+label, p{
     color: black;
     font-family: 'Gotham', sans-serif;
 }
 
+
+
+
+
 /* MOBILE */
 
-h1 {
-    font-size: 4vw;
-    margin: 20px;
-    margin-left: 10%;
+  
+  #div_diasAtiende {
+    position: absolute;
+    margin-left: 10px;
+    top:500px;
+    background-color: white;
+    overflow: hidden; 
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    float: left;
+    display: block;
+    width: 14.2857%;
+    text-align: center;
+    list-style-type: none;
+    font-family: 'Gotham Book', sans-serif;
+  }
+  
+  li:nth-child(n+1):nth-child(-n+7) {
+    font-weight: 900;
+    color: rgb(0 157 218);
+    font-family: 'Gotham Book', sans-serif;
+    
+  }
+  
+  li:nth-child(n+39), li:nth-child(n+8):nth-child(-n+16) {
+  
+  }
+  
+  li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
+    border-radius: 5px;
+    background-color: rgb(2, 82, 85);
+    color: #ecf0f1;
+
+  }
+  
+.seccion_principal {
+    position: relative;
+    width: 100%;
+    margin: 20px auto;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
 }
 
-.seccion-formulario-turno {
+.nav_menu_paginas_internas {
     position: relative;
-    width: 95%;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 0px 10px 10px;
+    background-color: rgb(238, 241, 239);   
+}
+    
+.enlace_pagina_interna {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.seccion_solicitar_turno {
+    position: relative;
+    height: 870px;
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+}
+
+.titulo_principal {
+    font-size: 40px;
+    text-align: center;
+}
+
+.seccion_formulario_turno {
+    position: relative;
+    width: 90%;
+    height:81%;
     margin: 0px auto;
     margin-bottom: 20px;
     border-radius: 10px 0px 10px 10px;
@@ -43,37 +122,38 @@ h1 {
 }
 
 form {
-    position: relative;
     width: 90%;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
 }
 
-.div-vinculo {
+.div_vinculo {
     position: relative;
+    top: 30px;
     height: 100px;
-    width: 100%;
-    margin: 0px auto;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     border: solid 1px #000;
 }
 
-.div-vinculo label {
+.label_vinculo {
     position: absolute;
     top: 20px;
     left: 5%;
-    margin-right: 10px;
+    margin-right: 0px;
+    font-family: 'Gotham', sans-serif;
 }
 
-.div-vinculo input {
+.checkbox_vinculo {
     position: absolute;
-    top: 13px;
+    top: 16px;
     left: 35px;
+    margin-left: 50px;
 }
 
-.div-vinculo select {
+.select_vinculo {
     position: relative;
     top: 50px;
     height: 25px;
@@ -81,38 +161,47 @@ form {
     margin: 0px auto;
 }
 
-.div-alineacion {
+.div_alineacion {
     position: relative;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.div-alineacion div {
+.div_especialidad {
     position: relative;
     height: 60px;
-    width: 45%;
+    width: 40%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div_profesional {
+    position: relative;
+    height: 60px;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 select {
-    height:30px;
+    height: 25px;
 }
 
-.label-turnos-disponibles {
-    margin-top: 20px;
+.label_turnos_disponibles {
     margin-bottom: 10px;
-    /*nuevos estilo y posicion*/
+    margin-left: 0px;
     font-family: 'Gotham', sans-serif;
     font-weight: 600;
     position:absolute;
     top:230px;
 }
 
-/*label nuevo para indicar que seleccione una hora*/
-.label-turnos-disponibles-hora{
+.label_turnos_disponibles_hora{
     font-family: 'Gotham', sans-serif;
     font-weight: 600;
     position:absolute;
@@ -124,39 +213,38 @@ select {
 
 
 input {
-    height: 25px;
+    height: 20px;
     width: 400px;
     margin-bottom: 10px;
     font-family: 'Gotham', sans-serif;
 }
 
-.div-turnos-disponibles {
+.div_turnos_disponibles {
     position: relative;
-    height: 400px;
-    width: 100%;
-    margin: 0px auto;
+    height: 200px;
+    width: 90%;
     border: solid 1px #000;
 }
 
-.div-scrollbar {
+.div_scrollbar {
     height: 100%;
     width: 100%;
     overflow: hidden;
     overflow-y: scroll;
 }
 
-.div-contenido {
+.div_contenido {
     padding: 20px;
     padding-top: 0px;
     padding-bottom: 0px;
 }
 
-.lista-turnos-disponibles {
+.lista_turnos_disponibles {
     list-style: none;
     padding: 0px;
 }
 
-.elemento-turno-disponible {
+.elemento_turno_disponible {
     height: 50px;
     width: 100%;
     margin-bottom: 10px;
@@ -164,7 +252,7 @@ input {
     background-color: whitesmoke;
 }
 
-.articulo-turno-disponible {
+.articulo_turno_disponible {
     height: 100%;
     width: 100%;
     display: flex;
@@ -172,109 +260,91 @@ input {
     justify-content: space-around;
 }
 
-.boton-seleccionar {
+.boton_seleccionar {
     height: 35px;
 }
 
-/* drag and drop */
-
-.div-drag-and-drop {
-    width: 100%;
-    height: 100px;
+.div_botones {
+    position: absolute;
+    top:500px;
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px dashed black;
-    font-size: 18px;
-}
-
-.div-drag-over {
-    width: 100%;
-    height: 100px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px dashed blue;
-    font-size: 18px;
-}
-
-.list-images {
-    margin-top: 20px;
-    list-style: none;
-}
-
-.list-images li:not(:first-child) {
-    margin-top: 10px;
-}
-
-.remove-button {
-    margin-left: 10px;
-}
-
-/* ... */
-
-.div-botones {
-    margin-top: 0px;
-    margin-bottom: 15px;
-    display: flex;
+    margin-bottom: 50px; 
     justify-content: center;
     justify-content: space-between;
 }
 
-.div-botones input {
-    font-size: 3vw;
+.boton_reset {
+    font-size: 15px;
     height: 35px;
-    width: calc(90% / 2);
+    width: 150px;
+    background-color: rgba(208,36,74,50%);
+    font-weight: 600;
 }
 
-/*estilos botones cancelar y pedir turno*/
-
+.boton_submit {
+    font-size: 15px;
+    height: 35px;
+    width: 150px;
+    font-weight: 600;
+    background-color: rgb(0, 218, 73);;
+}
 
 /* DESKTOP */
 @media screen and (min-width: 900px) {
 
-    .div-titulo-principal {
-        height: 120px;
+    .seccion_principal {
+        height: 1400px;
+      
     }
 
-    .div-vinculo {
+    .seccion_solicitar_turno {
+        top: 140px;
+        height: 1250px;
+    }
+
+    .titulo_principal {
+        font-size: 50px;
+    }
+
+    .nav_menu_paginas_internas {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        height: 60px;
+        width: 65%;
+        display: flex;
+        flex-direction: row;  
+        align-items: center;
+        justify-content: space-around; 
+    }
+
+    .enlace_pagina_interna:hover {
+        transform: scale(1.1);
+    }
+
+    .div_vinculo {
         width: 85%;
-        margin: 0px auto;/*agregado*/
-        margin-bottom: 30px;/*agregado*/
+        margin: 0px auto;
+        margin-bottom: 30px;
     }
 
-    .div-vinculo input {
+    .checkbox_vinculo {
         left: 45px;
     }
 
-    .div-alineacion {
-        margin: 0px auto;
-        margin-top: 20px;
-        width: 85%;
-    }
-
-    .seccion-formulario-turno {
-       /* width: 65%;*/
+    .seccion_formulario_turno {
+        position: relative;
         width: 90%;
         height: 980px;
         margin: 0px auto;
         margin-bottom: 10px;
+        border-radius: 10px 0px 10px 10px;
+        border: solid 2px #000;
+        background-color: rgb(238, 241, 239);
     }
 
-    /*estilos para el turnos dinamico, fechas y turnos disponibles
-    separados en 2 div, y un 3 div para dar resumen del turno seleccionado
-    */
-
-    /*Estilos para el primer div donde se ven los 7 días corrientes
-    apartir del día actual, se colocan estilos en verde y rojo para 
-    indicar días que atiende el médico y los días que no*/
-
-    
-    #div-diasAtiende {
+  
+    #div_diasAtiende {
         top: 260px;
         left: 25px;
         height: 150px;
@@ -291,6 +361,7 @@ input {
         height: 60px;
         align-items: center;
         justify-content: center;
+    
       }
       
       li:nth-child(n+39),
@@ -303,7 +374,7 @@ input {
         height: 30px;
         width: 155px;
       }
-      
+      }
       li.no-atencion:hover,
       li:nth-child(17) {
         pointer-events: none;
@@ -320,6 +391,7 @@ input {
         border: 1px solid rgb(2, 82, 85);
       }
 
+
       li.atencion:hover {
         border-radius: 5px;
         background-color: rgb(2, 82, 85);
@@ -328,25 +400,16 @@ input {
         align-items: center;
         justify-content: center;
       }
-
       .no-seleccionable {
         pointer-events: none;
         background-color: transparent !important;
       }
-
-    /*Estilos para el segundo div turnosDisponibles
-    que luego de elegir una opción del div diasAtiende
-    en este segundo div se muestran los horarios disponibles
-    para ese día, sacando los turnosTomados y considerando
-    la hora inicio, final y duraciónTurno
-    */  
-     
-    .div-turnos-disponibles label{
+      .div_turnos_disponibles label{
         color: #000;
       }
       
     
-    #div-turnosDisponibles {
+      #div_turnosDisponibles {
         position:absolute;
         top:450px;
         left: 25px;
@@ -355,41 +418,38 @@ input {
         margin-left: 10px;
         border: 1px solid black;
         background-color: white;
-    }
+      }
       
-    #div-turnosDisponibles ul {
-        position:absolute;
-        top:15px;
-    }
+      #div_turnosDisponibles ul {
+           position:absolute;
+           top:15px;
+      }
 
-    #div-turnosDisponibles li {
+      #div_turnosDisponibles li {
         padding: 10px;
         height: 60px;
         width: 130px;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+      }
 
-    #div-turnosDisponibles li:hover{
+      #div_turnosDisponibles li:hover{
         border-radius: 5px;
         background-color: rgb(2, 82, 85);
         color: #ecf0f1;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    
-    
-    li.no-disponibles {
+      }
+      
+     
+      li.no-disponibles {
         color: red; /* Color de texto para indicar no disponibles */
         font-style: italic; /* Estilo de texto para indicar no disponibles */
-    }
-
-    /*Estilos para el tercer div que solo muestra una linea de texto
-    a modo resumen del turno elegido, la hora y el especialista*/
+      }
       
-    #div-resultado{
+      #div_resultado{
         position:absolute;
         top:610px;
         left: 25px;
@@ -400,25 +460,43 @@ input {
         background-color: rgba(204, 201, 201, 0.743);
         text-align: center;
      }
-    
-    
-     #div-resultado p{
+
+     #div_resultado p{
         color: black;
      }
+    
+    
+    .div_botones {
+        position: absolute;
+        top:895px;
+        left:450px;
+        justify-content: space-around;
+    }
 
+    .boton_reset:hover {
+        transform: scale(1.1);
+    }
 
+    .boton_submit:hover {
+        transform: scale(1.1);
+    }
+
+    
     /* drag and drop */
 
     .div-drag-and-drop {
-        width: 100%;
+        width: 96%;
         height: 100px;
-        margin-top: 20px;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         border: 2px dashed black;
         font-size: 18px;
+        position: absolute;
+        top:700px;
+        left:20px;
     }
 
     .div-drag-over {
@@ -433,48 +511,13 @@ input {
         font-size: 18px;
     }
 
-    .list-images {
-        margin-top: 20px;
-        list-style: none;
-    }
-
-    .list-images li:not(:first-child) {
-        margin-top: 10px;
-    }
-
-    .remove-button {
-        margin-left: 10px;
-    }
-
-    /* ... */
-
-    .div-botones {
-        /*nueva posicion*/
-        position: absolute;
-        top:895px;
-        left:450px;
-        /*anterior*/
-        justify-content: space-around;
-    }
-
-    .div-botones input {
-        font-size: 1.5vw;
-        height: 40px;
-    }
-    
-    .div-botones input:hover {
-        transform: scale(1.1);
-    }
-
-} /*fin estilos desktop*/
-
 @media print {
             
-    .seccion-principal {
+    .seccion_principal {
         border: none;
     } 
 
-    .nav-menu-paginas-internas {
+    .nav_menu_paginas_internas {
         display: none;
     }
 
@@ -482,38 +525,38 @@ input {
         display: none;
     }
 
-    .seccion-formulario-turno {
+    .seccion_formulario_turno {
         border: none;
         background-color: white;
     }
 
-    .div-vinculo {
+    .div_vinculo {
         display: none;
     }
 
-    .div-alineacion {
+    .div_alineacion {
         display: none;
     }
 
-    .seccion-solicitar-turno {
+    .seccion_solicitar_turno {
         border: none;
     }
 
-    .label-turnos-disponibles {
+    .label_turnos_disponibles {
         display: none;
     }
 
-    .div-turnos-disponibles {
+    .div_turnos_disponibles {
         border: none;
     }
 
-    .div-scrollbar {
+    .div_scrollbar {
         overflow: visible;
         overflow-y: none;
     }
     
-    .div-vinculo input {
-        display: none;
+    .boton_reset, .boton_submit {
+       display: none;
     }
        
 }

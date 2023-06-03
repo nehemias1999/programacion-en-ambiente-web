@@ -136,20 +136,23 @@ class turnoDisponible {
         }
       ];
   
-      this.selectProfesional = document.querySelector('#select_pro');
-      this.ulElement = document.querySelector('#div_diasAtiende ul');
-      this.ulElementTurnos = document.querySelector('#div_turnosDisponibles ul');
-      this.ulElementResultados = document.querySelector('#div_resultado');
+      this.selectProfesional = document.querySelector('#select-profesional');
+      this.ulElement = document.querySelector('#div-diasAtiende ul');
+      this.ulElementTurnos = document.querySelector('#div-turnosDisponibles ul');
+      this.ulElementResultados = document.querySelector('#div-resultado');
   
       this.selectProfesional.addEventListener('change', () => this.fechasTurnos());
     }
   
     fechasTurnos() {
+
+      /** se seleccionan los datos del especialista elegido en el JSON */
       var profesionalSeleccionado = this.selectProfesional.value;
       var especialista = this.especialistas.find(function(especialista) {
         return especialista.nombre === profesionalSeleccionado;
       });
   
+      /** Si se encuentra el especialista */
       if (especialista) {
         this.ulElement.innerHTML = '';
         this.ulElementTurnos.innerHTML = '';
@@ -159,12 +162,21 @@ class turnoDisponible {
         var daysOfWeek = ['DOMINGO', 'LUNES', 'MARTES', 'MIÉRCOLES', 'JUEVES', 'VIERNES', 'SÁBADO'];
         var diasOrdenados = daysOfWeek.slice(diaActual).concat(daysOfWeek.slice(0, diaActual));
   
+        /**Se establecen los días de la semana, partiendo desde el día actual
+         * con sus nombres, y a cada día se le coloca un elemento li que corresponde
+         * a la fecha DD/MM//AAAA 
+         */
+
+        /**se recorre el array de dias y se agregan como li */
         daysOfWeek.forEach(function(day, index) {
           var liElement = document.createElement('li');
           liElement.textContent = diasOrdenados[index];
           this.ulElement.appendChild(liElement);
         }, this);
   
+        /**para cada li Dia anterior se le coloca las fechas actuales para 7 días, 
+         * en un li nuevo
+        */
         var fechaActual = new Date();
         for (var i = 0; i < daysOfWeek.length; i++) {
           var fecha = new Date(fechaActual);
@@ -173,9 +185,14 @@ class turnoDisponible {
           var mes = fecha.getMonth() + 1;
           var anio = fecha.getFullYear();
           var fechaString = dia.toString().padStart(2, '0') + '/' + mes.toString().padStart(2, '0') + '/' + anio;
-  
           var liElement = document.createElement('li');
           liElement.textContent = fechaString;
+          
+          /**compruebo si en ese día (nombre ej Lunes) corresponde a uno de los días que atiende
+           * entonces se coloca la clase atención para dar estilo de color verde 
+           * y sino, se coloca clase no atención y no seleccionable, para que no se pueda elegir 
+           * y que indique con color rojo
+           */
           if (especialista.diasQueAtiende.includes(daysOfWeek[fecha.getDay()].toUpperCase())) {
             liElement.classList.add('atencion');
           } else {
@@ -184,15 +201,18 @@ class turnoDisponible {
           }
           this.ulElement.appendChild(liElement);
   
+          /**obtengo el nombre del día que el usuario eligio (ej Lunes) */
           liElement.dataset.nombreDia = daysOfWeek[fecha.getDay()];
-  
+          
+          /**Espero un evento clic sobre el segundo div con las fecha del turno elegido */
           liElement.addEventListener('click', (event) => {
             var fechaSeleccionada = event.target.textContent;
             var nombreDiaSeleccionado = event.target.dataset.nombreDia;
   
             console.log('Fecha seleccionada:', fechaSeleccionada);
             console.log('Nombre del día:', nombreDiaSeleccionado);
-  
+            
+            /**Filtro los turnos tomados por el especialista para ese día elegido */
             var turnosTomadosFecha = especialista.turnosTomados.filter(function(turno) {
               return turno.dia.toUpperCase() === nombreDiaSeleccionado.toUpperCase();
             });
@@ -218,6 +238,10 @@ class turnoDisponible {
             HoraFin = horaFinalizacion;
             minutosFin = minutosFinalizacion;
   
+            /**Lógica para establecer cuando empieza y cuando termina un turno, teniendo en cuenta la
+             * duraciónTurno que nos da el JSON, la hora inicio, hora finalización de turnos y los turnos
+             * tomados
+             */
             while (HoraIni < horaFinalizacion || (HoraIni === horaFinalizacion && minutosIni < minutosFin)) {
               minutosSumados = minutosIni + duracionTurno;
   
@@ -237,7 +261,8 @@ class turnoDisponible {
             }
   
             console.log('Horarios Disponibles rangos:', horariosDisponibles);
-  
+            
+            /**filtro los horarios disponibles, sacando los que ya se hayan tomado */
             horariosDisponibles = horariosDisponibles.filter(function(horarioDisponible) {
               var horarioTomado = turnosTomadosFecha.find(function(turno) {
                 return turno.horas === parseInt(horarioDisponible.split(':')[0]) &&
@@ -246,6 +271,9 @@ class turnoDisponible {
               return !horarioTomado;
             });
   
+            /**compruebo si no hay turnos, dar mensaje de no turnos
+             * Si hay turnos disponibles, creo elemento li para esos turnos
+             */
             if (horariosDisponibles.length === 0) {
               var mensajeElement = document.createElement('li');
               mensajeElement.textContent = 'No hay turnos disponibles';
@@ -258,10 +286,11 @@ class turnoDisponible {
                 this.ulElementTurnos.appendChild(liElementTurnos);
               }, this);
             }
-  
+            
+            /**espero por eventos click sobre la hora elegida en el segundo div */
             this.ulElementTurnos.addEventListener('click', () => {
               var horaElegida = event.target.textContent;
-  
+              /**Creo resumen en un contenedor P con todos los datos de lo que fue eligiendo */
               var liElementResultado = document.createElement('p');
               liElementResultado.textContent = `Ud a seleccionado un turno el día ${nombreDiaSeleccionado} fecha: ${fechaSeleccionada} con el especialista ${profesionalSeleccionado} a las ${horaElegida} Hs`;
               this.ulElementResultados.appendChild(liElementResultado);
