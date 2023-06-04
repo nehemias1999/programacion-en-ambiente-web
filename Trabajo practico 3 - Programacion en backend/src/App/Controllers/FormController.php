@@ -42,6 +42,10 @@ class FormController
         $form = $_POST;
 
         $formState = $this->formValidation->validateFormSolicitarTurno($form);
+
+        if($formState) {
+            
+        }
         
         require $this->viewsDir . 'portal-del-paciente.inicio.solicitar-turno.view.php'; 
     }
