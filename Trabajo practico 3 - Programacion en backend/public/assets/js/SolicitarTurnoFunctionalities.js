@@ -9,6 +9,13 @@ class SolicitarTurnoFunctionalities {
                 let elementAdministrator = new ElementAdministrator();
 
                 this.addElementsDesktop();
+
+                let specialitiesSelect = elementAdministrator.getElement('#select-especialidad');
+                specialitiesSelect.addEventListener('change', () => {
+                    console.info(
+                        "OK"
+                    );
+                });
 			});
 
             ScriptAdministrator.loadScript("drag-and-drop-administrator", "/assets/js/components/DragAndDropAdministrator.js", () => {	

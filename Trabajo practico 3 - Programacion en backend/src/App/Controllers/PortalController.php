@@ -2,13 +2,17 @@
 
 namespace Paw\App\Controllers;
 
+use Paw\App\Models\DataBaseAdministrator;
+
 class PortalController
 {
     private string $viewsDir;
+    private DataBaseAdministrator $dataBaseAdministrator;
 
     public function __construct()
     {
         $this->viewsDir = __DIR__ . "/../Views/"; 
+        $this->dataBaseAdministrator = new DataBaseAdministrator();
     }
 
     // Ingresar
@@ -49,6 +53,9 @@ class PortalController
 
     public function inicioSolicitarTurno() 
     {
+        $especialidades = $this->dataBaseAdministrator->getAllData('tbl_specialities'); 
+        $profesionales = $this->dataBaseAdministrator->getDataById(1, 'tbl_professionals');
+
         require $this->viewsDir . 'portal-del-paciente.inicio.solicitar-turno.view.php';
     } 
 

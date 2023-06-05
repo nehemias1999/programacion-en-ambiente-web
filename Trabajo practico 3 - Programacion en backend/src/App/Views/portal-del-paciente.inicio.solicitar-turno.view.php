@@ -81,11 +81,12 @@
                                 Especialidad
                             </label>
                             <select id="select-especialidad" name="select-especialidad">
-                                <option value="" disabled selected>---</option>
-                                <option value="cardiologia">Cardiologia</option>
-                                <option value="traumatologia">Traumatologia</option>
-                                <option value="medicina-clinica">Medicina clinica</option>
-                                <option value="urologia">Urologia</option>
+                                <option value="" disabled selected>Seleccione</option>
+                                <?php foreach($especialidades as $especialidad): ?>
+                                    <option value="<?php echo $especialidad['speciality_id'] ?>">
+                                        <?php echo $especialidad['speciality_name'] ?>
+                                    </option>
+                                <?php endforeach; ?>
                             </select>
 
                         </div>
@@ -95,12 +96,13 @@
                             <label for="select-profesional">
                                 Profesional
                             </label>
-                            <select id="select-profesional" name="select-profesional">
-                                <option value="" disabled selected>---</option>
-                                <option value="Pagani Rocio">Pagani, Rocio</option>
-                                <option value="De Negri Gerardo">De negri, Gerardo</option>
-                                <option value="Fernandez Gustavo">Fernandez, Gustavo</option>
-                                <option value="Solei Sofia">Solei, Sofia</option>
+                            <select id="select-profesional" name="select-profesional" disabled>
+                                <option value="" disabled selected>Seleccione</option>
+                                <?php foreach($profesionales as $profesional): ?>
+                                    <option value="<?php echo $profesional['professional_id'] ?>">
+                                        <?php echo $profesional['last_name'] . ', ' . $profesional['first_name'] ?>
+                                    </option>
+                                <?php endforeach; ?>
                             </select>
 
                         </div>
@@ -117,7 +119,7 @@
                     </ul>
                 </div>
 
-                <label for="div-turnosDisponibles" class="label-turnos-disponibles-hora">
+                <!-- <label for="div-turnosDisponibles" class="label-turnos-disponibles-hora">
                     Seleccione un horario disponible
                 </label>
 
@@ -128,16 +130,11 @@
                 </div>
 
                 <div id="div-resultado">
-                </div>
+                </div> -->
 
-                <div class="div-drag-and-drop" draggable="true">
-                    Arrastra y suelta la imagen del estudio aquí
-                    <input type="hidden" name="input-image" id="input-image" class="input-image" value="">
-                </div>
+                <!-- <div class="div-input-files">
 
-                <div class="div-input-files">
-
-                </div>
+                </div> -->
                 
                 <div class="div-botones">
 
