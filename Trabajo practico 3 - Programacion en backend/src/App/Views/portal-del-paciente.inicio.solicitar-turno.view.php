@@ -99,6 +99,10 @@
 
                 </div>
 
+                <button class="button-buscar">
+                    Buscar
+                </button>
+
                 <label for="div-diasAtiende" class="label-turnos-disponibles">
                     Seleccione una fecha
                 </label>

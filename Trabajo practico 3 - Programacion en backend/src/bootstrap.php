@@ -44,7 +44,8 @@ $router->post("/portal-del-paciente/inicio/vinculaciones", "FormController@vincu
 $router->get("/portal-del-paciente/inicio/resultados", "PortalController@inicioResultados");
 
 $router->get("/portal-del-paciente/inicio/solicitar-turno/getAllSpecialities", "AjaxController@getAllSpecialities");
-$router->post("/portal-del-paciente/inicio/solicitar-turno/getAllDoctorsThatMatch", "AjaxController@getAllDoctorsThatMatch");
+$router->post("/portal-del-paciente/inicio/solicitar-turno/getAllProfessionalsThatMatch", "AjaxController@getAllProfessionalsThatMatch");
+$router->post("/portal-del-paciente/inicio/solicitar-turno/getAllProfessionalData", "AjaxController@getAllProfessionalData");
 
 // Mis datos
 $router->get("/portal-del-paciente/inicio/mis-datos", "PortalController@inicioMisDatos");

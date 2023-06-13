@@ -1,5 +1,6 @@
 class turnoDisponible {
     constructor() {
+      
       this.especialistas = [
         {
           "nombre": "Pagani Rocio",

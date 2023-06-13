@@ -25,14 +25,34 @@ class AjaxController
         echo json_encode($allSpecialities);
     }
 
-    public function getAllDoctorsThatMatch() 
+    public function getAllProfessionalsThatMatch() 
     {
         $speciality = $_POST['speciality'];
 
-        $doctors = $this->dataBaseAdministrator->getAllDoctorsThatMatch($speciality);
+        $professionals = $this->dataBaseAdministrator->getAllProfessionalsThatMatch($speciality);
+
+        header('Content-Type: application/json');
+        echo json_encode($professionals);
+    }
+
+    public function isProfessionalExists() 
+    {
+        $professional_id = $_POST['speciality'];
+
+        $doctors = $this->dataBaseAdministrator->isProfessionalExists($speciality);
 
         header('Content-Type: application/json');
         echo json_encode($doctors);
+    }
+
+    public function getAllProfessionalData() 
+    {
+        $professional_id = $_POST['professional_id'];
+
+        $professional_data = $this->dataBaseAdministrator->getAllProfessionalsData($professional_id);
+
+        header('Content-Type: application/json');
+        echo $professional_data;
     }
 }
 ?>
