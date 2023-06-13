@@ -15,7 +15,7 @@
         </h1>
 
         <?php
-            require "parts/nav.view.php";
+            require "parts/nav.portal.view.php";
         ?>
     </header>
     <main>

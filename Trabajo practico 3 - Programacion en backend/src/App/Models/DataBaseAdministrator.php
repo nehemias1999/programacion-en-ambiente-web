@@ -6,7 +6,6 @@ use PDO;
 
 class DataBaseAdministrator 
 {
-        
     private $host = 'localhost';
     private $dbName = 'listadoDeTurnos';
     private $username = 'root';
@@ -28,29 +27,40 @@ class DataBaseAdministrator
         }
     }
 
-    public function getAllData($table) 
+    public function getAllSpecialities() 
     {
-        $query = "SELECT * FROM $table;";
-        $stmt = $this->pdo->query($query);
+        $query = "SELECT * FROM tbl_specialities;";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->execute();
+
         $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $rows;
     }
 
-    public function getDataById($column_id, $table) 
+    public function getAllDoctorsThatMatch($speciality) 
     {
-        $query = "SELECT * FROM $table WHERE speciality_id = $column_id;";
-        $stmt = $this->pdo->query($query);
+        $query = "SELECT * FROM tbl_professionals WHERE speciality_id = :speciality_id;";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->bindParam(":speciality_id", $speciality);
+        $stmt->execute();
+
+        $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $rows;
+    }
+
+    public function getAllShiftsThatMatch() 
+    {
+        $speciality = $_POST['select-especialidad'];
+        $doctor = $_POST['select-profesional'];
+
+        $query = "SELECT * FROM tbl_doctors WHERE speciality_id = :speciality_id;";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->bindParam(":speciality_id", $speciality_id);
+        $stmt->execute();
+
         $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $rows;
     }
 }
-
-// $dataBaseAdministrator = new dataBaseAdministrator();
-
-// $resultados = $dataBaseAdministrator->getAllData();
-
-// foreach($resultados as $resultado) {
-//     print($resultado['speciality_id'] . ' ' . $resultado['speciality_name'] . "\n");
-// }
 
 ?>

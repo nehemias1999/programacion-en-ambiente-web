@@ -82,11 +82,6 @@
                             </label>
                             <select id="select-especialidad" name="select-especialidad">
                                 <option value="" disabled selected>Seleccione</option>
-                                <?php foreach($especialidades as $especialidad): ?>
-                                    <option value="<?php echo $especialidad['speciality_id'] ?>">
-                                        <?php echo $especialidad['speciality_name'] ?>
-                                    </option>
-                                <?php endforeach; ?>
                             </select>
 
                         </div>
@@ -98,11 +93,6 @@
                             </label>
                             <select id="select-profesional" name="select-profesional" disabled>
                                 <option value="" disabled selected>Seleccione</option>
-                                <?php foreach($profesionales as $profesional): ?>
-                                    <option value="<?php echo $profesional['professional_id'] ?>">
-                                        <?php echo $profesional['last_name'] . ', ' . $profesional['first_name'] ?>
-                                    </option>
-                                <?php endforeach; ?>
                             </select>
 
                         </div>

@@ -53,8 +53,7 @@ class PortalController
 
     public function inicioSolicitarTurno() 
     {
-        $especialidades = $this->dataBaseAdministrator->getAllData('tbl_specialities'); 
-        $profesionales = $this->dataBaseAdministrator->getDataById(1, 'tbl_professionals');
+        $especialidades = $this->dataBaseAdministrator->getAllSpecialities('tbl_specialities'); 
 
         require $this->viewsDir . 'portal-del-paciente.inicio.solicitar-turno.view.php';
     } 
@@ -85,7 +84,6 @@ class PortalController
     {
         require $this->viewsDir . 'portal-del-paciente.mis-datos.editar-datos.view.php';
     } 
-
 }
 
 ?>

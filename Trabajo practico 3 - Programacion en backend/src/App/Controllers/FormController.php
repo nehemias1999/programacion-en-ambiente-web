@@ -3,16 +3,19 @@
 namespace Paw\App\Controllers;
 
 use Paw\Core\Validations\FormValidations;
+use Paw\App\Models\DataBaseAdministrator;
 
 class FormController 
 {
     private string $viewsDir;
     private FormValidations $formValidation;
+    private DataBaseAdministrator $dataBaseAdministrator;
 
     public function __construct()
     {
         $this->viewsDir = __DIR__ . "/../Views/"; 
         $this->formValidation = new FormValidations();
+        $this->dataBaseAdministrator = new DataBaseAdministrator();
     }
 
     // PORTAL DEL PACIENTE
@@ -42,10 +45,6 @@ class FormController
         $form = $_POST;
 
         $formState = $this->formValidation->validateFormSolicitarTurno($form);
-
-        if($formState) {
-            
-        }
         
         require $this->viewsDir . 'portal-del-paciente.inicio.solicitar-turno.view.php'; 
     }

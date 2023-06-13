@@ -29,19 +29,22 @@ $router->post("/portal-del-paciente/recuperar-contrasena", "FormController@recup
 
 // Crear cuenta
 $router->get("/portal-del-paciente/crear-cuenta/datos-personales", "PortalController@crearCuentaDatosPersonales");
-$router->post("/portal-del-paciente/crear-cuenta/datos-personales", "FormController@datosPersonales"); // VER
+$router->post("/portal-del-paciente/crear-cuenta/datos-personales", "FormController@datosPersonales");
 $router->get("/portal-del-paciente/crear-cuenta/domicilio", "PortalController@crearCuentaDomicilio");
-$router->post("/portal-del-paciente/crear-cuenta/domicilio", "FormController@domicilio"); // VER
+$router->post("/portal-del-paciente/crear-cuenta/domicilio", "FormController@domicilio");
 $router->get("/portal-del-paciente/crear-cuenta/datos-de-la-cuenta", "PortalController@crearCuentaDatosDeLaCuenta");
-$router->post("/portal-del-paciente/crear-cuenta/datos-de-la-cuenta", "FormController@datosDeLaCuenta"); // VER
+$router->post("/portal-del-paciente/crear-cuenta/datos-de-la-cuenta", "FormController@datosDeLaCuenta"); 
 
 // Inicio
 $router->get("/portal-del-paciente/inicio/turnos-pendientes", "PortalController@inicioTurnosPendientes");
 $router->get("/portal-del-paciente/inicio/solicitar-turno", "PortalController@inicioSolicitarTurno");
-$router->post("/portal-del-paciente/inicio/solicitar-turno", "FormController@solicitarTurno"); // ARREGLAR CSS
+$router->post("/portal-del-paciente/inicio/solicitar-turno", "FormController@solicitarTurno");
 $router->get("/portal-del-paciente/inicio/vinculaciones", "PortalController@inicioVinculaciones");
-$router->post("/portal-del-paciente/inicio/vinculaciones", "FormController@vinculaciones"); // VER
+$router->post("/portal-del-paciente/inicio/vinculaciones", "FormController@vinculaciones"); 
 $router->get("/portal-del-paciente/inicio/resultados", "PortalController@inicioResultados");
+
+$router->get("/portal-del-paciente/inicio/solicitar-turno/getAllSpecialities", "AjaxController@getAllSpecialities");
+$router->post("/portal-del-paciente/inicio/solicitar-turno/getAllDoctorsThatMatch", "AjaxController@getAllDoctorsThatMatch");
 
 // Mis datos
 $router->get("/portal-del-paciente/inicio/mis-datos", "PortalController@inicioMisDatos");
