@@ -1,0 +1,96 @@
+
+-- BORRAR TABLAS
+
+DROP TABLE tbl_attention_days;
+DROP TABLES tbl_professionals;
+DROP TABLES tbl_specialities;
+DROP TABLE tbl_shifts;
+DROP TABLE tbl_patients;
+
+-- CREAR TABLAS
+
+CREATE TABLE tbl_specialities
+( 
+    speciality_id INT AUTO_INCREMENT,
+    speciality_name VARCHAR(255) NOT NULL,
+    PRIMARY KEY (speciality_id)
+);
+
+CREATE TABLE tbl_professionals
+( 
+    professional_id INT NOT NULL,
+    first_name VARCHAR(40) NOT NULL,
+    last_name VARCHAR(40) NOT NULL,
+    speciality_id INT NOT NULL,
+    PRIMARY KEY (professional_id),
+    FOREIGN KEY (speciality_id) REFERENCES tbl_specialities(speciality_id)
+);
+
+CREATE TABLE tbl_attention_days 
+( 
+    attention_day_id INT AUTO_INCREMENT,
+    professional_id INT NOT NULL,
+    week_day VARCHAR(20) NOT NULL,
+    start_hour INT NOT NULL,
+    start_minute INT NOT NULL,
+    end_hour INT NOT NULL,
+    end_minute INT NOT NULL,
+    shift_duration INT NOT NULL,
+    PRIMARY KEY (attention_day_id),
+    FOREIGN KEY (professional_id) REFERENCES tbl_professionals(professional_id)
+);
+
+CREATE TABLE tbl_patients
+( 
+    patient_id INT AUTO_INCREMENT,
+    first_name VARCHAR(40) NOT NULL,
+    last_name VARCHAR(40) NOT NULL,
+    birth_date DATE NOT NULL, 
+    PRIMARY KEY (patient_id)
+);
+
+CREATE TABLE tbl_shifts
+( 
+    shift_id INT AUTO_INCREMENT,
+    professional_id INT NOT NULL,
+    week_day VARCHAR(20) NOT NULL,
+    start_hour INT NOT NULL,
+    start_minute INT NOT NULL,
+    patient_id INT NULL,
+    PRIMARY KEY (shift_id),
+    FOREIGN KEY (professional_id) REFERENCES tbl_professionals(professional_id),
+    FOREIGN KEY (patient_id) REFERENCES tbl_patients(patient_id)
+);
+
+-- INSERTAR VALORES
+
+INSERT INTO tbl_specialities (speciality_name) VALUES ('traumatologia');
+INSERT INTO tbl_specialities (speciality_name) VALUES ('neurologia');
+INSERT INTO tbl_specialities (speciality_name) VALUES ('urologia');
+INSERT INTO tbl_specialities (speciality_name) VALUES ('psiquiatra');
+INSERT INTO tbl_specialities (speciality_name) VALUES ('medicina clinica');
+
+INSERT INTO tbl_professionals (professional_id, first_name, last_name, speciality_id) VALUES (1000, 'juan', 'fernandez', 1);
+INSERT INTO tbl_professionals (professional_id, first_name, last_name, speciality_id) VALUES (1001, 'pablo', 'noguera', 2);
+INSERT INTO tbl_professionals (professional_id, first_name, last_name, speciality_id) VALUES (1002, 'maria', 'ortiz', 1);
+INSERT INTO tbl_professionals (professional_id, first_name, last_name, speciality_id) VALUES (1003, 'roberto', 'hernandez', 1);
+INSERT INTO tbl_professionals (professional_id, first_name, last_name, speciality_id) VALUES (1004, 'juan', 'sanchez', 3);
+INSERT INTO tbl_professionals (professional_id, first_name, last_name, speciality_id) VALUES (1005, 'marta', 'fernandez', 4);
+INSERT INTO tbl_professionals (professional_id, first_name, last_name, speciality_id) VALUES (1006, 'martin', 'sastre', 4);
+
+INSERT INTO tbl_attention_days (professional_id, week_day, start_hour, start_minute, end_hour, end_minute, shift_duration) VALUES (1001, 'lunes', 9, 0, 12, 0, 15);
+INSERT INTO tbl_attention_days (professional_id, week_day, start_hour, start_minute, end_hour, end_minute, shift_duration) VALUES (1001, 'miercoles', 9, 0, 12, 0, 15);
+INSERT INTO tbl_attention_days (professional_id, week_day, start_hour, start_minute, end_hour, end_minute, shift_duration) VALUES (1001, 'viernes', 9, 0, 12, 0, 15);
+INSERT INTO tbl_attention_days (professional_id, week_day, start_hour, start_minute, end_hour, end_minute, shift_duration) VALUES (1002, 'martes', 9, 0, 12, 0, 15);
+INSERT INTO tbl_attention_days (professional_id, week_day, start_hour, start_minute, end_hour, end_minute, shift_duration) VALUES (1002, 'jueves', 9, 0, 12, 0, 15);
+
+INSERT INTO tbl_patients (first_name, last_name, birth_date) VALUES ('nehemias', 'salazar', '1999-01-21');
+INSERT INTO tbl_patients (first_name, last_name, birth_date) VALUES ('roberto', 'soto', '1997-05-06');
+INSERT INTO tbl_patients (first_name, last_name, birth_date) VALUES ('mariano', 'sastre', '1999-03-15');
+INSERT INTO tbl_patients (first_name, last_name, birth_date) VALUES ('maria', 'sanchez', '1998-05-22');
+
+INSERT INTO tbl_shifts (professional_id, week_day, start_hour, start_minute, patient_id) VALUES (1001, 'lunes', 9, 15, NULL);
+INSERT INTO tbl_shifts (professional_id, week_day, start_hour, start_minute, patient_id) VALUES (1001, 'lunes', 9, 15, NULL);
+INSERT INTO tbl_shifts (professional_id, week_day, start_hour, start_minute, patient_id) VALUES (1001, 'lunes', 9, 30, 1);
+INSERT INTO tbl_shifts (professional_id, week_day, start_hour, start_minute, patient_id) VALUES (1001, 'viernes', 9, 0, 2);
+INSERT INTO tbl_shifts (professional_id, week_day, start_hour, start_minute, patient_id) VALUES (1002, 'martes', 9, 0, 3);
